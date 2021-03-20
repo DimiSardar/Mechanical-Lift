@@ -1,6 +1,6 @@
 ﻿Public Class Meleth_Anelkysthra
     Private Sub ΒιβλιοθήκεςToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ΒιβλιοθήκεςToolStripMenuItem.Click
-
+        bibliothhkes.Show()
     End Sub
 
     Private Sub NextCentralTab_Click(sender As Object, e As EventArgs) Handles NextCentralTab1.Click
