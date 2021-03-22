@@ -53,52 +53,30 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
-
-        '<Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-        ' Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-        ' Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-        ' Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\Users\dhmht\Desktop\Πρόγραμμα Α"& _ 
-        '    "νελκυστήρα!\Table.Ελάχιστη_Ωφέλιμη_Επιφάνεια.accdb""")>  _
-        'Public ReadOnly Property Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαConnectionString() As String
-        '    Get
-        '        Return CType(Me("Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαConnectionString"),String)
-        '    End Get
-        'End Property
-
-        '<Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-        ' Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-        ' Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-        ' Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\Users\dhmht\Desktop\Πρόγραμμα Α"& _ 
-        '    "νελκυστήρα!\Table.Μέγιστη_Ωφέλιμη_Επιφάνεια.accdb""")>  _
-        'Public ReadOnly Property Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαConnectionString() As String
-        '    Get
-        '        Return CType(Me("Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαConnectionString"),String)
-        '    End Get
-        'End Property
-
-        '<Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-        ' Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-        ' Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-        ' Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\Users\dhmht\Desktop\Πρόγραμμα Α"& _ 
-        '    "νελκυστήρα!\Βιβλιοθήκες\DataAccess Βιβλιοθήκες\Table.Ελάχιστη_Ωφέλιμη_Επιφάνεια."& _ 
-        '    "accdb""")>  _
-        'Public ReadOnly Property Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαConnectionString1() As String
-        '    Get
-        '        Return CType(Me("Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαConnectionString1"),String)
-        '    End Get
-        'End Property
-
-        '<Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-        ' Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-        ' Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-        ' Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\Users\dhmht\Desktop\Πρόγραμμα Α"& _ 
-        '    "νελκυστήρα!\Βιβλιοθήκες\DataAccess Βιβλιοθήκες\Table.Μέγιστη_Ωφέλιμη_Επιφάνεια.a"& _ 
-        '    "ccdb""")>  _
-        'Public ReadOnly Property Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαConnectionString1() As String
-        '    Get
-        '        Return CType(Me("Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαConnectionString1"),String)
-        '    End Get
-        'End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\GitHub\Mechanical Lift\Πρόγραμμ"& _ 
+            "α Ανελκυστήρα! new\Βιβλιοθήκες\DataAccess Βιβλιοθήκες\Table.Ελάχιστη_Ωφέλιμη_Επι"& _ 
+            "φάνεια.accdb""")>  _
+        Public ReadOnly Property Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαConnectionString() As String
+            Get
+                Return CType(Me("Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαConnectionString"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\GitHub\Mechanical Lift\Πρόγραμμ"& _ 
+            "α Ανελκυστήρα! new\Βιβλιοθήκες\DataAccess Βιβλιοθήκες\Table.Μέγιστη_Ωφέλιμη_Επιφ"& _ 
+            "άνεια.accdb""")>  _
+        Public ReadOnly Property Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαConnectionString() As String
+            Get
+                Return CType(Me("Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

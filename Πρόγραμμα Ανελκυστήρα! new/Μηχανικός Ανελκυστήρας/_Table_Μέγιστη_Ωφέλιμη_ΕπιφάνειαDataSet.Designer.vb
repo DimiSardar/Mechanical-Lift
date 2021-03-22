@@ -25,7 +25,7 @@ Option Explicit On
 Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet
     Inherits Global.System.Data.DataSet
     
-    Private tableΜέγ_Ωφέλ_Επιφ_Θαλάμ As Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable
+    Private tableΠίν_Μέγ_Ωφέλ_Επιφ As Πίν_Μέγ_Ωφέλ_ΕπιφDataTable
     
     Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
     
@@ -56,8 +56,8 @@ Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαData
         If (Me.DetermineSchemaSerializationMode(info, context) = Global.System.Data.SchemaSerializationMode.IncludeSchema) Then
             Dim ds As Global.System.Data.DataSet = New Global.System.Data.DataSet()
             ds.ReadXmlSchema(New Global.System.Xml.XmlTextReader(New Global.System.IO.StringReader(strSchema)))
-            If (Not (ds.Tables("Μέγ_Ωφέλ_Επιφ_Θαλάμ")) Is Nothing) Then
-                MyBase.Tables.Add(New Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable(ds.Tables("Μέγ_Ωφέλ_Επιφ_Θαλάμ")))
+            If (Not (ds.Tables("Πίν_Μέγ_Ωφέλ_Επιφ")) Is Nothing) Then
+                MyBase.Tables.Add(New Πίν_Μέγ_Ωφέλ_ΕπιφDataTable(ds.Tables("Πίν_Μέγ_Ωφέλ_Επιφ")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -80,9 +80,9 @@ Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαData
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
      Global.System.ComponentModel.Browsable(false),  _
      Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
-    Public ReadOnly Property Μέγ_Ωφέλ_Επιφ_Θαλάμ() As Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable
+    Public ReadOnly Property Πίν_Μέγ_Ωφέλ_Επιφ() As Πίν_Μέγ_Ωφέλ_ΕπιφDataTable
         Get
-            Return Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ
+            Return Me.tableΠίν_Μέγ_Ωφέλ_Επιφ
         End Get
     End Property
     
@@ -153,8 +153,8 @@ Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαData
             Me.Reset
             Dim ds As Global.System.Data.DataSet = New Global.System.Data.DataSet()
             ds.ReadXml(reader)
-            If (Not (ds.Tables("Μέγ_Ωφέλ_Επιφ_Θαλάμ")) Is Nothing) Then
-                MyBase.Tables.Add(New Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable(ds.Tables("Μέγ_Ωφέλ_Επιφ_Θαλάμ")))
+            If (Not (ds.Tables("Πίν_Μέγ_Ωφέλ_Επιφ")) Is Nothing) Then
+                MyBase.Tables.Add(New Πίν_Μέγ_Ωφέλ_ΕπιφDataTable(ds.Tables("Πίν_Μέγ_Ωφέλ_Επιφ")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -188,10 +188,10 @@ Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαData
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
     Friend Overloads Sub InitVars(ByVal initTable As Boolean)
-        Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ = CType(MyBase.Tables("Μέγ_Ωφέλ_Επιφ_Θαλάμ"),Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable)
+        Me.tableΠίν_Μέγ_Ωφέλ_Επιφ = CType(MyBase.Tables("Πίν_Μέγ_Ωφέλ_Επιφ"),Πίν_Μέγ_Ωφέλ_ΕπιφDataTable)
         If (initTable = true) Then
-            If (Not (Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ) Is Nothing) Then
-                Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ.InitVars
+            If (Not (Me.tableΠίν_Μέγ_Ωφέλ_Επιφ) Is Nothing) Then
+                Me.tableΠίν_Μέγ_Ωφέλ_Επιφ.InitVars
             End If
         End If
     End Sub
@@ -204,13 +204,13 @@ Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαData
         Me.Namespace = "http://tempuri.org/_Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.xsd"
         Me.EnforceConstraints = true
         Me.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
-        Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ = New Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable()
-        MyBase.Tables.Add(Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ)
+        Me.tableΠίν_Μέγ_Ωφέλ_Επιφ = New Πίν_Μέγ_Ωφέλ_ΕπιφDataTable()
+        MyBase.Tables.Add(Me.tableΠίν_Μέγ_Ωφέλ_Επιφ)
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-    Private Function ShouldSerializeΜέγ_Ωφέλ_Επιφ_Θαλάμ() As Boolean
+    Private Function ShouldSerializeΠίν_Μέγ_Ωφέλ_Επιφ() As Boolean
         Return false
     End Function
     
@@ -273,27 +273,25 @@ Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαData
     End Function
     
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-    Public Delegate Sub Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChangeEventHandler(ByVal sender As Object, ByVal e As Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChangeEvent)
+    Public Delegate Sub Πίν_Μέγ_Ωφέλ_ΕπιφRowChangeEventHandler(ByVal sender As Object, ByVal e As Πίν_Μέγ_Ωφέλ_ΕπιφRowChangeEvent)
     
     '''<summary>
     '''Represents the strongly named DataTable class.
     '''</summary>
     <Global.System.Serializable(),  _
      Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
-    Partial Public Class Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable
-        Inherits Global.System.Data.TypedTableBase(Of Μέγ_Ωφέλ_Επιφ_ΘαλάμRow)
+    Partial Public Class Πίν_Μέγ_Ωφέλ_ΕπιφDataTable
+        Inherits Global.System.Data.TypedTableBase(Of Πίν_Μέγ_Ωφέλ_ΕπιφRow)
         
-        Private columnΑναγνωριστικό As Global.System.Data.DataColumn
+        Private _columnΩφέλιμο_Φορτίο___kg__ As Global.System.Data.DataColumn
         
-        Private _columnΩφέλιμο_Φορτίο_Μάζα__kg_ As Global.System.Data.DataColumn
-        
-        Private _columnΜέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_ As Global.System.Data.DataColumn
+        Private _columnΜέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__ As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub New()
             MyBase.New
-            Me.TableName = "Μέγ_Ωφέλ_Επιφ_Θαλάμ"
+            Me.TableName = "Πίν_Μέγ_Ωφέλ_Επιφ"
             Me.BeginInit
             Me.InitClass
             Me.EndInit
@@ -326,25 +324,17 @@ Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαData
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public ReadOnly Property ΑναγνωριστικόColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property _Ωφέλιμο_Φορτίο___kg__Column() As Global.System.Data.DataColumn
             Get
-                Return Me.columnΑναγνωριστικό
+                Return Me._columnΩφέλιμο_Φορτίο___kg__
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public ReadOnly Property _Ωφέλιμο_Φορτίο_Μάζα__kg_Column() As Global.System.Data.DataColumn
+        Public ReadOnly Property _Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__Column() As Global.System.Data.DataColumn
             Get
-                Return Me._columnΩφέλιμο_Φορτίο_Μάζα__kg_
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public ReadOnly Property _Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_Column() As Global.System.Data.DataColumn
-            Get
-                Return Me._columnΜέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_
+                Return Me._columnΜέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__
             End Get
         End Property
         
@@ -359,50 +349,50 @@ Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαData
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Default ReadOnly Property Item(ByVal index As Integer) As Μέγ_Ωφέλ_Επιφ_ΘαλάμRow
+        Public Default ReadOnly Property Item(ByVal index As Integer) As Πίν_Μέγ_Ωφέλ_ΕπιφRow
             Get
-                Return CType(Me.Rows(index),Μέγ_Ωφέλ_Επιφ_ΘαλάμRow)
+                Return CType(Me.Rows(index),Πίν_Μέγ_Ωφέλ_ΕπιφRow)
             End Get
         End Property
         
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Event Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChanging As Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChangeEventHandler
+        Public Event Πίν_Μέγ_Ωφέλ_ΕπιφRowChanging As Πίν_Μέγ_Ωφέλ_ΕπιφRowChangeEventHandler
         
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Event Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChanged As Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChangeEventHandler
+        Public Event Πίν_Μέγ_Ωφέλ_ΕπιφRowChanged As Πίν_Μέγ_Ωφέλ_ΕπιφRowChangeEventHandler
         
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Event Μέγ_Ωφέλ_Επιφ_ΘαλάμRowDeleting As Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChangeEventHandler
+        Public Event Πίν_Μέγ_Ωφέλ_ΕπιφRowDeleting As Πίν_Μέγ_Ωφέλ_ΕπιφRowChangeEventHandler
         
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Event Μέγ_Ωφέλ_Επιφ_ΘαλάμRowDeleted As Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChangeEventHandler
+        Public Event Πίν_Μέγ_Ωφέλ_ΕπιφRowDeleted As Πίν_Μέγ_Ωφέλ_ΕπιφRowChangeEventHandler
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Overloads Sub AddΜέγ_Ωφέλ_Επιφ_ΘαλάμRow(ByVal row As Μέγ_Ωφέλ_Επιφ_ΘαλάμRow)
+        Public Overloads Sub AddΠίν_Μέγ_Ωφέλ_ΕπιφRow(ByVal row As Πίν_Μέγ_Ωφέλ_ΕπιφRow)
             Me.Rows.Add(row)
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Overloads Function AddΜέγ_Ωφέλ_Επιφ_ΘαλάμRow(ByVal _Ωφέλιμο_Φορτίο_Μάζα__kg_ As Double, ByVal _Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_ As Double) As Μέγ_Ωφέλ_Επιφ_ΘαλάμRow
-            Dim rowΜέγ_Ωφέλ_Επιφ_ΘαλάμRow As Μέγ_Ωφέλ_Επιφ_ΘαλάμRow = CType(Me.NewRow,Μέγ_Ωφέλ_Επιφ_ΘαλάμRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, _Ωφέλιμο_Φορτίο_Μάζα__kg_, _Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_}
-            rowΜέγ_Ωφέλ_Επιφ_ΘαλάμRow.ItemArray = columnValuesArray
-            Me.Rows.Add(rowΜέγ_Ωφέλ_Επιφ_ΘαλάμRow)
-            Return rowΜέγ_Ωφέλ_Επιφ_ΘαλάμRow
+        Public Overloads Function AddΠίν_Μέγ_Ωφέλ_ΕπιφRow(ByVal _Ωφέλιμο_Φορτίο___kg__ As Double, ByVal _Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__ As Double) As Πίν_Μέγ_Ωφέλ_ΕπιφRow
+            Dim rowΠίν_Μέγ_Ωφέλ_ΕπιφRow As Πίν_Μέγ_Ωφέλ_ΕπιφRow = CType(Me.NewRow,Πίν_Μέγ_Ωφέλ_ΕπιφRow)
+            Dim columnValuesArray() As Object = New Object() {_Ωφέλιμο_Φορτίο___kg__, _Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__}
+            rowΠίν_Μέγ_Ωφέλ_ΕπιφRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowΠίν_Μέγ_Ωφέλ_ΕπιφRow)
+            Return rowΠίν_Μέγ_Ωφέλ_ΕπιφRow
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Function FindByΑναγνωριστικό(ByVal Αναγνωριστικό As Integer) As Μέγ_Ωφέλ_Επιφ_ΘαλάμRow
-            Return CType(Me.Rows.Find(New Object() {Αναγνωριστικό}),Μέγ_Ωφέλ_Επιφ_ΘαλάμRow)
+        Public Function FindBy_Ωφέλιμο_Φορτίο___kg__(ByVal _Ωφέλιμο_Φορτίο___kg__ As Double) As Πίν_Μέγ_Ωφέλ_ΕπιφRow
+            Return CType(Me.Rows.Find(New Object() {_Ωφέλιμο_Φορτίο___kg__}),Πίν_Μέγ_Ωφέλ_ΕπιφRow)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
-            Dim cln As Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable = CType(MyBase.Clone,Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable)
+            Dim cln As Πίν_Μέγ_Ωφέλ_ΕπιφDataTable = CType(MyBase.Clone,Πίν_Μέγ_Ωφέλ_ΕπιφDataTable)
             cln.InitVars
             Return cln
         End Function
@@ -410,62 +400,56 @@ Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαData
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
-            Return New Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable()
+            Return New Πίν_Μέγ_Ωφέλ_ΕπιφDataTable()
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Friend Sub InitVars()
-            Me.columnΑναγνωριστικό = MyBase.Columns("Αναγνωριστικό")
-            Me._columnΩφέλιμο_Φορτίο_Μάζα__kg_ = MyBase.Columns("Ωφέλιμο Φορτίο Μάζα (kg)")
-            Me._columnΜέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_ = MyBase.Columns("Μέγιστη Ωφέλιμη Επιφάνεια θαλάμου (m2)")
+            Me._columnΩφέλιμο_Φορτίο___kg__ = MyBase.Columns("Ωφέλιμο Φορτίο ( kg )")
+            Me._columnΜέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__ = MyBase.Columns("Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Private Sub InitClass()
-            Me.columnΑναγνωριστικό = New Global.System.Data.DataColumn("Αναγνωριστικό", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnΑναγνωριστικό)
-            Me._columnΩφέλιμο_Φορτίο_Μάζα__kg_ = New Global.System.Data.DataColumn("Ωφέλιμο Φορτίο Μάζα (kg)", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
-            Me._columnΩφέλιμο_Φορτίο_Μάζα__kg_.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnΩφέλιμο_Φορτίο_Μάζα__kg_")
-            Me._columnΩφέλιμο_Φορτίο_Μάζα__kg_.ExtendedProperties.Add("Generator_UserColumnName", "Ωφέλιμο Φορτίο Μάζα (kg)")
-            MyBase.Columns.Add(Me._columnΩφέλιμο_Φορτίο_Μάζα__kg_)
-            Me._columnΜέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_ = New Global.System.Data.DataColumn("Μέγιστη Ωφέλιμη Επιφάνεια θαλάμου (m2)", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
-            Me._columnΜέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnΜέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_")
-            Me._columnΜέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_.ExtendedProperties.Add("Generator_UserColumnName", "Μέγιστη Ωφέλιμη Επιφάνεια θαλάμου (m2)")
-            MyBase.Columns.Add(Me._columnΜέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnΑναγνωριστικό}, true))
-            Me.columnΑναγνωριστικό.AutoIncrement = true
-            Me.columnΑναγνωριστικό.AutoIncrementSeed = -1
-            Me.columnΑναγνωριστικό.AutoIncrementStep = -1
-            Me.columnΑναγνωριστικό.AllowDBNull = false
-            Me.columnΑναγνωριστικό.Unique = true
+            Me._columnΩφέλιμο_Φορτίο___kg__ = New Global.System.Data.DataColumn("Ωφέλιμο Φορτίο ( kg )", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
+            Me._columnΩφέλιμο_Φορτίο___kg__.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnΩφέλιμο_Φορτίο___kg__")
+            Me._columnΩφέλιμο_Φορτίο___kg__.ExtendedProperties.Add("Generator_UserColumnName", "Ωφέλιμο Φορτίο ( kg )")
+            MyBase.Columns.Add(Me._columnΩφέλιμο_Φορτίο___kg__)
+            Me._columnΜέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__ = New Global.System.Data.DataColumn("Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
+            Me._columnΜέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnΜέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__")
+            Me._columnΜέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__.ExtendedProperties.Add("Generator_UserColumnName", "Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )")
+            MyBase.Columns.Add(Me._columnΜέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__)
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me._columnΩφέλιμο_Φορτίο___kg__}, true))
+            Me._columnΩφέλιμο_Φορτίο___kg__.AllowDBNull = false
+            Me._columnΩφέλιμο_Φορτίο___kg__.Unique = true
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Function NewΜέγ_Ωφέλ_Επιφ_ΘαλάμRow() As Μέγ_Ωφέλ_Επιφ_ΘαλάμRow
-            Return CType(Me.NewRow,Μέγ_Ωφέλ_Επιφ_ΘαλάμRow)
+        Public Function NewΠίν_Μέγ_Ωφέλ_ΕπιφRow() As Πίν_Μέγ_Ωφέλ_ΕπιφRow
+            Return CType(Me.NewRow,Πίν_Μέγ_Ωφέλ_ΕπιφRow)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
-            Return New Μέγ_Ωφέλ_Επιφ_ΘαλάμRow(builder)
+            Return New Πίν_Μέγ_Ωφέλ_ΕπιφRow(builder)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Protected Overrides Function GetRowType() As Global.System.Type
-            Return GetType(Μέγ_Ωφέλ_Επιφ_ΘαλάμRow)
+            Return GetType(Πίν_Μέγ_Ωφέλ_ΕπιφRow)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowChanged(e)
-            If (Not (Me.Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChangedEvent) Is Nothing) Then
-                RaiseEvent Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChanged(Me, New Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChangeEvent(CType(e.Row,Μέγ_Ωφέλ_Επιφ_ΘαλάμRow), e.Action))
+            If (Not (Me.Πίν_Μέγ_Ωφέλ_ΕπιφRowChangedEvent) Is Nothing) Then
+                RaiseEvent Πίν_Μέγ_Ωφέλ_ΕπιφRowChanged(Me, New Πίν_Μέγ_Ωφέλ_ΕπιφRowChangeEvent(CType(e.Row,Πίν_Μέγ_Ωφέλ_ΕπιφRow), e.Action))
             End If
         End Sub
         
@@ -473,8 +457,8 @@ Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαData
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowChanging(e)
-            If (Not (Me.Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChangingEvent) Is Nothing) Then
-                RaiseEvent Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChanging(Me, New Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChangeEvent(CType(e.Row,Μέγ_Ωφέλ_Επιφ_ΘαλάμRow), e.Action))
+            If (Not (Me.Πίν_Μέγ_Ωφέλ_ΕπιφRowChangingEvent) Is Nothing) Then
+                RaiseEvent Πίν_Μέγ_Ωφέλ_ΕπιφRowChanging(Me, New Πίν_Μέγ_Ωφέλ_ΕπιφRowChangeEvent(CType(e.Row,Πίν_Μέγ_Ωφέλ_ΕπιφRow), e.Action))
             End If
         End Sub
         
@@ -482,8 +466,8 @@ Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαData
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowDeleted(e)
-            If (Not (Me.Μέγ_Ωφέλ_Επιφ_ΘαλάμRowDeletedEvent) Is Nothing) Then
-                RaiseEvent Μέγ_Ωφέλ_Επιφ_ΘαλάμRowDeleted(Me, New Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChangeEvent(CType(e.Row,Μέγ_Ωφέλ_Επιφ_ΘαλάμRow), e.Action))
+            If (Not (Me.Πίν_Μέγ_Ωφέλ_ΕπιφRowDeletedEvent) Is Nothing) Then
+                RaiseEvent Πίν_Μέγ_Ωφέλ_ΕπιφRowDeleted(Me, New Πίν_Μέγ_Ωφέλ_ΕπιφRowChangeEvent(CType(e.Row,Πίν_Μέγ_Ωφέλ_ΕπιφRow), e.Action))
             End If
         End Sub
         
@@ -491,14 +475,14 @@ Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαData
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowDeleting(e)
-            If (Not (Me.Μέγ_Ωφέλ_Επιφ_ΘαλάμRowDeletingEvent) Is Nothing) Then
-                RaiseEvent Μέγ_Ωφέλ_Επιφ_ΘαλάμRowDeleting(Me, New Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChangeEvent(CType(e.Row,Μέγ_Ωφέλ_Επιφ_ΘαλάμRow), e.Action))
+            If (Not (Me.Πίν_Μέγ_Ωφέλ_ΕπιφRowDeletingEvent) Is Nothing) Then
+                RaiseEvent Πίν_Μέγ_Ωφέλ_ΕπιφRowDeleting(Me, New Πίν_Μέγ_Ωφέλ_ΕπιφRowChangeEvent(CType(e.Row,Πίν_Μέγ_Ωφέλ_ΕπιφRow), e.Action))
             End If
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Sub RemoveΜέγ_Ωφέλ_Επιφ_ΘαλάμRow(ByVal row As Μέγ_Ωφέλ_Επιφ_ΘαλάμRow)
+        Public Sub RemoveΠίν_Μέγ_Ωφέλ_ΕπιφRow(ByVal row As Πίν_Μέγ_Ωφέλ_ΕπιφRow)
             Me.Rows.Remove(row)
         End Sub
         
@@ -525,7 +509,7 @@ Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαData
             type.Attributes.Add(attribute1)
             Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
             attribute2.Name = "tableTypeName"
-            attribute2.FixedValue = "Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable"
+            attribute2.FixedValue = "Πίν_Μέγ_Ωφέλ_ΕπιφDataTable"
             type.Attributes.Add(attribute2)
             type.Particle = sequence
             Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
@@ -572,83 +556,55 @@ Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαData
     '''<summary>
     '''Represents strongly named DataRow class.
     '''</summary>
-    Partial Public Class Μέγ_Ωφέλ_Επιφ_ΘαλάμRow
+    Partial Public Class Πίν_Μέγ_Ωφέλ_ΕπιφRow
         Inherits Global.System.Data.DataRow
         
-        Private tableΜέγ_Ωφέλ_Επιφ_Θαλάμ As Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable
+        Private tableΠίν_Μέγ_Ωφέλ_Επιφ As Πίν_Μέγ_Ωφέλ_ΕπιφDataTable
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
             MyBase.New(rb)
-            Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ = CType(Me.Table,Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable)
+            Me.tableΠίν_Μέγ_Ωφέλ_Επιφ = CType(Me.Table,Πίν_Μέγ_Ωφέλ_ΕπιφDataTable)
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Property Αναγνωριστικό() As Integer
+        Public Property _Ωφέλιμο_Φορτίο___kg__() As Double
             Get
-                Return CType(Me(Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ.ΑναγνωριστικόColumn),Integer)
+                Return CType(Me(Me.tableΠίν_Μέγ_Ωφέλ_Επιφ._Ωφέλιμο_Φορτίο___kg__Column),Double)
             End Get
             Set
-                Me(Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ.ΑναγνωριστικόColumn) = value
+                Me(Me.tableΠίν_Μέγ_Ωφέλ_Επιφ._Ωφέλιμο_Φορτίο___kg__Column) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Property _Ωφέλιμο_Φορτίο_Μάζα__kg_() As Double
+        Public Property _Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__() As Double
             Get
                 Try 
-                    Return CType(Me(Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ._Ωφέλιμο_Φορτίο_Μάζα__kg_Column),Double)
+                    Return CType(Me(Me.tableΠίν_Μέγ_Ωφέλ_Επιφ._Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__Column),Double)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'Ωφέλιμο Φορτίο Μάζα (kg)' in table 'Μέγ_Ωφέλ_Επιφ_Θαλάμ' is"& _ 
-                            " DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )' in table 'Πίν_Μέγ"& _ 
+                            "_Ωφέλ_Επιφ' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ._Ωφέλιμο_Φορτίο_Μάζα__kg_Column) = value
+                Me(Me.tableΠίν_Μέγ_Ωφέλ_Επιφ._Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__Column) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Property _Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_() As Double
-            Get
-                Try 
-                    Return CType(Me(Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ._Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_Column),Double)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'Μέγιστη Ωφέλιμη Επιφάνεια θαλάμου (m2)' in table 'Μέγ_Ωφέλ_"& _ 
-                            "Επιφ_Θαλάμ' is DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ._Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_Column) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Function Is_Ωφέλιμο_Φορτίο_Μάζα__kg_Null() As Boolean
-            Return Me.IsNull(Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ._Ωφέλιμο_Φορτίο_Μάζα__kg_Column)
+        Public Function Is_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__Null() As Boolean
+            Return Me.IsNull(Me.tableΠίν_Μέγ_Ωφέλ_Επιφ._Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__Column)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Sub Set_Ωφέλιμο_Φορτίο_Μάζα__kg_Null()
-            Me(Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ._Ωφέλιμο_Φορτίο_Μάζα__kg_Column) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Function Is_Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_Null() As Boolean
-            Return Me.IsNull(Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ._Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_Column)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Sub Set_Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_Null()
-            Me(Me.tableΜέγ_Ωφέλ_Επιφ_Θαλάμ._Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_Column) = Global.System.Convert.DBNull
+        Public Sub Set_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__Null()
+            Me(Me.tableΠίν_Μέγ_Ωφέλ_Επιφ._Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__Column) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -656,16 +612,16 @@ Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαData
     '''Row event argument class
     '''</summary>
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-    Public Class Μέγ_Ωφέλ_Επιφ_ΘαλάμRowChangeEvent
+    Public Class Πίν_Μέγ_Ωφέλ_ΕπιφRowChangeEvent
         Inherits Global.System.EventArgs
         
-        Private eventRow As Μέγ_Ωφέλ_Επιφ_ΘαλάμRow
+        Private eventRow As Πίν_Μέγ_Ωφέλ_ΕπιφRow
         
         Private eventAction As Global.System.Data.DataRowAction
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Sub New(ByVal row As Μέγ_Ωφέλ_Επιφ_ΘαλάμRow, ByVal action As Global.System.Data.DataRowAction)
+        Public Sub New(ByVal row As Πίν_Μέγ_Ωφέλ_ΕπιφRow, ByVal action As Global.System.Data.DataRowAction)
             MyBase.New
             Me.eventRow = row
             Me.eventAction = action
@@ -673,7 +629,7 @@ Partial Public Class _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαData
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public ReadOnly Property Row() As Μέγ_Ωφέλ_Επιφ_ΘαλάμRow
+        Public ReadOnly Property Row() As Πίν_Μέγ_Ωφέλ_ΕπιφRow
             Get
                 Return Me.eventRow
             End Get
@@ -700,7 +656,7 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
      Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
      Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-    Partial Public Class Μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter
+    Partial Public Class Πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter
         Inherits Global.System.ComponentModel.Component
         
         Private WithEvents _adapter As Global.System.Data.OleDb.OleDbDataAdapter
@@ -817,45 +773,38 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
             Me._adapter = New Global.System.Data.OleDb.OleDbDataAdapter()
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
-            tableMapping.DataSetTable = "Μέγ_Ωφέλ_Επιφ_Θαλάμ"
-            tableMapping.ColumnMappings.Add("Αναγνωριστικό", "Αναγνωριστικό")
-            tableMapping.ColumnMappings.Add("Ωφέλιμο Φορτίο Μάζα (kg)", "Ωφέλιμο Φορτίο Μάζα (kg)")
-            tableMapping.ColumnMappings.Add("Μέγιστη Ωφέλιμη Επιφάνεια θαλάμου (m2)", "Μέγιστη Ωφέλιμη Επιφάνεια θαλάμου (m2)")
+            tableMapping.DataSetTable = "Πίν_Μέγ_Ωφέλ_Επιφ"
+            tableMapping.ColumnMappings.Add("Ωφέλιμο Φορτίο ( kg )", "Ωφέλιμο Φορτίο ( kg )")
+            tableMapping.ColumnMappings.Add("Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )", "Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM `Μέγ_Ωφέλ_Επιφ_Θαλάμ` WHERE ((`Αναγνωριστικό` = ?) AND ((? = 1 AND `Ω"& _ 
-                "φέλιμο Φορτίο Μάζα (kg)` IS NULL) OR (`Ωφέλιμο Φορτίο Μάζα (kg)` = ?)) AND ((? ="& _ 
-                " 1 AND `Μέγιστη Ωφέλιμη Επιφάνεια θαλάμου (m2)` IS NULL) OR (`Μέγιστη Ωφέλιμη Επ"& _ 
-                "ιφάνεια θαλάμου (m2)` = ?)))"
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM `Πίν_Μέγ_Ωφέλ_Επιφ` WHERE ((`Ωφέλιμο Φορτίο ( kg )` = ?) AND ((? = 1 "& _ 
+                "AND `Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )` IS NULL) OR (`Μέγιστη Ωφέλιμη Επι"& _ 
+                "φάνεια Θαλάμου ( m2 )` = ?)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Αναγνωριστικό", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Αναγνωριστικό", Global.System.Data.DataRowVersion.Original, false, Nothing))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Ωφέλιμο_Φορτίο_Μάζα_(kg)", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Ωφέλιμο Φορτίο Μάζα (kg)", Global.System.Data.DataRowVersion.Original, true, Nothing))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Ωφέλιμο_Φορτίο_Μάζα_(kg)", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Ωφέλιμο Φορτίο Μάζα (kg)", Global.System.Data.DataRowVersion.Original, false, Nothing))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου_(m2)", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Μέγιστη Ωφέλιμη Επιφάνεια θαλάμου (m2)", Global.System.Data.DataRowVersion.Original, true, Nothing))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου_(m2)", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Μέγιστη Ωφέλιμη Επιφάνεια θαλάμου (m2)", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Ωφέλιμο_Φορτίο_(_kg_)", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Ωφέλιμο Φορτίο ( kg )", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου_(_m2_)", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου_(_m2_)", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.InsertCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO `Μέγ_Ωφέλ_Επιφ_Θαλάμ` (`Ωφέλιμο Φορτίο Μάζα (kg)`, `Μέγιστη Ωφέλιμη Ε"& _ 
-                "πιφάνεια θαλάμου (m2)`) VALUES (?, ?)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `Πίν_Μέγ_Ωφέλ_Επιφ` (`Ωφέλιμο Φορτίο ( kg )`, `Μέγιστη Ωφέλιμη Επιφάν"& _ 
+                "εια Θαλάμου ( m2 )`) VALUES (?, ?)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Ωφέλιμο_Φορτίο_Μάζα_(kg)", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Ωφέλιμο Φορτίο Μάζα (kg)", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου_(m2)", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Μέγιστη Ωφέλιμη Επιφάνεια θαλάμου (m2)", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Ωφέλιμο_Φορτίο_(_kg_)", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Ωφέλιμο Φορτίο ( kg )", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου_(_m2_)", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE `Μέγ_Ωφέλ_Επιφ_Θαλάμ` SET `Ωφέλιμο Φορτίο Μάζα (kg)` = ?, `Μέγιστη Ωφέλιμη"& _ 
-                " Επιφάνεια θαλάμου (m2)` = ? WHERE ((`Αναγνωριστικό` = ?) AND ((? = 1 AND `Ωφέλι"& _ 
-                "μο Φορτίο Μάζα (kg)` IS NULL) OR (`Ωφέλιμο Φορτίο Μάζα (kg)` = ?)) AND ((? = 1 A"& _ 
-                "ND `Μέγιστη Ωφέλιμη Επιφάνεια θαλάμου (m2)` IS NULL) OR (`Μέγιστη Ωφέλιμη Επιφάν"& _ 
-                "εια θαλάμου (m2)` = ?)))"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE `Πίν_Μέγ_Ωφέλ_Επιφ` SET `Ωφέλιμο Φορτίο ( kg )` = ?, `Μέγιστη Ωφέλιμη Επιφ"& _ 
+                "άνεια Θαλάμου ( m2 )` = ? WHERE ((`Ωφέλιμο Φορτίο ( kg )` = ?) AND ((? = 1 AND `"& _ 
+                "Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )` IS NULL) OR (`Μέγιστη Ωφέλιμη Επιφάνει"& _ 
+                "α Θαλάμου ( m2 )` = ?)))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Ωφέλιμο_Φορτίο_Μάζα_(kg)", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Ωφέλιμο Φορτίο Μάζα (kg)", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου_(m2)", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Μέγιστη Ωφέλιμη Επιφάνεια θαλάμου (m2)", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Αναγνωριστικό", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Αναγνωριστικό", Global.System.Data.DataRowVersion.Original, false, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Ωφέλιμο_Φορτίο_Μάζα_(kg)", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Ωφέλιμο Φορτίο Μάζα (kg)", Global.System.Data.DataRowVersion.Original, true, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Ωφέλιμο_Φορτίο_Μάζα_(kg)", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Ωφέλιμο Φορτίο Μάζα (kg)", Global.System.Data.DataRowVersion.Original, false, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου_(m2)", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Μέγιστη Ωφέλιμη Επιφάνεια θαλάμου (m2)", Global.System.Data.DataRowVersion.Original, true, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου_(m2)", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Μέγιστη Ωφέλιμη Επιφάνεια θαλάμου (m2)", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Ωφέλιμο_Φορτίο_(_kg_)", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Ωφέλιμο Φορτίο ( kg )", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου_(_m2_)", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Ωφέλιμο_Φορτίο_(_kg_)", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Ωφέλιμο Φορτίο ( kg )", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου_(_m2_)", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου_(_m2_)", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )", Global.System.Data.DataRowVersion.Original, false, Nothing))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -871,8 +820,8 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
             Me._commandCollection = New Global.System.Data.OleDb.OleDbCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.OleDb.OleDbCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT Αναγνωριστικό, [Ωφέλιμο Φορτίο Μάζα (kg)], [Μέγιστη Ωφέλιμη Επιφάνεια θαλά"& _ 
-                "μου (m2)] FROM Μέγ_Ωφέλ_Επιφ_Θαλάμ"
+            Me._commandCollection(0).CommandText = "SELECT [Ωφέλιμο Φορτίο ( kg )], [Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )] FROM Π"& _ 
+                "ίν_Μέγ_Ωφέλ_Επιφ"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -880,7 +829,7 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable) As Integer
+        Public Overloads Overridable Function Fill(ByVal dataTable As _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Πίν_Μέγ_Ωφέλ_ΕπιφDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -893,9 +842,9 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable
+        Public Overloads Overridable Function GetData() As _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Πίν_Μέγ_Ωφέλ_ΕπιφDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            Dim dataTable As _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable = New _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable()
+            Dim dataTable As _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Πίν_Μέγ_Ωφέλ_ΕπιφDataTable = New _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Πίν_Μέγ_Ωφέλ_ΕπιφDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
@@ -903,7 +852,7 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataTable As _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Μέγ_Ωφέλ_Επιφ_ΘαλάμDataTable) As Integer
+        Public Overloads Overridable Function Update(ByVal dataTable As _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Πίν_Μέγ_Ωφέλ_ΕπιφDataTable) As Integer
             Return Me.Adapter.Update(dataTable)
         End Function
         
@@ -911,7 +860,7 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
         Public Overloads Overridable Function Update(ByVal dataSet As _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet) As Integer
-            Return Me.Adapter.Update(dataSet, "Μέγ_Ωφέλ_Επιφ_Θαλάμ")
+            Return Me.Adapter.Update(dataSet, "Πίν_Μέγ_Ωφέλ_Επιφ")
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -932,21 +881,18 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_Αναγνωριστικό As Integer, ByVal _Original_Ωφέλιμο_Φορτίο_Μάζα__kg_ As Global.System.Nullable(Of Double), ByVal _Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_ As Global.System.Nullable(Of Double)) As Integer
-            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_Αναγνωριστικό,Integer)
-            If (_Original_Ωφέλιμο_Φορτίο_Μάζα__kg_.HasValue = true) Then
+        Public Overloads Overridable Function Delete(ByVal _Original_Ωφέλιμο_Φορτίο___kg__ As Global.System.Nullable(Of Double), ByVal _Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__ As Global.System.Nullable(Of Double)) As Integer
+            If (_Original_Ωφέλιμο_Φορτίο___kg__.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(0).Value = CType(_Original_Ωφέλιμο_Φορτίο___kg__.Value,Double)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(0).Value = Global.System.DBNull.Value
+            End If
+            If (_Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__.HasValue = true) Then
                 Me.Adapter.DeleteCommand.Parameters(1).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(_Original_Ωφέλιμο_Φορτίο_Μάζα__kg_.Value,Double)
+                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(_Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__.Value,Double)
             Else
                 Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(2).Value = Global.System.DBNull.Value
-            End If
-            If (_Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(_Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_.Value,Double)
-            Else
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -967,14 +913,14 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal _Ωφέλιμο_Φορτίο_Μάζα__kg_ As Global.System.Nullable(Of Double), ByVal _Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_ As Global.System.Nullable(Of Double)) As Integer
-            If (_Ωφέλιμο_Φορτίο_Μάζα__kg_.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(_Ωφέλιμο_Φορτίο_Μάζα__kg_.Value,Double)
+        Public Overloads Overridable Function Insert(ByVal _Ωφέλιμο_Φορτίο___kg__ As Global.System.Nullable(Of Double), ByVal _Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__ As Global.System.Nullable(Of Double)) As Integer
+            If (_Ωφέλιμο_Φορτίο___kg__.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(_Ωφέλιμο_Φορτίο___kg__.Value,Double)
             Else
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             End If
-            If (_Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(1).Value = CType(_Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_.Value,Double)
+            If (_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__.Value,Double)
             Else
                 Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
             End If
@@ -997,31 +943,28 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal _Ωφέλιμο_Φορτίο_Μάζα__kg_ As Global.System.Nullable(Of Double), ByVal _Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_ As Global.System.Nullable(Of Double), ByVal Original_Αναγνωριστικό As Integer, ByVal _Original_Ωφέλιμο_Φορτίο_Μάζα__kg_ As Global.System.Nullable(Of Double), ByVal _Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_ As Global.System.Nullable(Of Double)) As Integer
-            If (_Ωφέλιμο_Φορτίο_Μάζα__kg_.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(_Ωφέλιμο_Φορτίο_Μάζα__kg_.Value,Double)
+        Public Overloads Overridable Function Update(ByVal _Ωφέλιμο_Φορτίο___kg__ As Global.System.Nullable(Of Double), ByVal _Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__ As Global.System.Nullable(Of Double), ByVal _Original_Ωφέλιμο_Φορτίο___kg__ As Global.System.Nullable(Of Double), ByVal _Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__ As Global.System.Nullable(Of Double)) As Integer
+            If (_Ωφέλιμο_Φορτίο___kg__.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(_Ωφέλιμο_Φορτίο___kg__.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(0).Value = Global.System.DBNull.Value
             End If
-            If (_Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(_Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_.Value,Double)
+            If (_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
             End If
-            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(Original_Αναγνωριστικό,Integer)
-            If (_Original_Ωφέλιμο_Φορτίο_Μάζα__kg_.HasValue = true) Then
+            If (_Original_Ωφέλιμο_Φορτίο___kg__.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(_Original_Ωφέλιμο_Φορτίο___kg__.Value,Double)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
+            End If
+            If (_Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(3).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(_Original_Ωφέλιμο_Φορτίο_Μάζα__kg_.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(_Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(3).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(4).Value = Global.System.DBNull.Value
-            End If
-            If (_Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(_Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_θαλάμου__m2_.Value,Double)
-            Else
-                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(6).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -1036,6 +979,14 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
                     Me.Adapter.UpdateCommand.Connection.Close
                 End If
             End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
+        Public Overloads Overridable Function Update(ByVal _Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__ As Global.System.Nullable(Of Double), ByVal _Original_Ωφέλιμο_Φορτίο___kg__ As Global.System.Nullable(Of Double), ByVal _Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__ As Global.System.Nullable(Of Double)) As Integer
+            Return Me.Update(_Original_Ωφέλιμο_Φορτίο___kg__, _Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__, _Original_Ωφέλιμο_Φορτίο___kg__, _Original_Μέγιστη_Ωφέλιμη_Επιφάνεια_Θαλάμου___m2__)
         End Function
     End Class
     
@@ -1052,7 +1003,7 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
         
         Private _updateOrder As UpdateOrderOption
         
-        Private _μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter As Μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter
+        Private _πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter As Πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter
         
         Private _backupDataSetBeforeUpdate As Boolean
         
@@ -1074,12 +1025,12 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
          Global.System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso"& _ 
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3"& _ 
             "a", "System.Drawing.Design.UITypeEditor")>  _
-        Public Property Μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter() As Μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter
+        Public Property Πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter() As Πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter
             Get
-                Return Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter
+                Return Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter
             End Get
             Set
-                Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter = value
+                Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter = value
             End Set
         End Property
         
@@ -1102,9 +1053,9 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
                 If (Not (Me._connection) Is Nothing) Then
                     Return Me._connection
                 End If
-                If ((Not (Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter) Is Nothing)  _
-                            AndAlso (Not (Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter.Connection) Is Nothing)) Then
-                    Return Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter.Connection
+                If ((Not (Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter) Is Nothing)  _
+                            AndAlso (Not (Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.Connection) Is Nothing)) Then
+                    Return Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.Connection
                 End If
                 Return Nothing
             End Get
@@ -1119,7 +1070,7 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
         Public ReadOnly Property TableAdapterInstanceCount() As Integer
             Get
                 Dim count As Integer = 0
-                If (Not (Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter) Is Nothing) Then
+                If (Not (Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter) Is Nothing) Then
                     count = (count + 1)
                 End If
                 Return count
@@ -1133,12 +1084,12 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Private Function UpdateUpdatedRows(ByVal dataSet As _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow), ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
-            If (Not (Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter) Is Nothing) Then
-                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Μέγ_Ωφέλ_Επιφ_Θαλάμ.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+            If (Not (Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Πίν_Μέγ_Ωφέλ_Επιφ.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
                 updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
                 If ((Not (updatedRows) Is Nothing)  _
                             AndAlso (0 < updatedRows.Length)) Then
-                    result = (result + Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter.Update(updatedRows))
+                    result = (result + Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.Update(updatedRows))
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
@@ -1152,11 +1103,11 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Private Function UpdateInsertedRows(ByVal dataSet As _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet, ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
-            If (Not (Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter) Is Nothing) Then
-                Dim addedRows() As Global.System.Data.DataRow = dataSet.Μέγ_Ωφέλ_Επιφ_Θαλάμ.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+            If (Not (Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.Πίν_Μέγ_Ωφέλ_Επιφ.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing)  _
                             AndAlso (0 < addedRows.Length)) Then
-                    result = (result + Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter.Update(addedRows))
+                    result = (result + Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.Update(addedRows))
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
@@ -1170,11 +1121,11 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Private Function UpdateDeletedRows(ByVal dataSet As _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
-            If (Not (Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter) Is Nothing) Then
-                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Μέγ_Ωφέλ_Επιφ_Θαλάμ.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+            If (Not (Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Πίν_Μέγ_Ωφέλ_Επιφ.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
                 If ((Not (deletedRows) Is Nothing)  _
                             AndAlso (0 < deletedRows.Length)) Then
-                    result = (result + Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter.Update(deletedRows))
+                    result = (result + Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.Update(deletedRows))
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
@@ -1219,8 +1170,8 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
             If (dataSet.HasChanges = false) Then
                 Return 0
             End If
-            If ((Not (Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter) Is Nothing)  _
-                        AndAlso (Me.MatchTableAdapterConnection(Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter.Connection) = false)) Then
+            If ((Not (Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter) Is Nothing)  _
+                        AndAlso (Me.MatchTableAdapterConnection(Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.Connection) = false)) Then
                 Throw New Global.System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s"& _ 
                         "tring.")
             End If
@@ -1256,13 +1207,13 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
             Try 
                 '---- Prepare for update -----------
                 '
-                If (Not (Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter) Is Nothing) Then
-                    revertConnections.Add(Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter, Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter.Connection)
-                    Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter.Connection = CType(workConnection,Global.System.Data.OleDb.OleDbConnection)
-                    Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter.Transaction = CType(workTransaction,Global.System.Data.OleDb.OleDbTransaction)
-                    If Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter.Adapter.AcceptChangesDuringUpdate Then
-                        Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter.Adapter.AcceptChangesDuringUpdate = false
-                        adaptersWithAcceptChangesDuringUpdate.Add(Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter.Adapter)
+                If (Not (Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter) Is Nothing) Then
+                    revertConnections.Add(Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter, Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.Connection)
+                    Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.Connection = CType(workConnection,Global.System.Data.OleDb.OleDbConnection)
+                    Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.Transaction = CType(workTransaction,Global.System.Data.OleDb.OleDbTransaction)
+                    If Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.Adapter.AcceptChangesDuringUpdate Then
+                        Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.Adapter.AcceptChangesDuringUpdate = false
+                        adaptersWithAcceptChangesDuringUpdate.Add(Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.Adapter)
                     End If
                 End If
                 '
@@ -1325,9 +1276,9 @@ Namespace _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAda
                 If workConnOpened Then
                     workConnection.Close
                 End If
-                If (Not (Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter) Is Nothing) Then
-                    Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter.Connection = CType(revertConnections(Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter),Global.System.Data.OleDb.OleDbConnection)
-                    Me._μέγ_Ωφέλ_Επιφ_ΘαλάμTableAdapter.Transaction = Nothing
+                If (Not (Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter) Is Nothing) Then
+                    Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.Connection = CType(revertConnections(Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter),Global.System.Data.OleDb.OleDbConnection)
+                    Me._πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.Transaction = Nothing
                 End If
                 If (0 < adaptersWithAcceptChangesDuringUpdate.Count) Then
                     Dim adapters((adaptersWithAcceptChangesDuringUpdate.Count) - 1) As Global.System.Data.Common.DataAdapter
