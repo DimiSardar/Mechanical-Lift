@@ -52,6 +52,17 @@
 
     End Sub
 
+    Private Sub ArithmAtomwntxt_Click(sender As Object, e As EventArgs) Handles ArithmAtomwntxt.Click
+
+        If WfelimoFortiolist.SelectedIndex = 0 Then
+            Wfelimotxt.Text = Val(WfelimoFortioField.Text) * 75
+        ElseIf WfelimoFortiolist.SelectedIndex = 1 Then
+            Wfelimotxt.Text = Val(WfelimoFortioField.Text)
+        Else
+        End If
+
+    End Sub
+
     Private Sub MhxEpanw_CheckedChanged(sender As Object, e As EventArgs) Handles MhxEpanw.CheckedChanged
 
         If MhxEpanw.Checked = True Then
@@ -70,67 +81,5 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles NextCentralTab2.Click
-        If Not CentralTabControl.SelectedTab Is TabPage5 Then
 
-            CentralTabControl.SelectedIndex = CentralTabControl.SelectedIndex + 1
-
-        End If
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles NextCentralTab3.Click
-        If Not CentralTabControl.SelectedTab Is TabPage5 Then
-
-            CentralTabControl.SelectedIndex = CentralTabControl.SelectedIndex + 1
-
-        End If
-    End Sub
-
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles NextCentralTab4.Click
-        If Not CentralTabControl.SelectedTab Is TabPage5 Then
-
-            CentralTabControl.SelectedIndex = CentralTabControl.SelectedIndex + 1
-
-        End If
-    End Sub
-
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles NextCentralTab5.Click
-        If Not CentralTabControl.SelectedTab Is TabPage5 Then
-
-            CentralTabControl.SelectedIndex = CentralTabControl.SelectedIndex + 1
-
-        End If
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles PreviousCentralTab2.Click
-        If Not CentralTabControl.SelectedTab Is TabPage1 Then
-
-            CentralTabControl.SelectedIndex = CentralTabControl.SelectedIndex - 1
-
-        End If
-    End Sub
-
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles PreviousCentralTab3.Click
-        If Not CentralTabControl.SelectedTab Is TabPage1 Then
-
-            CentralTabControl.SelectedIndex = CentralTabControl.SelectedIndex - 1
-
-        End If
-    End Sub
-
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles PreviousCentralTab4.Click
-        If Not CentralTabControl.SelectedTab Is TabPage1 Then
-
-            CentralTabControl.SelectedIndex = CentralTabControl.SelectedIndex - 1
-
-        End If
-    End Sub
-
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles PreviousCentralTab5.Click
-        If Not CentralTabControl.SelectedTab Is TabPage1 Then
-
-            CentralTabControl.SelectedIndex = CentralTabControl.SelectedIndex - 1
-
-        End If
-    End Sub
 End Class

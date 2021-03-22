@@ -26,11 +26,7 @@ Partial Class Meleth_Anelkysthra
         Me.ΑρχείοToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ΒιβλιοθήκεςToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.NextCentralTab1 = New System.Windows.Forms.Button()
-        Me.PreviousCentralTab1 = New System.Windows.Forms.Button()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.NextCentralTab2 = New System.Windows.Forms.Button()
-        Me.PreviousCentralTab2 = New System.Windows.Forms.Button()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.freatio_img = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -66,24 +62,22 @@ Partial Class Meleth_Anelkysthra
         Me.anarthsh2pros1 = New System.Windows.Forms.CheckBox()
         Me.anarthsh1pros1 = New System.Windows.Forms.CheckBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.ArithmAtomwntxt = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Wfelimotxt = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.imglift = New System.Windows.Forms.PictureBox()
         Me.CentralTabControl = New System.Windows.Forms.TabControl()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.NextCentralTab3 = New System.Windows.Forms.Button()
-        Me.PreviousCentralTab3 = New System.Windows.Forms.Button()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.NextCentralTab4 = New System.Windows.Forms.Button()
-        Me.PreviousCentralTab4 = New System.Windows.Forms.Button()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
-        Me.NextCentralTab5 = New System.Windows.Forms.Button()
-        Me.PreviousCentralTab5 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.PreviousCentralTab1 = New System.Windows.Forms.Button()
+        Me.NextCentralTab1 = New System.Windows.Forms.Button()
+        Me.Panel6 = New System.Windows.Forms.Panel()
         Me.MenuStrip1.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.freatio_img, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -92,10 +86,8 @@ Partial Class Meleth_Anelkysthra
         Me.Panel3.SuspendLayout()
         CType(Me.imglift, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.CentralTabControl.SuspendLayout()
-        Me.TabPage3.SuspendLayout()
-        Me.TabPage4.SuspendLayout()
-        Me.TabPage5.SuspendLayout()
         Me.Panel5.SuspendLayout()
+        Me.Panel6.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -130,71 +122,19 @@ Partial Class Meleth_Anelkysthra
         Me.ProgressBar1.Size = New System.Drawing.Size(960, 23)
         Me.ProgressBar1.TabIndex = 2
         '
-        'NextCentralTab1
-        '
-        Me.NextCentralTab1.BackColor = System.Drawing.Color.RoyalBlue
-        Me.NextCentralTab1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.NextCentralTab1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.NextCentralTab1.Location = New System.Drawing.Point(840, 548)
-        Me.NextCentralTab1.Name = "NextCentralTab1"
-        Me.NextCentralTab1.Size = New System.Drawing.Size(100, 45)
-        Me.NextCentralTab1.TabIndex = 6
-        Me.NextCentralTab1.Text = "Επόμενο"
-        Me.NextCentralTab1.UseVisualStyleBackColor = False
-        '
-        'PreviousCentralTab1
-        '
-        Me.PreviousCentralTab1.BackColor = System.Drawing.Color.RoyalBlue
-        Me.PreviousCentralTab1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.PreviousCentralTab1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.PreviousCentralTab1.Location = New System.Drawing.Point(498, 548)
-        Me.PreviousCentralTab1.Name = "PreviousCentralTab1"
-        Me.PreviousCentralTab1.Size = New System.Drawing.Size(100, 45)
-        Me.PreviousCentralTab1.TabIndex = 7
-        Me.PreviousCentralTab1.Text = "Προηγούμενο"
-        Me.PreviousCentralTab1.UseVisualStyleBackColor = False
-        '
         'TabPage2
         '
-        Me.TabPage2.Controls.Add(Me.NextCentralTab2)
-        Me.TabPage2.Controls.Add(Me.PreviousCentralTab2)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(952, 601)
+        Me.TabPage2.Size = New System.Drawing.Size(952, 561)
         Me.TabPage2.TabIndex = 6
         Me.TabPage2.Text = "TabPage2"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'NextCentralTab2
-        '
-        Me.NextCentralTab2.BackColor = System.Drawing.Color.RoyalBlue
-        Me.NextCentralTab2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.NextCentralTab2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.NextCentralTab2.Location = New System.Drawing.Point(846, 550)
-        Me.NextCentralTab2.Name = "NextCentralTab2"
-        Me.NextCentralTab2.Size = New System.Drawing.Size(100, 45)
-        Me.NextCentralTab2.TabIndex = 8
-        Me.NextCentralTab2.Text = "Επόμενο"
-        Me.NextCentralTab2.UseVisualStyleBackColor = False
-        '
-        'PreviousCentralTab2
-        '
-        Me.PreviousCentralTab2.BackColor = System.Drawing.Color.RoyalBlue
-        Me.PreviousCentralTab2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.PreviousCentralTab2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.PreviousCentralTab2.Location = New System.Drawing.Point(504, 550)
-        Me.PreviousCentralTab2.Name = "PreviousCentralTab2"
-        Me.PreviousCentralTab2.Size = New System.Drawing.Size(100, 45)
-        Me.PreviousCentralTab2.TabIndex = 9
-        Me.PreviousCentralTab2.Text = "Προηγούμενο"
-        Me.PreviousCentralTab2.UseVisualStyleBackColor = False
-        '
         'TabPage1
         '
         Me.TabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TabPage1.Controls.Add(Me.NextCentralTab1)
-        Me.TabPage1.Controls.Add(Me.PreviousCentralTab1)
         Me.TabPage1.Controls.Add(Me.freatio_img)
         Me.TabPage1.Controls.Add(Me.Panel1)
         Me.TabPage1.Controls.Add(Me.Panel4)
@@ -204,7 +144,7 @@ Partial Class Meleth_Anelkysthra
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(952, 601)
+        Me.TabPage1.Size = New System.Drawing.Size(952, 561)
         Me.TabPage1.TabIndex = 2
         Me.TabPage1.Text = "TabPage1"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -236,7 +176,7 @@ Partial Class Meleth_Anelkysthra
         Me.Panel1.Controls.Add(Me.Label12)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Location = New System.Drawing.Point(498, 85)
+        Me.Panel1.Location = New System.Drawing.Point(498, 148)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(442, 219)
         Me.Panel1.TabIndex = 4
@@ -372,7 +312,7 @@ Partial Class Meleth_Anelkysthra
         Me.Panel4.Controls.Add(Me.Label11)
         Me.Panel4.Controls.Add(Me.Label10)
         Me.Panel4.Controls.Add(Me.Label9)
-        Me.Panel4.Location = New System.Drawing.Point(498, 310)
+        Me.Panel4.Location = New System.Drawing.Point(498, 373)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(442, 115)
         Me.Panel4.TabIndex = 8
@@ -430,7 +370,7 @@ Partial Class Meleth_Anelkysthra
         Me.Panel2.Controls.Add(Me.anarthsh1pros1)
         Me.Panel2.Location = New System.Drawing.Point(6, 373)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(486, 220)
+        Me.Panel2.Size = New System.Drawing.Size(486, 182)
         Me.Panel2.TabIndex = 13
         '
         'MhxKatw
@@ -438,7 +378,7 @@ Partial Class Meleth_Anelkysthra
         Me.MhxKatw.AutoSize = True
         Me.MhxKatw.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.MhxKatw.ForeColor = System.Drawing.Color.Blue
-        Me.MhxKatw.Location = New System.Drawing.Point(390, 42)
+        Me.MhxKatw.Location = New System.Drawing.Point(391, 35)
         Me.MhxKatw.Name = "MhxKatw"
         Me.MhxKatw.Size = New System.Drawing.Size(51, 17)
         Me.MhxKatw.TabIndex = 12
@@ -447,7 +387,7 @@ Partial Class Meleth_Anelkysthra
         '
         'YpsosKtirioy
         '
-        Me.YpsosKtirioy.Location = New System.Drawing.Point(208, 167)
+        Me.YpsosKtirioy.Location = New System.Drawing.Point(209, 138)
         Me.YpsosKtirioy.Name = "YpsosKtirioy"
         Me.YpsosKtirioy.Size = New System.Drawing.Size(92, 20)
         Me.YpsosKtirioy.TabIndex = 2
@@ -457,7 +397,7 @@ Partial Class Meleth_Anelkysthra
         '
         Me.Label17.AutoSize = True
         Me.Label17.ForeColor = System.Drawing.Color.DimGray
-        Me.Label17.Location = New System.Drawing.Point(13, 32)
+        Me.Label17.Location = New System.Drawing.Point(14, 25)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(108, 13)
         Me.Label17.TabIndex = 2
@@ -466,7 +406,7 @@ Partial Class Meleth_Anelkysthra
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(16, 170)
+        Me.Label3.Location = New System.Drawing.Point(17, 141)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(112, 13)
         Me.Label3.TabIndex = 1
@@ -474,7 +414,7 @@ Partial Class Meleth_Anelkysthra
         '
         'TaxuthtaAnupswshs
         '
-        Me.TaxuthtaAnupswshs.Location = New System.Drawing.Point(208, 136)
+        Me.TaxuthtaAnupswshs.Location = New System.Drawing.Point(209, 107)
         Me.TaxuthtaAnupswshs.Name = "TaxuthtaAnupswshs"
         Me.TaxuthtaAnupswshs.Size = New System.Drawing.Size(92, 20)
         Me.TaxuthtaAnupswshs.TabIndex = 2
@@ -485,7 +425,7 @@ Partial Class Meleth_Anelkysthra
         Me.MhxEpanw.AutoSize = True
         Me.MhxEpanw.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.MhxEpanw.ForeColor = System.Drawing.Color.Blue
-        Me.MhxEpanw.Location = New System.Drawing.Point(390, 19)
+        Me.MhxEpanw.Location = New System.Drawing.Point(391, 12)
         Me.MhxEpanw.Name = "MhxEpanw"
         Me.MhxEpanw.Size = New System.Drawing.Size(57, 17)
         Me.MhxEpanw.TabIndex = 12
@@ -494,7 +434,7 @@ Partial Class Meleth_Anelkysthra
         '
         'WfelimoFortioField
         '
-        Me.WfelimoFortioField.Location = New System.Drawing.Point(208, 105)
+        Me.WfelimoFortioField.Location = New System.Drawing.Point(209, 76)
         Me.WfelimoFortioField.Name = "WfelimoFortioField"
         Me.WfelimoFortioField.Size = New System.Drawing.Size(92, 20)
         Me.WfelimoFortioField.TabIndex = 2
@@ -503,7 +443,7 @@ Partial Class Meleth_Anelkysthra
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(16, 139)
+        Me.Label5.Location = New System.Drawing.Point(17, 110)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(159, 13)
         Me.Label5.TabIndex = 1
@@ -513,7 +453,7 @@ Partial Class Meleth_Anelkysthra
         '
         Me.Label18.AutoSize = True
         Me.Label18.ForeColor = System.Drawing.Color.DimGray
-        Me.Label18.Location = New System.Drawing.Point(257, 32)
+        Me.Label18.Location = New System.Drawing.Point(258, 25)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(85, 13)
         Me.Label18.TabIndex = 2
@@ -525,7 +465,7 @@ Partial Class Meleth_Anelkysthra
         Me.WfelimoFortiolist.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.WfelimoFortiolist.FormattingEnabled = True
         Me.WfelimoFortiolist.Items.AddRange(New Object() {"Αριθμός Επιβατών: n [ - ]", "Ωφέλιμο Φορτίο: Q [ kg ]"})
-        Me.WfelimoFortiolist.Location = New System.Drawing.Point(16, 105)
+        Me.WfelimoFortiolist.Location = New System.Drawing.Point(17, 76)
         Me.WfelimoFortiolist.Name = "WfelimoFortiolist"
         Me.WfelimoFortiolist.Size = New System.Drawing.Size(149, 21)
         Me.WfelimoFortiolist.TabIndex = 11
@@ -535,7 +475,7 @@ Partial Class Meleth_Anelkysthra
         Me.anarthsh2pros1.AutoSize = True
         Me.anarthsh2pros1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.anarthsh2pros1.ForeColor = System.Drawing.Color.Blue
-        Me.anarthsh2pros1.Location = New System.Drawing.Point(142, 42)
+        Me.anarthsh2pros1.Location = New System.Drawing.Point(143, 35)
         Me.anarthsh2pros1.Name = "anarthsh2pros1"
         Me.anarthsh2pros1.Size = New System.Drawing.Size(66, 17)
         Me.anarthsh2pros1.TabIndex = 10
@@ -547,7 +487,7 @@ Partial Class Meleth_Anelkysthra
         Me.anarthsh1pros1.AutoSize = True
         Me.anarthsh1pros1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.anarthsh1pros1.ForeColor = System.Drawing.Color.Blue
-        Me.anarthsh1pros1.Location = New System.Drawing.Point(142, 19)
+        Me.anarthsh1pros1.Location = New System.Drawing.Point(143, 12)
         Me.anarthsh1pros1.Name = "anarthsh1pros1"
         Me.anarthsh1pros1.Size = New System.Drawing.Size(66, 17)
         Me.anarthsh1pros1.TabIndex = 9
@@ -557,13 +497,35 @@ Partial Class Meleth_Anelkysthra
         'Panel3
         '
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Controls.Add(Me.ArithmAtomwntxt)
+        Me.Panel3.Controls.Add(Me.Label16)
         Me.Panel3.Controls.Add(Me.Label2)
         Me.Panel3.Controls.Add(Me.Wfelimotxt)
         Me.Panel3.Controls.Add(Me.Label14)
         Me.Panel3.Location = New System.Drawing.Point(498, 23)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(442, 56)
+        Me.Panel3.Size = New System.Drawing.Size(442, 106)
         Me.Panel3.TabIndex = 7
+        '
+        'ArithmAtomwntxt
+        '
+        Me.ArithmAtomwntxt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.ArithmAtomwntxt.ForeColor = System.Drawing.Color.Red
+        Me.ArithmAtomwntxt.Location = New System.Drawing.Point(205, 48)
+        Me.ArithmAtomwntxt.Name = "ArithmAtomwntxt"
+        Me.ArithmAtomwntxt.Size = New System.Drawing.Size(35, 13)
+        Me.ArithmAtomwntxt.TabIndex = 4
+        Me.ArithmAtomwntxt.Text = "-"
+        Me.ArithmAtomwntxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(11, 48)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(128, 13)
+        Me.Label16.TabIndex = 3
+        Me.Label16.Text = "Αριθμός Ατόμων: n [ - ] ="
         '
         'Label2
         '
@@ -613,126 +575,48 @@ Partial Class Meleth_Anelkysthra
         Me.CentralTabControl.Controls.Add(Me.TabPage3)
         Me.CentralTabControl.Controls.Add(Me.TabPage4)
         Me.CentralTabControl.Controls.Add(Me.TabPage5)
-        Me.CentralTabControl.Location = New System.Drawing.Point(12, 43)
+        Me.CentralTabControl.Location = New System.Drawing.Point(12, 31)
         Me.CentralTabControl.Name = "CentralTabControl"
         Me.CentralTabControl.SelectedIndex = 0
-        Me.CentralTabControl.Size = New System.Drawing.Size(960, 627)
+        Me.CentralTabControl.Size = New System.Drawing.Size(960, 587)
         Me.CentralTabControl.TabIndex = 3
         '
         'TabPage3
         '
-        Me.TabPage3.Controls.Add(Me.NextCentralTab3)
-        Me.TabPage3.Controls.Add(Me.PreviousCentralTab3)
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(952, 601)
+        Me.TabPage3.Size = New System.Drawing.Size(952, 561)
         Me.TabPage3.TabIndex = 7
         Me.TabPage3.Text = "TabPage3"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
-        'NextCentralTab3
-        '
-        Me.NextCentralTab3.BackColor = System.Drawing.Color.RoyalBlue
-        Me.NextCentralTab3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.NextCentralTab3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.NextCentralTab3.Location = New System.Drawing.Point(846, 550)
-        Me.NextCentralTab3.Name = "NextCentralTab3"
-        Me.NextCentralTab3.Size = New System.Drawing.Size(100, 45)
-        Me.NextCentralTab3.TabIndex = 8
-        Me.NextCentralTab3.Text = "Επόμενο"
-        Me.NextCentralTab3.UseVisualStyleBackColor = False
-        '
-        'PreviousCentralTab3
-        '
-        Me.PreviousCentralTab3.BackColor = System.Drawing.Color.RoyalBlue
-        Me.PreviousCentralTab3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.PreviousCentralTab3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.PreviousCentralTab3.Location = New System.Drawing.Point(504, 550)
-        Me.PreviousCentralTab3.Name = "PreviousCentralTab3"
-        Me.PreviousCentralTab3.Size = New System.Drawing.Size(100, 45)
-        Me.PreviousCentralTab3.TabIndex = 9
-        Me.PreviousCentralTab3.Text = "Προηγούμενο"
-        Me.PreviousCentralTab3.UseVisualStyleBackColor = False
-        '
         'TabPage4
         '
-        Me.TabPage4.Controls.Add(Me.NextCentralTab4)
-        Me.TabPage4.Controls.Add(Me.PreviousCentralTab4)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(952, 601)
+        Me.TabPage4.Size = New System.Drawing.Size(952, 561)
         Me.TabPage4.TabIndex = 8
         Me.TabPage4.Text = "TabPage4"
         Me.TabPage4.UseVisualStyleBackColor = True
         '
-        'NextCentralTab4
-        '
-        Me.NextCentralTab4.BackColor = System.Drawing.Color.RoyalBlue
-        Me.NextCentralTab4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.NextCentralTab4.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.NextCentralTab4.Location = New System.Drawing.Point(846, 550)
-        Me.NextCentralTab4.Name = "NextCentralTab4"
-        Me.NextCentralTab4.Size = New System.Drawing.Size(100, 45)
-        Me.NextCentralTab4.TabIndex = 8
-        Me.NextCentralTab4.Text = "Επόμενο"
-        Me.NextCentralTab4.UseVisualStyleBackColor = False
-        '
-        'PreviousCentralTab4
-        '
-        Me.PreviousCentralTab4.BackColor = System.Drawing.Color.RoyalBlue
-        Me.PreviousCentralTab4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.PreviousCentralTab4.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.PreviousCentralTab4.Location = New System.Drawing.Point(504, 550)
-        Me.PreviousCentralTab4.Name = "PreviousCentralTab4"
-        Me.PreviousCentralTab4.Size = New System.Drawing.Size(100, 45)
-        Me.PreviousCentralTab4.TabIndex = 9
-        Me.PreviousCentralTab4.Text = "Προηγούμενο"
-        Me.PreviousCentralTab4.UseVisualStyleBackColor = False
-        '
         'TabPage5
         '
-        Me.TabPage5.Controls.Add(Me.NextCentralTab5)
-        Me.TabPage5.Controls.Add(Me.PreviousCentralTab5)
         Me.TabPage5.Location = New System.Drawing.Point(4, 22)
         Me.TabPage5.Name = "TabPage5"
         Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(952, 601)
+        Me.TabPage5.Size = New System.Drawing.Size(952, 561)
         Me.TabPage5.TabIndex = 9
         Me.TabPage5.Text = "TabPage5"
         Me.TabPage5.UseVisualStyleBackColor = True
-        '
-        'NextCentralTab5
-        '
-        Me.NextCentralTab5.BackColor = System.Drawing.Color.RoyalBlue
-        Me.NextCentralTab5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.NextCentralTab5.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.NextCentralTab5.Location = New System.Drawing.Point(846, 550)
-        Me.NextCentralTab5.Name = "NextCentralTab5"
-        Me.NextCentralTab5.Size = New System.Drawing.Size(100, 45)
-        Me.NextCentralTab5.TabIndex = 8
-        Me.NextCentralTab5.Text = "Επόμενο"
-        Me.NextCentralTab5.UseVisualStyleBackColor = False
-        '
-        'PreviousCentralTab5
-        '
-        Me.PreviousCentralTab5.BackColor = System.Drawing.Color.RoyalBlue
-        Me.PreviousCentralTab5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.PreviousCentralTab5.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.PreviousCentralTab5.Location = New System.Drawing.Point(504, 550)
-        Me.PreviousCentralTab5.Name = "PreviousCentralTab5"
-        Me.PreviousCentralTab5.Size = New System.Drawing.Size(100, 45)
-        Me.PreviousCentralTab5.TabIndex = 9
-        Me.PreviousCentralTab5.Text = "Προηγούμενο"
-        Me.PreviousCentralTab5.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.Label1.Location = New System.Drawing.Point(289, 18)
+        Me.Label1.Location = New System.Drawing.Point(293, 11)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(373, 20)
         Me.Label1.TabIndex = 6
@@ -745,8 +629,41 @@ Partial Class Meleth_Anelkysthra
         Me.Panel5.Controls.Add(Me.Label1)
         Me.Panel5.Location = New System.Drawing.Point(12, 27)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(956, 56)
+        Me.Panel5.Size = New System.Drawing.Size(960, 44)
         Me.Panel5.TabIndex = 9
+        '
+        'PreviousCentralTab1
+        '
+        Me.PreviousCentralTab1.BackColor = System.Drawing.Color.RoyalBlue
+        Me.PreviousCentralTab1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.PreviousCentralTab1.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.PreviousCentralTab1.Location = New System.Drawing.Point(8, 2)
+        Me.PreviousCentralTab1.Name = "PreviousCentralTab1"
+        Me.PreviousCentralTab1.Size = New System.Drawing.Size(100, 45)
+        Me.PreviousCentralTab1.TabIndex = 7
+        Me.PreviousCentralTab1.Text = "Προηγούμενο"
+        Me.PreviousCentralTab1.UseVisualStyleBackColor = False
+        '
+        'NextCentralTab1
+        '
+        Me.NextCentralTab1.BackColor = System.Drawing.Color.RoyalBlue
+        Me.NextCentralTab1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.NextCentralTab1.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.NextCentralTab1.Location = New System.Drawing.Point(842, 2)
+        Me.NextCentralTab1.Name = "NextCentralTab1"
+        Me.NextCentralTab1.Size = New System.Drawing.Size(100, 45)
+        Me.NextCentralTab1.TabIndex = 6
+        Me.NextCentralTab1.Text = "Επόμενο"
+        Me.NextCentralTab1.UseVisualStyleBackColor = False
+        '
+        'Panel6
+        '
+        Me.Panel6.Controls.Add(Me.NextCentralTab1)
+        Me.Panel6.Controls.Add(Me.PreviousCentralTab1)
+        Me.Panel6.Location = New System.Drawing.Point(16, 620)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(952, 50)
+        Me.Panel6.TabIndex = 10
         '
         'Meleth_Anelkysthra
         '
@@ -757,6 +674,7 @@ Partial Class Meleth_Anelkysthra
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.CentralTabControl)
+        Me.Controls.Add(Me.Panel6)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Meleth_Anelkysthra"
@@ -764,7 +682,6 @@ Partial Class Meleth_Anelkysthra
         Me.Text = "Μελέτη Μηχανικού Ανελκυστήρα: ΕΝ 81-20"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.TabPage2.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         CType(Me.freatio_img, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
@@ -777,11 +694,9 @@ Partial Class Meleth_Anelkysthra
         Me.Panel3.PerformLayout()
         CType(Me.imglift, System.ComponentModel.ISupportInitialize).EndInit()
         Me.CentralTabControl.ResumeLayout(False)
-        Me.TabPage3.ResumeLayout(False)
-        Me.TabPage4.ResumeLayout(False)
-        Me.TabPage5.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -791,8 +706,6 @@ Partial Class Meleth_Anelkysthra
     Friend WithEvents ΑρχείοToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ΒιβλιοθήκεςToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProgressBar1 As ProgressBar
-    Friend WithEvents NextCentralTab1 As Button
-    Friend WithEvents PreviousCentralTab1 As Button
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents CentralTabControl As TabControl
@@ -839,12 +752,9 @@ Partial Class Meleth_Anelkysthra
     Friend WithEvents Label11 As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents NextCentralTab2 As Button
-    Friend WithEvents PreviousCentralTab2 As Button
-    Friend WithEvents NextCentralTab3 As Button
-    Friend WithEvents PreviousCentralTab3 As Button
-    Friend WithEvents NextCentralTab4 As Button
-    Friend WithEvents PreviousCentralTab4 As Button
-    Friend WithEvents NextCentralTab5 As Button
-    Friend WithEvents PreviousCentralTab5 As Button
+    Friend WithEvents PreviousCentralTab1 As Button
+    Friend WithEvents NextCentralTab1 As Button
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents Label16 As Label
+    Friend WithEvents ArithmAtomwntxt As Label
 End Class
