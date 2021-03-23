@@ -41,7 +41,7 @@
 
     End Sub
 
-    Private Sub Wfelimotxt_MouseClick(sender As Object, e As EventArgs) Handles WfelimoFortioField.MouseClick, WfelimoFortiolist.MouseClick, TaxuthtaAnupswshs.MouseClick
+    Private Sub Wfelimotxt_MouseClick(sender As Object, e As EventArgs) Handles WfelimoFortioField.MouseClick, WfelimoFortiolist.MouseClick, TaxuthtaAnupswshs.MouseClick, Panel2.Paint
 
         If WfelimoFortiolist.SelectedIndex = 0 Then
             Wfelimotxt.Text = Val(WfelimoFortioField.Text) * 75
@@ -52,12 +52,16 @@
 
     End Sub
 
-    Private Sub ArithmAtomwntxt_Click(sender As Object, e As EventArgs) Handles ArithmAtomwntxt.Click
+    Private Sub ArithmAtomwntxt_Click(sender As Object, e As EventArgs) Handles ArithmAtomwntxt.Click, WfelimoFortiolist.MouseClick, TaxuthtaAnupswshs.MouseClick, Panel2.Paint
+
+        Dim d As Double
 
         If WfelimoFortiolist.SelectedIndex = 0 Then
-            Wfelimotxt.Text = Val(WfelimoFortioField.Text) * 75
+            ArithmAtomwntxt.Text = Val(WfelimoFortioField.Text)
         ElseIf WfelimoFortiolist.SelectedIndex = 1 Then
-            Wfelimotxt.Text = Val(WfelimoFortioField.Text)
+            d = (Val(WfelimoFortioField.Text) / 75)
+            ArithmAtomwntxt.Text = Math.Floor(d)
+
         Else
         End If
 
@@ -81,5 +85,17 @@
 
     End Sub
 
+    Private Sub Label21_Click(sender As Object, e As EventArgs) Handles ElaxEmbadtxt.Click
 
+        'Dim adapter As New MyAdapter()
+        'Dim table As New MyTable()
+
+        'adapter.fill(table, param1, param2)
+        'If table.rows.count > 0 Then
+        '    For Each i As MyRow In table
+        '        Dim s As String = i.columnName
+        '    Next
+        'End If
+
+    End Sub
 End Class

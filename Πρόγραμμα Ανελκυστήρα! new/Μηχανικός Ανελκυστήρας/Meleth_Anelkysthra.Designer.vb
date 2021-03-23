@@ -35,7 +35,7 @@ Partial Class Meleth_Anelkysthra
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
+        Me.ElaxEmbadtxt = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.AnalytikaBarosThalam = New System.Windows.Forms.Button()
@@ -77,6 +77,8 @@ Partial Class Meleth_Anelkysthra
         Me.PreviousCentralTab1 = New System.Windows.Forms.Button()
         Me.NextCentralTab1 = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1 = New Μηχανικός_Ανελκυστήρας._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet()
+        Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet1 = New Μηχανικός_Ανελκυστήρας._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet()
         Me.MenuStrip1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.freatio_img, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -88,6 +90,8 @@ Partial Class Meleth_Anelkysthra
         Me.CentralTabControl.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
+        CType(Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -168,7 +172,7 @@ Partial Class Meleth_Anelkysthra
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Controls.Add(Me.Label23)
-        Me.Panel1.Controls.Add(Me.Label21)
+        Me.Panel1.Controls.Add(Me.ElaxEmbadtxt)
         Me.Panel1.Controls.Add(Me.Label20)
         Me.Panel1.Controls.Add(Me.Label19)
         Me.Panel1.Controls.Add(Me.AnalytikaBarosThalam)
@@ -176,7 +180,7 @@ Partial Class Meleth_Anelkysthra
         Me.Panel1.Controls.Add(Me.Label12)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Location = New System.Drawing.Point(498, 148)
+        Me.Panel1.Location = New System.Drawing.Point(498, 111)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(442, 219)
         Me.Panel1.TabIndex = 4
@@ -230,15 +234,15 @@ Partial Class Meleth_Anelkysthra
         Me.Label23.Text = "-"
         Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label21
+        'ElaxEmbadtxt
         '
-        Me.Label21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label21.Location = New System.Drawing.Point(206, 37)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(35, 15)
-        Me.Label21.TabIndex = 6
-        Me.Label21.Text = "-"
-        Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ElaxEmbadtxt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.ElaxEmbadtxt.Location = New System.Drawing.Point(206, 37)
+        Me.ElaxEmbadtxt.Name = "ElaxEmbadtxt"
+        Me.ElaxEmbadtxt.Size = New System.Drawing.Size(35, 15)
+        Me.ElaxEmbadtxt.TabIndex = 6
+        Me.ElaxEmbadtxt.Text = "-"
+        Me.ElaxEmbadtxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label20
         '
@@ -312,7 +316,7 @@ Partial Class Meleth_Anelkysthra
         Me.Panel4.Controls.Add(Me.Label11)
         Me.Panel4.Controls.Add(Me.Label10)
         Me.Panel4.Controls.Add(Me.Label9)
-        Me.Panel4.Location = New System.Drawing.Point(498, 373)
+        Me.Panel4.Location = New System.Drawing.Point(498, 336)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(442, 115)
         Me.Panel4.TabIndex = 8
@@ -504,7 +508,7 @@ Partial Class Meleth_Anelkysthra
         Me.Panel3.Controls.Add(Me.Label14)
         Me.Panel3.Location = New System.Drawing.Point(498, 23)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(442, 106)
+        Me.Panel3.Size = New System.Drawing.Size(442, 82)
         Me.Panel3.TabIndex = 7
         '
         'ArithmAtomwntxt
@@ -665,6 +669,16 @@ Partial Class Meleth_Anelkysthra
         Me.Panel6.Size = New System.Drawing.Size(952, 50)
         Me.Panel6.TabIndex = 10
         '
+        '_Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1
+        '
+        Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1.DataSetName = "_Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet"
+        Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        '_Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet1
+        '
+        Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet1.DataSetName = "_Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet"
+        Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Meleth_Anelkysthra
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -697,6 +711,8 @@ Partial Class Meleth_Anelkysthra
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         Me.Panel6.ResumeLayout(False)
+        CType(Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -746,7 +762,7 @@ Partial Class Meleth_Anelkysthra
     Friend WithEvents Label8 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label23 As Label
-    Friend WithEvents Label21 As Label
+    Friend WithEvents ElaxEmbadtxt As Label
     Friend WithEvents Label20 As Label
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Label11 As Label
@@ -757,4 +773,6 @@ Partial Class Meleth_Anelkysthra
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Label16 As Label
     Friend WithEvents ArithmAtomwntxt As Label
+    Friend WithEvents _Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1 As _Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet
+    Friend WithEvents _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet1 As _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet
 End Class
