@@ -85,17 +85,28 @@
 
     End Sub
 
-    Private Sub Label21_Click(sender As Object, e As EventArgs) Handles ElaxEmbadtxt.Click
+    Private Sub ElaxEmbadtxt_click(sender As Object, e As EventArgs) Handles ElaxEmbadtxt.Click
 
-        'Dim adapter As New MyAdapter()
-        'Dim table As New MyTable()
 
-        'adapter.fill(table, param1, param2)
-        'If table.rows.count > 0 Then
-        '    For Each i As MyRow In table
-        '        Dim s As String = i.columnName
-        '    Next
-        'End If
+
+
+
+        'Dim o As String = _Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1.Πιν_Ελάχ_Ωφέλ_Επίφ.Rows(1).Item("Ελάχιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )").ToString
+
+        'Item("Ελάχιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )")
+        'Columns("Ελάχιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )")
+
+        ElaxEmbadtxt.Text = _Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1.Tables("Πιν_Ελάχ_Ωφέλ_Επίφ").Rows(3)("Αριθμός Επιβατών")
+
+
+
+
+
 
     End Sub
+
+
+
+
+
 End Class

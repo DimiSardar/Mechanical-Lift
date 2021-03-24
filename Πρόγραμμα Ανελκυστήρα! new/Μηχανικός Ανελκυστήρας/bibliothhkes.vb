@@ -90,4 +90,6 @@ Errr:
         Me.PrintForm1.PrinterSettings.DefaultPageSettings.PaperSize = New Printing.PaperSize("size1", 1500, 1100)
         Me.PrintForm1.Print(Me, PowerPacks.Printing.PrintForm.PrintOption.FullWindow)
     End Sub
+
+
 End Class
