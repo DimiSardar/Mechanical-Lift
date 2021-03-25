@@ -113,6 +113,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet.vb">
+      <DependentUpon>_Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -1,4 +1,13 @@
-﻿Public Class Meleth_Anelkysthra
+﻿Imports System.Data.OleDb
+
+Public Class Meleth_Anelkysthra
+
+
+    Private Sub Meleth_Anelkysthra_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+
     Private Sub ΒιβλιοθήκεςToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ΒιβλιοθήκεςToolStripMenuItem.Click
         bibliothhkes.Show()
     End Sub
@@ -87,26 +96,44 @@
 
     Private Sub ElaxEmbadtxt_click(sender As Object, e As EventArgs) Handles ElaxEmbadtxt.Click
 
+        Dim conn As New OleDbConnection
+
+        conn.ConnectionString = ("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\GitHub\Mechanical Lift\Πρόγραμμα Ανελκυστήρα! new\Βιβλιοθήκες\DataAccess Βιβλιοθήκες\Table.Ελάχιστη_Ωφέλιμη_Επιφάνεια.accdb;Persist Security Info=False;")
+        conn.Open()
 
 
+        Dim strql As String
+        'Dim table1 As String
 
+        ' table1 = _Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1
+
+        'strql = "SELECT 'Ελάχιστη Ωφέλμη Επιφάνεια Θαλάμου ( m2 )' FROM Πιν_Ελάχ_Ωφέλ_Επίφ WHERE 'Αριθμός Επιβατών' ='" + ArithmAtomwntxt.Text + "'"
+        strql = "SELECT 'Ελάχιστη Ωφέλμη Επιφάνεια Θαλάμου ( m2 )' FROM Πιν_Ελάχ_Ωφέλ_Επίφ WHERE 'Αριθμός Επιβατών'='26'"
+        'strql = "Select 'Ελάχιστη Ωφέλμη Επιφάνεια Θαλάμου ( m2 )' FROM Πιν_Ελάχ_Ωφέλ_Επίφ "
+
+
+        Dim cmd As New OleDbCommand(strql, conn)
+        Dim myreader As OleDbDataReader
+
+        myreader = cmd.ExecuteReader
+
+        ' myreader.Read()
+
+        'ElaxEmbadtxt.Text = myreader("'Ελάχιστη Ωφέλμη Επιφάνεια Θαλάμου ( m2 )'")
+
+        If (myreader.Read()) Then
+            ' MessageBox.Show("hello2")
+            ElaxEmbadtxt.Text = myreader.GetString(0)
+        End If
+
+        myreader.Close()
+        conn.Close()
 
         'Dim o As String = _Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1.Πιν_Ελάχ_Ωφέλ_Επίφ.Rows(1).Item("Ελάχιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )").ToString
-
         'Item("Ελάχιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )")
         'Columns("Ελάχιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )")
-
-        ElaxEmbadtxt.Text = _Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1.Tables("Πιν_Ελάχ_Ωφέλ_Επίφ").Rows(3)("Αριθμός Επιβατών")
-
-
-
-
-
+        'ElaxEmbadtxt.Text = _Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1.Tables("Πιν_Ελάχ_Ωφέλ_Επίφ").Rows(3)("Αριθμός Επιβατών")
 
     End Sub
-
-
-
-
 
 End Class
