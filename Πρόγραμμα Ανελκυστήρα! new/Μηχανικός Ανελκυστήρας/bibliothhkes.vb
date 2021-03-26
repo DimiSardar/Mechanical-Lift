@@ -1,12 +1,12 @@
 ﻿Public Class bibliothhkes
 
     Private Sub bibliothhkes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the '_Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Πίν_Μέγ_Ωφέλ_Επιφ' table. You can move, or remove it, as needed.
-        Me.Πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.Fill(Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Πίν_Μέγ_Ωφέλ_Επιφ)
-        'TODO: This line of code loads data into the '_Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Πιν_Ελάχ_Ωφέλ_Επίφ' table. You can move, or remove it, as needed.
-        Me.Πιν_Ελάχ_Ωφέλ_ΕπίφTableAdapter.Fill(Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Πιν_Ελάχ_Ωφέλ_Επίφ)
-
+        'TODO: This line of code loads data into the '_Table_Max_UseFull_Chamber_AreaDataSet.Maximum_Useful_Chamber' table. You can move, or remove it, as needed.
+        Me.Maximum_Useful_ChamberTableAdapter.Fill(Me._Table_Max_UseFull_Chamber_AreaDataSet.Maximum_Useful_Chamber)
+        'TODO: This line of code loads data into the '_Table_Min_UseFull_Chamber_AreaDataSet.Minimum_Useful_Chamber' table. You can move, or remove it, as needed.
+        Me.Minimum_Useful_ChamberTableAdapter.Fill(Me._Table_Min_UseFull_Chamber_AreaDataSet.Minimum_Useful_Chamber)
     End Sub
+
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
         If ListBox1.SelectedItem = "Ελάχ. Ωφέλ. Επιφ. Θαλάμ." Then
             TabControl1.SelectTab(0)
@@ -21,9 +21,9 @@
         On Error GoTo Errr
 
         If TabControl1.SelectedTab.Text = "TabPage1" Then
-            ΠινΕλάχΩφέλΕπίφBindingSource.AddNew()
+            TableMinUseFullChamberAreaDataSetBindingSource.AddNew()
         ElseIf TabControl1.SelectedTab.Text = "TabPage2" Then
-            ΠίνΜέγΩφέλΕπιφBindingSource.AddNew()
+            TableMaxUseFullChamberAreaDataSetBindingSource.AddNew()
 
 
         End If
@@ -39,9 +39,9 @@ Errr:
         On Error GoTo Errr
 
         If TabControl1.SelectedTab.Text = "TabPage1" Then
-            ΠινΕλάχΩφέλΕπίφBindingSource.RemoveCurrent()
+            TableMinUseFullChamberAreaDataSetBindingSource.RemoveCurrent()
         ElseIf TabControl1.SelectedTab.Text = "TabPage2" Then
-            ΠίνΜέγΩφέλΕπιφBindingSource.RemoveCurrent()
+            TableMaxUseFullChamberAreaDataSetBindingSource.RemoveCurrent()
 
 
         End If
@@ -58,14 +58,14 @@ Errr:
 
         If TabControl1.SelectedTab.Text = "TabPage1" Then
 
-            ΠινΕλάχΩφέλΕπίφBindingSource.EndEdit()
-            Πιν_Ελάχ_Ωφέλ_ΕπίφTableAdapter.Update(_Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Πιν_Ελάχ_Ωφέλ_Επίφ)
+            TableMinUseFullChamberAreaDataSetBindingSource.EndEdit()
+            Minimum_Useful_ChamberTableAdapter.Update(_Table_Min_UseFull_Chamber_AreaDataSet.Minimum_Useful_Chamber)
             MessageBox.Show("Η προσθήκη ήταν επιτυχής!")
 
         ElseIf TabControl1.SelectedTab.Text = "TabPage2" Then
 
-            ΠίνΜέγΩφέλΕπιφBindingSource.EndEdit()
-            Πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.Update(_Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Πίν_Μέγ_Ωφέλ_Επιφ)
+            TableMaxUseFullChamberAreaDataSetBindingSource.EndEdit()
+            Maximum_Useful_ChamberTableAdapter.Update(_Table_Max_UseFull_Chamber_AreaDataSet.Maximum_Useful_Chamber)
             MessageBox.Show("Η προσθήκη ήταν επιτυχής!")
 
         End If

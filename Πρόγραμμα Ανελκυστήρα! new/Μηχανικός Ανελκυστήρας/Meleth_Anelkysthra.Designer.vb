@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Meleth_Anelkysthra
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Meleth_Anelkysthra
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ΑρχείοToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -77,8 +77,6 @@ Partial Class Meleth_Anelkysthra
         Me.PreviousCentralTab1 = New System.Windows.Forms.Button()
         Me.NextCentralTab1 = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1 = New Μηχανικός_Ανελκυστήρας._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet()
-        Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet1 = New Μηχανικός_Ανελκυστήρας._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet()
         Me.MenuStrip1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.freatio_img, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -90,8 +88,6 @@ Partial Class Meleth_Anelkysthra
         Me.CentralTabControl.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
-        CType(Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -123,7 +119,7 @@ Partial Class Meleth_Anelkysthra
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ProgressBar1.Location = New System.Drawing.Point(12, 676)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(960, 23)
+        Me.ProgressBar1.Size = New System.Drawing.Size(960, 13)
         Me.ProgressBar1.TabIndex = 2
         '
         'TabPage2
@@ -669,21 +665,11 @@ Partial Class Meleth_Anelkysthra
         Me.Panel6.Size = New System.Drawing.Size(952, 50)
         Me.Panel6.TabIndex = 10
         '
-        '_Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1
-        '
-        Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1.DataSetName = "_Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet"
-        Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        '_Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet1
-        '
-        Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet1.DataSetName = "_Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet"
-        Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'Meleth_Anelkysthra
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(984, 711)
+        Me.ClientSize = New System.Drawing.Size(984, 701)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -711,8 +697,6 @@ Partial Class Meleth_Anelkysthra
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         Me.Panel6.ResumeLayout(False)
-        CType(Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -773,6 +757,4 @@ Partial Class Meleth_Anelkysthra
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Label16 As Label
     Friend WithEvents ArithmAtomwntxt As Label
-    Friend WithEvents _Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet1 As _Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet
-    Friend WithEvents _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet1 As _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet
 End Class

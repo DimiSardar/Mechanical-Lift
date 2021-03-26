@@ -25,6 +25,8 @@ Partial Class bibliothhkes
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(bibliothhkes))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -32,17 +34,8 @@ Partial Class bibliothhkes
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.ΑριθμόςΕπιβατώνDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ΕλάχιστηΩφέλμηΕπιφάνειαΘαλάμουM2DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ΠινΕλάχΩφέλΕπίφBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TableΕλάχιστηΩφέλιμηΕπιφάνειαDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet = New Μηχανικός_Ανελκυστήρας._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.ΩφέλιμοΦορτίοKgDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ΜέγιστηΩφέλιμηΕπιφάνειαΘαλάμουM2DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ΠίνΜέγΩφέλΕπιφBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet = New Μηχανικός_Ανελκυστήρας._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.DataGridView3 = New System.Windows.Forms.DataGridView()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
@@ -60,21 +53,26 @@ Partial Class bibliothhkes
         Me.btnPrint = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.Πιν_Ελάχ_Ωφέλ_ΕπίφTableAdapter = New Μηχανικός_Ανελκυστήρας._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAdapters.Πιν_Ελάχ_Ωφέλ_ΕπίφTableAdapter()
-        Me.Πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter = New Μηχανικός_Ανελκυστήρας._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAdapters.Πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter()
         Me.PrintForm1 = New Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(Me.components)
+        Me._Table_Min_UseFull_Chamber_AreaDataSet = New Μηχανικός_Ανελκυστήρας._Table_Min_UseFull_Chamber_AreaDataSet()
+        Me.TableMinUseFullChamberAreaDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me._Table_Max_UseFull_Chamber_AreaDataSet = New Μηχανικός_Ανελκυστήρας._Table_Max_UseFull_Chamber_AreaDataSet()
+        Me.TableMaxUseFullChamberAreaDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MinimumUsefulChamberBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Minimum_Useful_ChamberTableAdapter = New Μηχανικός_Ανελκυστήρας._Table_Min_UseFull_Chamber_AreaDataSetTableAdapters.Minimum_Useful_ChamberTableAdapter()
+        Me.NumberOfPassengersDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MinimumUsefulChamberAream2DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MaximumUsefulChamberBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Maximum_Useful_ChamberTableAdapter = New Μηχανικός_Ανελκυστήρας._Table_Max_UseFull_Chamber_AreaDataSetTableAdapters.Maximum_Useful_ChamberTableAdapter()
+        Me.UsefulLoadkgDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MaximumUsefulChamberAream2DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ΠινΕλάχΩφέλΕπίφBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TableΕλάχιστηΩφέλιμηΕπιφάνειαDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ΠίνΜέγΩφέλΕπιφBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage3.SuspendLayout()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage4.SuspendLayout()
@@ -86,6 +84,12 @@ Partial Class bibliothhkes
         Me.TabPage7.SuspendLayout()
         CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
+        CType(Me._Table_Min_UseFull_Chamber_AreaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TableMinUseFullChamberAreaDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me._Table_Max_UseFull_Chamber_AreaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TableMaxUseFullChamberAreaDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MinimumUsefulChamberBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MaximumUsefulChamberBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -157,11 +161,18 @@ Partial Class bibliothhkes
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
         Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ΑριθμόςΕπιβατώνDataGridViewTextBoxColumn, Me.ΕλάχιστηΩφέλμηΕπιφάνειαΘαλάμουM2DataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.ΠινΕλάχΩφέλΕπίφBindingSource
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NumberOfPassengersDataGridViewTextBoxColumn, Me.MinimumUsefulChamberAream2DataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.MinimumUsefulChamberBindingSource
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView1.Location = New System.Drawing.Point(3, 3)
         Me.DataGridView1.MultiSelect = False
@@ -169,56 +180,6 @@ Partial Class bibliothhkes
         Me.DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         Me.DataGridView1.Size = New System.Drawing.Size(788, 486)
         Me.DataGridView1.TabIndex = 0
-        '
-        'DataGridView2
-        '
-        Me.DataGridView2.AutoGenerateColumns = False
-        Me.DataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ΩφέλιμοΦορτίοKgDataGridViewTextBoxColumn, Me.ΜέγιστηΩφέλιμηΕπιφάνειαΘαλάμουM2DataGridViewTextBoxColumn})
-        Me.DataGridView2.DataSource = Me.ΠίνΜέγΩφέλΕπιφBindingSource
-        Me.DataGridView2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView2.Location = New System.Drawing.Point(3, 3)
-        Me.DataGridView2.MultiSelect = False
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.DataGridView2.Size = New System.Drawing.Size(788, 486)
-        Me.DataGridView2.TabIndex = 0
-        '
-        'ΑριθμόςΕπιβατώνDataGridViewTextBoxColumn
-        '
-        Me.ΑριθμόςΕπιβατώνDataGridViewTextBoxColumn.DataPropertyName = "Αριθμός Επιβατών"
-        Me.ΑριθμόςΕπιβατώνDataGridViewTextBoxColumn.HeaderText = "Αριθμός Επιβατών"
-        Me.ΑριθμόςΕπιβατώνDataGridViewTextBoxColumn.Name = "ΑριθμόςΕπιβατώνDataGridViewTextBoxColumn"
-        '
-        'ΕλάχιστηΩφέλμηΕπιφάνειαΘαλάμουM2DataGridViewTextBoxColumn
-        '
-        Me.ΕλάχιστηΩφέλμηΕπιφάνειαΘαλάμουM2DataGridViewTextBoxColumn.DataPropertyName = "Ελάχιστη Ωφέλμη Επιφάνεια Θαλάμου ( m2 )"
-        Me.ΕλάχιστηΩφέλμηΕπιφάνειαΘαλάμουM2DataGridViewTextBoxColumn.HeaderText = "Ελάχιστη Ωφέλμη Επιφάνεια Θαλάμου ( m2 )"
-        Me.ΕλάχιστηΩφέλμηΕπιφάνειαΘαλάμουM2DataGridViewTextBoxColumn.Name = "ΕλάχιστηΩφέλμηΕπιφάνειαΘαλάμουM2DataGridViewTextBoxColumn"
-        '
-        'ΠινΕλάχΩφέλΕπίφBindingSource
-        '
-        Me.ΠινΕλάχΩφέλΕπίφBindingSource.DataMember = "Πιν_Ελάχ_Ωφέλ_Επίφ"
-        Me.ΠινΕλάχΩφέλΕπίφBindingSource.DataSource = Me.TableΕλάχιστηΩφέλιμηΕπιφάνειαDataSetBindingSource
-        '
-        'TableΕλάχιστηΩφέλιμηΕπιφάνειαDataSetBindingSource
-        '
-        Me.TableΕλάχιστηΩφέλιμηΕπιφάνειαDataSetBindingSource.DataSource = Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet
-        Me.TableΕλάχιστηΩφέλιμηΕπιφάνειαDataSetBindingSource.Position = 0
-        '
-        '_Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet
-        '
-        Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet.DataSetName = "_Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet"
-        Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'TabPage2
         '
@@ -231,28 +192,35 @@ Partial Class bibliothhkes
         Me.TabPage2.Text = "TabPage2"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-
-        'ΩφέλιμοΦορτίοKgDataGridViewTextBoxColumn
+        'DataGridView2
         '
-        Me.ΩφέλιμοΦορτίοKgDataGridViewTextBoxColumn.DataPropertyName = "Ωφέλιμο Φορτίο ( kg )"
-        Me.ΩφέλιμοΦορτίοKgDataGridViewTextBoxColumn.HeaderText = "Ωφέλιμο Φορτίο ( kg )"
-        Me.ΩφέλιμοΦορτίοKgDataGridViewTextBoxColumn.Name = "ΩφέλιμοΦορτίοKgDataGridViewTextBoxColumn"
-        '
-        'ΜέγιστηΩφέλιμηΕπιφάνειαΘαλάμουM2DataGridViewTextBoxColumn
-        '
-        Me.ΜέγιστηΩφέλιμηΕπιφάνειαΘαλάμουM2DataGridViewTextBoxColumn.DataPropertyName = "Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )"
-        Me.ΜέγιστηΩφέλιμηΕπιφάνειαΘαλάμουM2DataGridViewTextBoxColumn.HeaderText = "Μέγιστη Ωφέλιμη Επιφάνεια Θαλάμου ( m2 )"
-        Me.ΜέγιστηΩφέλιμηΕπιφάνειαΘαλάμουM2DataGridViewTextBoxColumn.Name = "ΜέγιστηΩφέλιμηΕπιφάνειαΘαλάμουM2DataGridViewTextBoxColumn"
-        '
-        'ΠίνΜέγΩφέλΕπιφBindingSource
-        '
-        Me.ΠίνΜέγΩφέλΕπιφBindingSource.DataMember = "Πίν_Μέγ_Ωφέλ_Επιφ"
-        Me.ΠίνΜέγΩφέλΕπιφBindingSource.DataSource = Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet
-        '
-        '_Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet
-        '
-        Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.DataSetName = "_Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet"
-        Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.DataGridView2.AutoGenerateColumns = False
+        Me.DataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.UsefulLoadkgDataGridViewTextBoxColumn, Me.MaximumUsefulChamberAream2DataGridViewTextBoxColumn})
+        Me.DataGridView2.DataSource = Me.MaximumUsefulChamberBindingSource
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle4
+        Me.DataGridView2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView2.Location = New System.Drawing.Point(3, 3)
+        Me.DataGridView2.MultiSelect = False
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.Size = New System.Drawing.Size(788, 486)
+        Me.DataGridView2.TabIndex = 0
         '
         'TabPage3
         '
@@ -436,14 +404,6 @@ Partial Class bibliothhkes
         Me.ListBox1.Size = New System.Drawing.Size(150, 667)
         Me.ListBox1.TabIndex = 2
         '
-        'Πιν_Ελάχ_Ωφέλ_ΕπίφTableAdapter
-        '
-        Me.Πιν_Ελάχ_Ωφέλ_ΕπίφTableAdapter.ClearBeforeFill = True
-        '
-        'Πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter
-        '
-        Me.Πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter.ClearBeforeFill = True
-        '
         'PrintForm1
         '
         Me.PrintForm1.DocumentName = "document"
@@ -451,6 +411,68 @@ Partial Class bibliothhkes
         Me.PrintForm1.PrintAction = System.Drawing.Printing.PrintAction.PrintToPrinter
         Me.PrintForm1.PrinterSettings = CType(resources.GetObject("PrintForm1.PrinterSettings"), System.Drawing.Printing.PrinterSettings)
         Me.PrintForm1.PrintFileName = Nothing
+        '
+        '_Table_Min_UseFull_Chamber_AreaDataSet
+        '
+        Me._Table_Min_UseFull_Chamber_AreaDataSet.DataSetName = "_Table_Min_UseFull_Chamber_AreaDataSet"
+        Me._Table_Min_UseFull_Chamber_AreaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'TableMinUseFullChamberAreaDataSetBindingSource
+        '
+        Me.TableMinUseFullChamberAreaDataSetBindingSource.DataSource = Me._Table_Min_UseFull_Chamber_AreaDataSet
+        Me.TableMinUseFullChamberAreaDataSetBindingSource.Position = 0
+        '
+        '_Table_Max_UseFull_Chamber_AreaDataSet
+        '
+        Me._Table_Max_UseFull_Chamber_AreaDataSet.DataSetName = "_Table_Max_UseFull_Chamber_AreaDataSet"
+        Me._Table_Max_UseFull_Chamber_AreaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'TableMaxUseFullChamberAreaDataSetBindingSource
+        '
+        Me.TableMaxUseFullChamberAreaDataSetBindingSource.DataSource = Me._Table_Max_UseFull_Chamber_AreaDataSet
+        Me.TableMaxUseFullChamberAreaDataSetBindingSource.Position = 0
+        '
+        'MinimumUsefulChamberBindingSource
+        '
+        Me.MinimumUsefulChamberBindingSource.DataMember = "Minimum_Useful_Chamber"
+        Me.MinimumUsefulChamberBindingSource.DataSource = Me.TableMinUseFullChamberAreaDataSetBindingSource
+        '
+        'Minimum_Useful_ChamberTableAdapter
+        '
+        Me.Minimum_Useful_ChamberTableAdapter.ClearBeforeFill = True
+        '
+        'NumberOfPassengersDataGridViewTextBoxColumn
+        '
+        Me.NumberOfPassengersDataGridViewTextBoxColumn.DataPropertyName = "Number_Of_Passengers"
+        Me.NumberOfPassengersDataGridViewTextBoxColumn.HeaderText = "Number_Of_Passengers"
+        Me.NumberOfPassengersDataGridViewTextBoxColumn.Name = "NumberOfPassengersDataGridViewTextBoxColumn"
+        '
+        'MinimumUsefulChamberAream2DataGridViewTextBoxColumn
+        '
+        Me.MinimumUsefulChamberAream2DataGridViewTextBoxColumn.DataPropertyName = "Minimum_Useful_Chamber_Area_m2"
+        Me.MinimumUsefulChamberAream2DataGridViewTextBoxColumn.HeaderText = "Minimum_Useful_Chamber_Area_m2"
+        Me.MinimumUsefulChamberAream2DataGridViewTextBoxColumn.Name = "MinimumUsefulChamberAream2DataGridViewTextBoxColumn"
+        '
+        'MaximumUsefulChamberBindingSource
+        '
+        Me.MaximumUsefulChamberBindingSource.DataMember = "Maximum_Useful_Chamber"
+        Me.MaximumUsefulChamberBindingSource.DataSource = Me.TableMaxUseFullChamberAreaDataSetBindingSource
+        '
+        'Maximum_Useful_ChamberTableAdapter
+        '
+        Me.Maximum_Useful_ChamberTableAdapter.ClearBeforeFill = True
+        '
+        'UsefulLoadkgDataGridViewTextBoxColumn
+        '
+        Me.UsefulLoadkgDataGridViewTextBoxColumn.DataPropertyName = "Useful_ Load_kg"
+        Me.UsefulLoadkgDataGridViewTextBoxColumn.HeaderText = "Useful_ Load_kg"
+        Me.UsefulLoadkgDataGridViewTextBoxColumn.Name = "UsefulLoadkgDataGridViewTextBoxColumn"
+        '
+        'MaximumUsefulChamberAream2DataGridViewTextBoxColumn
+        '
+        Me.MaximumUsefulChamberAream2DataGridViewTextBoxColumn.DataPropertyName = "Maximum_Useful_Chamber_Area_m2"
+        Me.MaximumUsefulChamberAream2DataGridViewTextBoxColumn.HeaderText = "Maximum_Useful_Chamber_Area_m2"
+        Me.MaximumUsefulChamberAream2DataGridViewTextBoxColumn.Name = "MaximumUsefulChamberAream2DataGridViewTextBoxColumn"
         '
         'bibliothhkes
         '
@@ -469,13 +491,8 @@ Partial Class bibliothhkes
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ΠινΕλάχΩφέλΕπίφBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TableΕλάχιστηΩφέλιμηΕπιφάνειαDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me._Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ΠίνΜέγΩφέλΕπιφBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me._Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage3.ResumeLayout(False)
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage4.ResumeLayout(False)
@@ -487,6 +504,12 @@ Partial Class bibliothhkes
         Me.TabPage7.ResumeLayout(False)
         CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
+        CType(Me._Table_Min_UseFull_Chamber_AreaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TableMinUseFullChamberAreaDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me._Table_Max_UseFull_Chamber_AreaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TableMaxUseFullChamberAreaDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MinimumUsefulChamberBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MaximumUsefulChamberBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -508,8 +531,6 @@ Partial Class bibliothhkes
     Friend WithEvents Panel3 As Panel
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label1 As Label
-    Friend WithEvents TableΕλάχιστηΩφέλιμηΕπιφάνειαDataSetBindingSource As BindingSource
-    Friend WithEvents _Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet As _Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents DataGridView3 As DataGridView
@@ -517,14 +538,17 @@ Partial Class bibliothhkes
     Friend WithEvents DataGridView5 As DataGridView
     Friend WithEvents DataGridView6 As DataGridView
     Friend WithEvents DataGridView7 As DataGridView
-    Friend WithEvents ΠινΕλάχΩφέλΕπίφBindingSource As BindingSource
-    Friend WithEvents Πιν_Ελάχ_Ωφέλ_ΕπίφTableAdapter As _Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAdapters.Πιν_Ελάχ_Ωφέλ_ΕπίφTableAdapter
-    Friend WithEvents ΑριθμόςΕπιβατώνDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents ΕλάχιστηΩφέλμηΕπιφάνειαΘαλάμουM2DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet As _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSet
-    Friend WithEvents ΠίνΜέγΩφέλΕπιφBindingSource As BindingSource
-    Friend WithEvents Πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter As _Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαDataSetTableAdapters.Πίν_Μέγ_Ωφέλ_ΕπιφTableAdapter
-    Friend WithEvents ΩφέλιμοΦορτίοKgDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents ΜέγιστηΩφέλιμηΕπιφάνειαΘαλάμουM2DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents PrintForm1 As PowerPacks.Printing.PrintForm
+    Friend WithEvents TableMinUseFullChamberAreaDataSetBindingSource As BindingSource
+    Friend WithEvents _Table_Min_UseFull_Chamber_AreaDataSet As _Table_Min_UseFull_Chamber_AreaDataSet
+    Friend WithEvents TableMaxUseFullChamberAreaDataSetBindingSource As BindingSource
+    Friend WithEvents _Table_Max_UseFull_Chamber_AreaDataSet As _Table_Max_UseFull_Chamber_AreaDataSet
+    Friend WithEvents MinimumUsefulChamberBindingSource As BindingSource
+    Friend WithEvents Minimum_Useful_ChamberTableAdapter As _Table_Min_UseFull_Chamber_AreaDataSetTableAdapters.Minimum_Useful_ChamberTableAdapter
+    Friend WithEvents NumberOfPassengersDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents MinimumUsefulChamberAream2DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents MaximumUsefulChamberBindingSource As BindingSource
+    Friend WithEvents Maximum_Useful_ChamberTableAdapter As _Table_Max_UseFull_Chamber_AreaDataSetTableAdapters.Maximum_Useful_ChamberTableAdapter
+    Friend WithEvents UsefulLoadkgDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents MaximumUsefulChamberAream2DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class

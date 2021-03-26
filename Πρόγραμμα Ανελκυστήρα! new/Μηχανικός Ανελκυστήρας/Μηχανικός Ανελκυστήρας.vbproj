@@ -108,6 +108,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
+    <Compile Include="_Table_Max_UseFull_Chamber_AreaDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Table_Max_UseFull_Chamber_AreaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Table_Min_UseFull_Chamber_AreaDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Table_Min_UseFull_Chamber_AreaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -152,6 +162,28 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="_Table_Max_UseFull_Chamber_AreaDataSet.xsc">
+      <DependentUpon>_Table_Max_UseFull_Chamber_AreaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Table_Max_UseFull_Chamber_AreaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Table_Max_UseFull_Chamber_AreaDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Table_Max_UseFull_Chamber_AreaDataSet.xss">
+      <DependentUpon>_Table_Max_UseFull_Chamber_AreaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Table_Min_UseFull_Chamber_AreaDataSet.xsc">
+      <DependentUpon>_Table_Min_UseFull_Chamber_AreaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Table_Min_UseFull_Chamber_AreaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Table_Min_UseFull_Chamber_AreaDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Table_Min_UseFull_Chamber_AreaDataSet.xss">
+      <DependentUpon>_Table_Min_UseFull_Chamber_AreaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="_Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet.xsc">
       <DependentUpon>_Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαDataSet.xsd</DependentUpon>
     </None>
