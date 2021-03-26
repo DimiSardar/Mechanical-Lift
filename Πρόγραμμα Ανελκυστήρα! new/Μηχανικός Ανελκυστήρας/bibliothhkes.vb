@@ -21,9 +21,9 @@
         On Error GoTo Errr
 
         If TabControl1.SelectedTab.Text = "TabPage1" Then
-            TableMinUseFullChamberAreaDataSetBindingSource.AddNew()
+            MinimumUsefulChamberBindingSource.AddNew()
         ElseIf TabControl1.SelectedTab.Text = "TabPage2" Then
-            TableMaxUseFullChamberAreaDataSetBindingSource.AddNew()
+            MaximumUsefulChamberBindingSource.AddNew()
 
 
         End If
@@ -39,9 +39,9 @@ Errr:
         On Error GoTo Errr
 
         If TabControl1.SelectedTab.Text = "TabPage1" Then
-            TableMinUseFullChamberAreaDataSetBindingSource.RemoveCurrent()
+            MinimumUsefulChamberBindingSource.RemoveCurrent()
         ElseIf TabControl1.SelectedTab.Text = "TabPage2" Then
-            TableMaxUseFullChamberAreaDataSetBindingSource.RemoveCurrent()
+            MaximumUsefulChamberBindingSource.RemoveCurrent()
 
 
         End If

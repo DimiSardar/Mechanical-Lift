@@ -58,30 +58,6 @@ Namespace My
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
          Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\GitHub\Mechanical Lift\Πρόγραμμ"& _ 
-            "α Ανελκυστήρα! new\Βιβλιοθήκες\DataAccess Βιβλιοθήκες\Table.Ελάχιστη_Ωφέλιμη_Επι"& _ 
-            "φάνεια.accdb""")>  _
-        Public ReadOnly Property Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαConnectionString() As String
-            Get
-                Return CType(Me("Table_Ελάχιστη_Ωφέλιμη_ΕπιφάνειαConnectionString"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\GitHub\Mechanical Lift\Πρόγραμμ"& _ 
-            "α Ανελκυστήρα! new\Βιβλιοθήκες\DataAccess Βιβλιοθήκες\Table.Μέγιστη_Ωφέλιμη_Επιφ"& _ 
-            "άνεια.accdb""")>  _
-        Public ReadOnly Property Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαConnectionString() As String
-            Get
-                Return CType(Me("Table_Μέγιστη_Ωφέλιμη_ΕπιφάνειαConnectionString"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\GitHub\Mechanical Lift\Πρόγραμμ"& _ 
             "α Ανελκυστήρα! new\Libraries\DataAccess_Libraries\Table.Max_UseFull_Chamber_Area"& _ 
             ".accdb""")>  _
         Public ReadOnly Property Table_Max_UseFull_Chamber_AreaConnectionString() As String

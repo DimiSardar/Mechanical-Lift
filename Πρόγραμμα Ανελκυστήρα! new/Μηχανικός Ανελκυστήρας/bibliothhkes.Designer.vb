@@ -54,18 +54,18 @@ Partial Class bibliothhkes
         Me.btnExit = New System.Windows.Forms.Button()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.PrintForm1 = New Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(Me.components)
-        Me._Table_Min_UseFull_Chamber_AreaDataSet = New Μηχανικός_Ανελκυστήρας._Table_Min_UseFull_Chamber_AreaDataSet()
-        Me.TableMinUseFullChamberAreaDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me._Table_Max_UseFull_Chamber_AreaDataSet = New Μηχανικός_Ανελκυστήρας._Table_Max_UseFull_Chamber_AreaDataSet()
-        Me.TableMaxUseFullChamberAreaDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MinimumUsefulChamberBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Minimum_Useful_ChamberTableAdapter = New Μηχανικός_Ανελκυστήρας._Table_Min_UseFull_Chamber_AreaDataSetTableAdapters.Minimum_Useful_ChamberTableAdapter()
+        Me.MaximumUsefulChamberBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.NumberOfPassengersDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MinimumUsefulChamberAream2DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MaximumUsefulChamberBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Maximum_Useful_ChamberTableAdapter = New Μηχανικός_Ανελκυστήρας._Table_Max_UseFull_Chamber_AreaDataSetTableAdapters.Maximum_Useful_ChamberTableAdapter()
+        Me.TableMinUseFullChamberAreaDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me._Table_Min_UseFull_Chamber_AreaDataSet = New Μηχανικός_Ανελκυστήρας._Table_Min_UseFull_Chamber_AreaDataSet()
         Me.UsefulLoadkgDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MaximumUsefulChamberAream2DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TableMaxUseFullChamberAreaDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me._Table_Max_UseFull_Chamber_AreaDataSet = New Μηχανικός_Ανελκυστήρας._Table_Max_UseFull_Chamber_AreaDataSet()
+        Me.Minimum_Useful_ChamberTableAdapter = New Μηχανικός_Ανελκυστήρας._Table_Min_UseFull_Chamber_AreaDataSetTableAdapters.Minimum_Useful_ChamberTableAdapter()
+        Me.Maximum_Useful_ChamberTableAdapter = New Μηχανικός_Ανελκυστήρας._Table_Max_UseFull_Chamber_AreaDataSetTableAdapters.Maximum_Useful_ChamberTableAdapter()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -84,12 +84,12 @@ Partial Class bibliothhkes
         Me.TabPage7.SuspendLayout()
         CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        CType(Me._Table_Min_UseFull_Chamber_AreaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TableMinUseFullChamberAreaDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me._Table_Max_UseFull_Chamber_AreaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TableMaxUseFullChamberAreaDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MinimumUsefulChamberBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MaximumUsefulChamberBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TableMinUseFullChamberAreaDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me._Table_Min_UseFull_Chamber_AreaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TableMaxUseFullChamberAreaDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me._Table_Max_UseFull_Chamber_AreaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -412,34 +412,15 @@ Partial Class bibliothhkes
         Me.PrintForm1.PrinterSettings = CType(resources.GetObject("PrintForm1.PrinterSettings"), System.Drawing.Printing.PrinterSettings)
         Me.PrintForm1.PrintFileName = Nothing
         '
-        '_Table_Min_UseFull_Chamber_AreaDataSet
-        '
-        Me._Table_Min_UseFull_Chamber_AreaDataSet.DataSetName = "_Table_Min_UseFull_Chamber_AreaDataSet"
-        Me._Table_Min_UseFull_Chamber_AreaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TableMinUseFullChamberAreaDataSetBindingSource
-        '
-        Me.TableMinUseFullChamberAreaDataSetBindingSource.DataSource = Me._Table_Min_UseFull_Chamber_AreaDataSet
-        Me.TableMinUseFullChamberAreaDataSetBindingSource.Position = 0
-        '
-        '_Table_Max_UseFull_Chamber_AreaDataSet
-        '
-        Me._Table_Max_UseFull_Chamber_AreaDataSet.DataSetName = "_Table_Max_UseFull_Chamber_AreaDataSet"
-        Me._Table_Max_UseFull_Chamber_AreaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TableMaxUseFullChamberAreaDataSetBindingSource
-        '
-        Me.TableMaxUseFullChamberAreaDataSetBindingSource.DataSource = Me._Table_Max_UseFull_Chamber_AreaDataSet
-        Me.TableMaxUseFullChamberAreaDataSetBindingSource.Position = 0
-        '
         'MinimumUsefulChamberBindingSource
         '
         Me.MinimumUsefulChamberBindingSource.DataMember = "Minimum_Useful_Chamber"
         Me.MinimumUsefulChamberBindingSource.DataSource = Me.TableMinUseFullChamberAreaDataSetBindingSource
         '
-        'Minimum_Useful_ChamberTableAdapter
+        'MaximumUsefulChamberBindingSource
         '
-        Me.Minimum_Useful_ChamberTableAdapter.ClearBeforeFill = True
+        Me.MaximumUsefulChamberBindingSource.DataMember = "Maximum_Useful_Chamber"
+        Me.MaximumUsefulChamberBindingSource.DataSource = Me.TableMaxUseFullChamberAreaDataSetBindingSource
         '
         'NumberOfPassengersDataGridViewTextBoxColumn
         '
@@ -453,14 +434,15 @@ Partial Class bibliothhkes
         Me.MinimumUsefulChamberAream2DataGridViewTextBoxColumn.HeaderText = "Minimum_Useful_Chamber_Area_m2"
         Me.MinimumUsefulChamberAream2DataGridViewTextBoxColumn.Name = "MinimumUsefulChamberAream2DataGridViewTextBoxColumn"
         '
-        'MaximumUsefulChamberBindingSource
+        'TableMinUseFullChamberAreaDataSetBindingSource
         '
-        Me.MaximumUsefulChamberBindingSource.DataMember = "Maximum_Useful_Chamber"
-        Me.MaximumUsefulChamberBindingSource.DataSource = Me.TableMaxUseFullChamberAreaDataSetBindingSource
+        Me.TableMinUseFullChamberAreaDataSetBindingSource.DataSource = Me._Table_Min_UseFull_Chamber_AreaDataSet
+        Me.TableMinUseFullChamberAreaDataSetBindingSource.Position = 0
         '
-        'Maximum_Useful_ChamberTableAdapter
+        '_Table_Min_UseFull_Chamber_AreaDataSet
         '
-        Me.Maximum_Useful_ChamberTableAdapter.ClearBeforeFill = True
+        Me._Table_Min_UseFull_Chamber_AreaDataSet.DataSetName = "_Table_Min_UseFull_Chamber_AreaDataSet"
+        Me._Table_Min_UseFull_Chamber_AreaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'UsefulLoadkgDataGridViewTextBoxColumn
         '
@@ -473,6 +455,24 @@ Partial Class bibliothhkes
         Me.MaximumUsefulChamberAream2DataGridViewTextBoxColumn.DataPropertyName = "Maximum_Useful_Chamber_Area_m2"
         Me.MaximumUsefulChamberAream2DataGridViewTextBoxColumn.HeaderText = "Maximum_Useful_Chamber_Area_m2"
         Me.MaximumUsefulChamberAream2DataGridViewTextBoxColumn.Name = "MaximumUsefulChamberAream2DataGridViewTextBoxColumn"
+        '
+        'TableMaxUseFullChamberAreaDataSetBindingSource
+        '
+        Me.TableMaxUseFullChamberAreaDataSetBindingSource.DataSource = Me._Table_Max_UseFull_Chamber_AreaDataSet
+        Me.TableMaxUseFullChamberAreaDataSetBindingSource.Position = 0
+        '
+        '_Table_Max_UseFull_Chamber_AreaDataSet
+        '
+        Me._Table_Max_UseFull_Chamber_AreaDataSet.DataSetName = "_Table_Max_UseFull_Chamber_AreaDataSet"
+        Me._Table_Max_UseFull_Chamber_AreaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Minimum_Useful_ChamberTableAdapter
+        '
+        Me.Minimum_Useful_ChamberTableAdapter.ClearBeforeFill = True
+        '
+        'Maximum_Useful_ChamberTableAdapter
+        '
+        Me.Maximum_Useful_ChamberTableAdapter.ClearBeforeFill = True
         '
         'bibliothhkes
         '
@@ -504,12 +504,12 @@ Partial Class bibliothhkes
         Me.TabPage7.ResumeLayout(False)
         CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
-        CType(Me._Table_Min_UseFull_Chamber_AreaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TableMinUseFullChamberAreaDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me._Table_Max_UseFull_Chamber_AreaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TableMaxUseFullChamberAreaDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MinimumUsefulChamberBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MaximumUsefulChamberBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TableMinUseFullChamberAreaDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me._Table_Min_UseFull_Chamber_AreaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TableMaxUseFullChamberAreaDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me._Table_Max_UseFull_Chamber_AreaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
