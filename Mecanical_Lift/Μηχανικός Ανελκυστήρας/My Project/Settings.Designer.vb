@@ -57,9 +57,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\GitHub\Mechanical Lift\Πρόγραμμ"& _ 
-            "α Ανελκυστήρα! new\Libraries\DataAccess_Libraries\Table.Max_UseFull_Chamber_Area"& _ 
-            ".accdb""")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\GitHub\Mechanical Lift\Mecanica"& _ 
+            "l_Lift\Libraries\DataAccess_Libraries\Table.Max_UseFull_Chamber_Area.accdb""")>  _
         Public ReadOnly Property Table_Max_UseFull_Chamber_AreaConnectionString() As String
             Get
                 Return CType(Me("Table_Max_UseFull_Chamber_AreaConnectionString"),String)
@@ -69,9 +68,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\GitHub\Mechanical Lift\Πρόγραμμ"& _ 
-            "α Ανελκυστήρα! new\Libraries\DataAccess_Libraries\Table.Min_UseFull_Chamber_Area"& _ 
-            ".accdb""")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\GitHub\Mechanical Lift\Mecanica"& _ 
+            "l_Lift\Libraries\DataAccess_Libraries\Table.Min_UseFull_Chamber_Area.accdb""")>  _
         Public ReadOnly Property Table_Min_UseFull_Chamber_AreaConnectionString() As String
             Get
                 Return CType(Me("Table_Min_UseFull_Chamber_AreaConnectionString"),String)
