@@ -50,7 +50,7 @@
               </DbSource>
             </MainSource>
             <Mappings>
-              <Mapping SourceColumn="Useful_ Load_kg" DataSetColumn="Useful_ Load_kg" />
+              <Mapping SourceColumn="Useful_Load_kg" DataSetColumn="Useful_Load_kg" />
               <Mapping SourceColumn="Maximum_Useful_Chamber_Area_m2" DataSetColumn="Maximum_Useful_Chamber_Area_m2" />
             </Mappings>
             <Sources />
@@ -63,10 +63,10 @@
   <xs:element name="_Table_Max_UseFull_Chamber_AreaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_Table_Max_UseFull_Chamber_AreaDataSet" msprop:Generator_UserDSName="_Table_Max_UseFull_Chamber_AreaDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Maximum_Useful_Chamber" msprop:Generator_TableClassName="Maximum_Useful_ChamberDataTable" msprop:Generator_TableVarName="tableMaximum_Useful_Chamber" msprop:Generator_TablePropName="Maximum_Useful_Chamber" msprop:Generator_RowDeletingName="Maximum_Useful_ChamberRowDeleting" msprop:Generator_RowChangingName="Maximum_Useful_ChamberRowChanging" msprop:Generator_RowEvHandlerName="Maximum_Useful_ChamberRowChangeEventHandler" msprop:Generator_RowDeletedName="Maximum_Useful_ChamberRowDeleted" msprop:Generator_UserTableName="Maximum_Useful_Chamber" msprop:Generator_RowChangedName="Maximum_Useful_ChamberRowChanged" msprop:Generator_RowEvArgName="Maximum_Useful_ChamberRowChangeEvent" msprop:Generator_RowClassName="Maximum_Useful_ChamberRow">
+        <xs:element name="Maximum_Useful_Chamber" msprop:Generator_TableClassName="Maximum_Useful_ChamberDataTable" msprop:Generator_TableVarName="tableMaximum_Useful_Chamber" msprop:Generator_RowChangedName="Maximum_Useful_ChamberRowChanged" msprop:Generator_TablePropName="Maximum_Useful_Chamber" msprop:Generator_RowDeletingName="Maximum_Useful_ChamberRowDeleting" msprop:Generator_RowChangingName="Maximum_Useful_ChamberRowChanging" msprop:Generator_RowEvHandlerName="Maximum_Useful_ChamberRowChangeEventHandler" msprop:Generator_RowDeletedName="Maximum_Useful_ChamberRowDeleted" msprop:Generator_RowClassName="Maximum_Useful_ChamberRow" msprop:Generator_UserTableName="Maximum_Useful_Chamber" msprop:Generator_RowEvArgName="Maximum_Useful_ChamberRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Useful__x0020_Load_kg" msprop:Generator_ColumnVarNameInTable="columnUseful__Load_kg" msprop:Generator_ColumnPropNameInRow="Useful__Load_kg" msprop:Generator_ColumnPropNameInTable="Useful__Load_kgColumn" msprop:Generator_UserColumnName="Useful_ Load_kg" type="xs:double" />
+              <xs:element name="Useful_Load_kg" msprop:Generator_ColumnVarNameInTable="columnUseful_Load_kg" msprop:Generator_ColumnPropNameInRow="Useful_Load_kg" msprop:Generator_ColumnPropNameInTable="Useful_Load_kgColumn" msprop:Generator_UserColumnName="Useful_Load_kg" type="xs:double" />
               <xs:element name="Maximum_Useful_Chamber_Area_m2" msprop:Generator_ColumnVarNameInTable="columnMaximum_Useful_Chamber_Area_m2" msprop:Generator_ColumnPropNameInRow="Maximum_Useful_Chamber_Area_m2" msprop:Generator_ColumnPropNameInTable="Maximum_Useful_Chamber_Area_m2Column" msprop:Generator_UserColumnName="Maximum_Useful_Chamber_Area_m2" type="xs:double" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
@@ -75,7 +75,7 @@
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Maximum_Useful_Chamber" />
-      <xs:field xpath="mstns:Useful__x0020_Load_kg" />
+      <xs:field xpath="mstns:Useful_Load_kg" />
     </xs:unique>
   </xs:element>
 </xs:schema>

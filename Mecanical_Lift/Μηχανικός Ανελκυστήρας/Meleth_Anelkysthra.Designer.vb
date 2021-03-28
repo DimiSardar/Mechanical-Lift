@@ -34,7 +34,7 @@ Partial Class Meleth_Anelkysthra
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
+        Me.MegEmbadtxt = New System.Windows.Forms.Label()
         Me.ElaxEmbadtxt = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
@@ -49,10 +49,10 @@ Partial Class Meleth_Anelkysthra
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.YpsosOrofwnList = New System.Windows.Forms.ComboBox()
         Me.MhxKatw = New System.Windows.Forms.CheckBox()
         Me.YpsosKtirioy = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.TaxuthtaAnupswshs = New System.Windows.Forms.TextBox()
         Me.MhxEpanw = New System.Windows.Forms.CheckBox()
         Me.WfelimoFortioField = New System.Windows.Forms.TextBox()
@@ -77,6 +77,8 @@ Partial Class Meleth_Anelkysthra
         Me.PreviousCentralTab1 = New System.Windows.Forms.Button()
         Me.NextCentralTab1 = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.YpsosKtirioutxt = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.freatio_img, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -167,7 +169,7 @@ Partial Class Meleth_Anelkysthra
         Me.Panel1.Controls.Add(Me.Label13)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.Label23)
+        Me.Panel1.Controls.Add(Me.MegEmbadtxt)
         Me.Panel1.Controls.Add(Me.ElaxEmbadtxt)
         Me.Panel1.Controls.Add(Me.Label20)
         Me.Panel1.Controls.Add(Me.Label19)
@@ -176,9 +178,9 @@ Partial Class Meleth_Anelkysthra
         Me.Panel1.Controls.Add(Me.Label12)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Location = New System.Drawing.Point(498, 111)
+        Me.Panel1.Location = New System.Drawing.Point(498, 145)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(442, 219)
+        Me.Panel1.Size = New System.Drawing.Size(442, 222)
         Me.Panel1.TabIndex = 4
         '
         'Label22
@@ -220,19 +222,21 @@ Partial Class Meleth_Anelkysthra
         Me.Label6.Text = "-"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label23
+        'MegEmbadtxt
         '
-        Me.Label23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label23.Location = New System.Drawing.Point(206, 61)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(35, 15)
-        Me.Label23.TabIndex = 6
-        Me.Label23.Text = "-"
-        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.MegEmbadtxt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.MegEmbadtxt.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MegEmbadtxt.Location = New System.Drawing.Point(206, 61)
+        Me.MegEmbadtxt.Name = "MegEmbadtxt"
+        Me.MegEmbadtxt.Size = New System.Drawing.Size(35, 15)
+        Me.MegEmbadtxt.TabIndex = 6
+        Me.MegEmbadtxt.Text = "-"
+        Me.MegEmbadtxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ElaxEmbadtxt
         '
         Me.ElaxEmbadtxt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.ElaxEmbadtxt.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ElaxEmbadtxt.Location = New System.Drawing.Point(206, 37)
         Me.ElaxEmbadtxt.Name = "ElaxEmbadtxt"
         Me.ElaxEmbadtxt.Size = New System.Drawing.Size(35, 15)
@@ -312,7 +316,7 @@ Partial Class Meleth_Anelkysthra
         Me.Panel4.Controls.Add(Me.Label11)
         Me.Panel4.Controls.Add(Me.Label10)
         Me.Panel4.Controls.Add(Me.Label9)
-        Me.Panel4.Location = New System.Drawing.Point(498, 336)
+        Me.Panel4.Location = New System.Drawing.Point(498, 373)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(442, 115)
         Me.Panel4.TabIndex = 8
@@ -356,10 +360,10 @@ Partial Class Meleth_Anelkysthra
         'Panel2
         '
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.YpsosOrofwnList)
         Me.Panel2.Controls.Add(Me.MhxKatw)
         Me.Panel2.Controls.Add(Me.YpsosKtirioy)
         Me.Panel2.Controls.Add(Me.Label17)
-        Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.TaxuthtaAnupswshs)
         Me.Panel2.Controls.Add(Me.MhxEpanw)
         Me.Panel2.Controls.Add(Me.WfelimoFortioField)
@@ -372,6 +376,16 @@ Partial Class Meleth_Anelkysthra
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(486, 182)
         Me.Panel2.TabIndex = 13
+        '
+        'YpsosOrofwnList
+        '
+        Me.YpsosOrofwnList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.YpsosOrofwnList.FormattingEnabled = True
+        Me.YpsosOrofwnList.Items.AddRange(New Object() {"Ύψος Κτιρίου: h [ m ] ", "Αριθμός Ορόφων: k [ - ]"})
+        Me.YpsosOrofwnList.Location = New System.Drawing.Point(17, 138)
+        Me.YpsosOrofwnList.Name = "YpsosOrofwnList"
+        Me.YpsosOrofwnList.Size = New System.Drawing.Size(149, 21)
+        Me.YpsosOrofwnList.TabIndex = 13
         '
         'MhxKatw
         '
@@ -402,15 +416,6 @@ Partial Class Meleth_Anelkysthra
         Me.Label17.Size = New System.Drawing.Size(108, 13)
         Me.Label17.TabIndex = 2
         Me.Label17.Text = "Ανάρτηση Θαλάμου:"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(17, 141)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(112, 13)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Ύψος κτιρίου: h [ m ] "
         '
         'TaxuthtaAnupswshs
         '
@@ -497,6 +502,8 @@ Partial Class Meleth_Anelkysthra
         'Panel3
         '
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Controls.Add(Me.YpsosKtirioutxt)
+        Me.Panel3.Controls.Add(Me.Label3)
         Me.Panel3.Controls.Add(Me.ArithmAtomwntxt)
         Me.Panel3.Controls.Add(Me.Label16)
         Me.Panel3.Controls.Add(Me.Label2)
@@ -504,14 +511,14 @@ Partial Class Meleth_Anelkysthra
         Me.Panel3.Controls.Add(Me.Label14)
         Me.Panel3.Location = New System.Drawing.Point(498, 23)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(442, 82)
+        Me.Panel3.Size = New System.Drawing.Size(442, 116)
         Me.Panel3.TabIndex = 7
         '
         'ArithmAtomwntxt
         '
         Me.ArithmAtomwntxt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.ArithmAtomwntxt.ForeColor = System.Drawing.Color.Red
-        Me.ArithmAtomwntxt.Location = New System.Drawing.Point(205, 48)
+        Me.ArithmAtomwntxt.Location = New System.Drawing.Point(205, 50)
         Me.ArithmAtomwntxt.Name = "ArithmAtomwntxt"
         Me.ArithmAtomwntxt.Size = New System.Drawing.Size(35, 13)
         Me.ArithmAtomwntxt.TabIndex = 4
@@ -521,7 +528,7 @@ Partial Class Meleth_Anelkysthra
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(11, 48)
+        Me.Label16.Location = New System.Drawing.Point(11, 50)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(128, 13)
         Me.Label16.TabIndex = 3
@@ -665,6 +672,26 @@ Partial Class Meleth_Anelkysthra
         Me.Panel6.Size = New System.Drawing.Size(952, 50)
         Me.Panel6.TabIndex = 10
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(11, 81)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(119, 13)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "Ύψος Κτιρίου: h [ m ] ="
+        '
+        'YpsosKtirioutxt
+        '
+        Me.YpsosKtirioutxt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.YpsosKtirioutxt.ForeColor = System.Drawing.Color.Red
+        Me.YpsosKtirioutxt.Location = New System.Drawing.Point(205, 81)
+        Me.YpsosKtirioutxt.Name = "YpsosKtirioutxt"
+        Me.YpsosKtirioutxt.Size = New System.Drawing.Size(35, 13)
+        Me.YpsosKtirioutxt.TabIndex = 6
+        Me.YpsosKtirioutxt.Text = "-"
+        Me.YpsosKtirioutxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Meleth_Anelkysthra
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -717,7 +744,6 @@ Partial Class Meleth_Anelkysthra
     Friend WithEvents anarthsh2pros1 As CheckBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents WfelimoFortiolist As ComboBox
     Friend WithEvents WfelimoFortioField As TextBox
     Friend WithEvents TaxuthtaAnupswshs As TextBox
@@ -745,7 +771,7 @@ Partial Class Meleth_Anelkysthra
     Friend WithEvents Label13 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label23 As Label
+    Friend WithEvents MegEmbadtxt As Label
     Friend WithEvents ElaxEmbadtxt As Label
     Friend WithEvents Label20 As Label
     Friend WithEvents Panel4 As Panel
@@ -757,4 +783,7 @@ Partial Class Meleth_Anelkysthra
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Label16 As Label
     Friend WithEvents ArithmAtomwntxt As Label
+    Friend WithEvents YpsosOrofwnList As ComboBox
+    Friend WithEvents YpsosKtirioutxt As Label
+    Friend WithEvents Label3 As Label
 End Class

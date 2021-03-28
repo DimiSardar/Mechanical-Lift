@@ -283,7 +283,7 @@ Partial Public Class _Table_Max_UseFull_Chamber_AreaDataSet
     Partial Public Class Maximum_Useful_ChamberDataTable
         Inherits Global.System.Data.TypedTableBase(Of Maximum_Useful_ChamberRow)
         
-        Private columnUseful__Load_kg As Global.System.Data.DataColumn
+        Private columnUseful_Load_kg As Global.System.Data.DataColumn
         
         Private columnMaximum_Useful_Chamber_Area_m2 As Global.System.Data.DataColumn
         
@@ -324,9 +324,9 @@ Partial Public Class _Table_Max_UseFull_Chamber_AreaDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public ReadOnly Property Useful__Load_kgColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property Useful_Load_kgColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnUseful__Load_kg
+                Return Me.columnUseful_Load_kg
             End Get
         End Property
         
@@ -375,9 +375,9 @@ Partial Public Class _Table_Max_UseFull_Chamber_AreaDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Overloads Function AddMaximum_Useful_ChamberRow(ByVal Useful__Load_kg As Double, ByVal Maximum_Useful_Chamber_Area_m2 As Double) As Maximum_Useful_ChamberRow
+        Public Overloads Function AddMaximum_Useful_ChamberRow(ByVal Useful_Load_kg As Double, ByVal Maximum_Useful_Chamber_Area_m2 As Double) As Maximum_Useful_ChamberRow
             Dim rowMaximum_Useful_ChamberRow As Maximum_Useful_ChamberRow = CType(Me.NewRow,Maximum_Useful_ChamberRow)
-            Dim columnValuesArray() As Object = New Object() {Useful__Load_kg, Maximum_Useful_Chamber_Area_m2}
+            Dim columnValuesArray() As Object = New Object() {Useful_Load_kg, Maximum_Useful_Chamber_Area_m2}
             rowMaximum_Useful_ChamberRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowMaximum_Useful_ChamberRow)
             Return rowMaximum_Useful_ChamberRow
@@ -385,8 +385,8 @@ Partial Public Class _Table_Max_UseFull_Chamber_AreaDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Function FindByUseful__Load_kg(ByVal Useful__Load_kg As Double) As Maximum_Useful_ChamberRow
-            Return CType(Me.Rows.Find(New Object() {Useful__Load_kg}),Maximum_Useful_ChamberRow)
+        Public Function FindByUseful_Load_kg(ByVal Useful_Load_kg As Double) As Maximum_Useful_ChamberRow
+            Return CType(Me.Rows.Find(New Object() {Useful_Load_kg}),Maximum_Useful_ChamberRow)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -406,20 +406,20 @@ Partial Public Class _Table_Max_UseFull_Chamber_AreaDataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Friend Sub InitVars()
-            Me.columnUseful__Load_kg = MyBase.Columns("Useful_ Load_kg")
+            Me.columnUseful_Load_kg = MyBase.Columns("Useful_Load_kg")
             Me.columnMaximum_Useful_Chamber_Area_m2 = MyBase.Columns("Maximum_Useful_Chamber_Area_m2")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Private Sub InitClass()
-            Me.columnUseful__Load_kg = New Global.System.Data.DataColumn("Useful_ Load_kg", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnUseful__Load_kg)
+            Me.columnUseful_Load_kg = New Global.System.Data.DataColumn("Useful_Load_kg", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnUseful_Load_kg)
             Me.columnMaximum_Useful_Chamber_Area_m2 = New Global.System.Data.DataColumn("Maximum_Useful_Chamber_Area_m2", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnMaximum_Useful_Chamber_Area_m2)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnUseful__Load_kg}, true))
-            Me.columnUseful__Load_kg.AllowDBNull = false
-            Me.columnUseful__Load_kg.Unique = true
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnUseful_Load_kg}, true))
+            Me.columnUseful_Load_kg.AllowDBNull = false
+            Me.columnUseful_Load_kg.Unique = true
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -566,12 +566,12 @@ Partial Public Class _Table_Max_UseFull_Chamber_AreaDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Property Useful__Load_kg() As Double
+        Public Property Useful_Load_kg() As Double
             Get
-                Return CType(Me(Me.tableMaximum_Useful_Chamber.Useful__Load_kgColumn),Double)
+                Return CType(Me(Me.tableMaximum_Useful_Chamber.Useful_Load_kgColumn),Double)
             End Get
             Set
-                Me(Me.tableMaximum_Useful_Chamber.Useful__Load_kgColumn) = value
+                Me(Me.tableMaximum_Useful_Chamber.Useful_Load_kgColumn) = value
             End Set
         End Property
         
@@ -770,7 +770,7 @@ Namespace _Table_Max_UseFull_Chamber_AreaDataSetTableAdapters
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
             tableMapping.DataSetTable = "Maximum_Useful_Chamber"
-            tableMapping.ColumnMappings.Add("Useful_ Load_kg", "Useful_ Load_kg")
+            tableMapping.ColumnMappings.Add("Useful_Load_kg", "Useful_Load_kg")
             tableMapping.ColumnMappings.Add("Maximum_Useful_Chamber_Area_m2", "Maximum_Useful_Chamber_Area_m2")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.OleDb.OleDbCommand()
@@ -974,14 +974,6 @@ Namespace _Table_Max_UseFull_Chamber_AreaDataSetTableAdapters
                     Me.Adapter.UpdateCommand.Connection.Close
                 End If
             End Try
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal Maximum_Useful_Chamber_Area_m2 As Global.System.Nullable(Of Double), ByVal Original_Useful__Load_kg As Global.System.Nullable(Of Double), ByVal Original_Maximum_Useful_Chamber_Area_m2 As Global.System.Nullable(Of Double)) As Integer
-            Return Me.Update(Original_Useful__Load_kg, Maximum_Useful_Chamber_Area_m2, Original_Useful__Load_kg, Original_Maximum_Useful_Chamber_Area_m2)
         End Function
     End Class
     

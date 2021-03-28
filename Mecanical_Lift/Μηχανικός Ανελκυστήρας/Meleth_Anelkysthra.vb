@@ -76,6 +76,20 @@ Public Class Meleth_Anelkysthra
 
     End Sub
 
+    Private Sub YpsosKtirioutxt_Click(sender As Object, e As EventArgs) Handles YpsosKtirioutxt.Click, WfelimoFortioField.MouseClick, WfelimoFortiolist.MouseClick, TaxuthtaAnupswshs.MouseClick, Panel2.Paint
+
+        Dim d As Integer
+
+        If YpsosOrofwnList.SelectedIndex = 0 Then
+            YpsosKtirioutxt.Text = Val(YpsosKtirioy.Text)
+        ElseIf YpsosOrofwnList.SelectedIndex = 1 Then
+            d = (Val(YpsosKtirioy.Text) * 3)
+            YpsosKtirioutxt.Text = Math.Floor(d + 3)
+
+        Else
+        End If
+
+    End Sub
     Private Sub MhxEpanw_CheckedChanged(sender As Object, e As EventArgs) Handles MhxEpanw.CheckedChanged
 
         If MhxEpanw.Checked = True Then
@@ -94,8 +108,9 @@ Public Class Meleth_Anelkysthra
 
     End Sub
 
-    Private Sub ElaxEmbadtxt_click(sender As Object, e As EventArgs) Handles ElaxEmbadtxt.Click
+    Private Sub ElaxEmbadtxt_click(sender As Object, e As EventArgs) Handles ElaxEmbadtxt.Click, WfelimoFortiolist.MouseClick, TaxuthtaAnupswshs.MouseClick
 
+        On Error GoTo Err
         Dim conn As New OleDbConnection
 
         conn.ConnectionString = ("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\GitHub\Mechanical Lift\Mecanical_Lift\Libraries\DataAccess_Libraries\Table.Min_UseFull_Chamber_Area.accdb")
@@ -119,7 +134,39 @@ Public Class Meleth_Anelkysthra
 
         myreader.Close()
         conn.Close()
+Err:
+        Exit Sub
 
     End Sub
 
+    Private Sub MegEmbadtxt_Click(sender As Object, e As EventArgs) Handles MegEmbadtxt.Click, WfelimoFortiolist.MouseClick, TaxuthtaAnupswshs.MouseClick
+
+        On Error GoTo Err
+        Dim conn As New OleDbConnection
+
+        conn.ConnectionString = ("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\GitHub\Mechanical Lift\Mecanical_Lift\Libraries\DataAccess_Libraries\Table.Max_UseFull_Chamber_Area.accdb")
+        conn.Open()
+
+        Dim strql As String
+
+        strql = "SELECT Maximum_Useful_Chamber_Area_m2 FROM Maximum_Useful_Chamber WHERE Useful_Load_kg =" + Wfelimotxt.Text + ""
+
+        Dim cmd As New OleDbCommand(strql, conn)
+        Dim myreader As OleDbDataReader
+
+        myreader = cmd.ExecuteReader
+
+        If (myreader.Read()) Then
+
+            MegEmbadtxt.Text = myreader("Maximum_Useful_Chamber_Area_m2")
+
+
+        End If
+
+        myreader.Close()
+        conn.Close()
+Err:
+        Exit Sub
+
+    End Sub
 End Class

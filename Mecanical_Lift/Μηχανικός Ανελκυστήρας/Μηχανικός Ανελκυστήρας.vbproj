@@ -113,6 +113,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_Table_Max_UseFull_Chamber_AreaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_Table_Max_UseFull_Chamber_AreaDataSet.vb">
+      <DependentUpon>_Table_Max_UseFull_Chamber_AreaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_Table_Min_UseFull_Chamber_AreaDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
