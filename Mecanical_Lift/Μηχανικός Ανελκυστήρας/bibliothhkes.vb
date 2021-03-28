@@ -5,6 +5,7 @@
         Me.Maximum_Useful_ChamberTableAdapter.Fill(Me._Table_Max_UseFull_Chamber_AreaDataSet.Maximum_Useful_Chamber)
         'TODO: This line of code loads data into the '_Table_Min_UseFull_Chamber_AreaDataSet.Minimum_Useful_Chamber' table. You can move, or remove it, as needed.
         Me.Minimum_Useful_ChamberTableAdapter.Fill(Me._Table_Min_UseFull_Chamber_AreaDataSet.Minimum_Useful_Chamber)
+
     End Sub
 
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
@@ -58,13 +59,13 @@ Errr:
 
         If TabControl1.SelectedTab.Text = "TabPage1" Then
 
-            TableMinUseFullChamberAreaDataSetBindingSource.EndEdit()
+            MinimumUsefulChamberBindingSource.EndEdit()
             Minimum_Useful_ChamberTableAdapter.Update(_Table_Min_UseFull_Chamber_AreaDataSet.Minimum_Useful_Chamber)
             MessageBox.Show("Η προσθήκη ήταν επιτυχής!")
 
         ElseIf TabControl1.SelectedTab.Text = "TabPage2" Then
 
-            TableMaxUseFullChamberAreaDataSetBindingSource.EndEdit()
+            MaximumUsefulChamberBindingSource.EndEdit()
             Maximum_Useful_ChamberTableAdapter.Update(_Table_Max_UseFull_Chamber_AreaDataSet.Maximum_Useful_Chamber)
             MessageBox.Show("Η προσθήκη ήταν επιτυχής!")
 

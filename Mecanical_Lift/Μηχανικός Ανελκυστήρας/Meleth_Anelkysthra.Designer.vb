@@ -62,6 +62,8 @@ Partial Class Meleth_Anelkysthra
         Me.anarthsh2pros1 = New System.Windows.Forms.CheckBox()
         Me.anarthsh1pros1 = New System.Windows.Forms.CheckBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.YpsosKtirioutxt = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.ArithmAtomwntxt = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -77,8 +79,6 @@ Partial Class Meleth_Anelkysthra
         Me.PreviousCentralTab1 = New System.Windows.Forms.Button()
         Me.NextCentralTab1 = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.YpsosKtirioutxt = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.freatio_img, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -514,6 +514,26 @@ Partial Class Meleth_Anelkysthra
         Me.Panel3.Size = New System.Drawing.Size(442, 116)
         Me.Panel3.TabIndex = 7
         '
+        'YpsosKtirioutxt
+        '
+        Me.YpsosKtirioutxt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.YpsosKtirioutxt.ForeColor = System.Drawing.Color.Red
+        Me.YpsosKtirioutxt.Location = New System.Drawing.Point(205, 81)
+        Me.YpsosKtirioutxt.Name = "YpsosKtirioutxt"
+        Me.YpsosKtirioutxt.Size = New System.Drawing.Size(35, 13)
+        Me.YpsosKtirioutxt.TabIndex = 6
+        Me.YpsosKtirioutxt.Text = "-"
+        Me.YpsosKtirioutxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(11, 81)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(119, 13)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "Ύψος Κτιρίου: h [ m ] ="
+        '
         'ArithmAtomwntxt
         '
         Me.ArithmAtomwntxt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
@@ -671,26 +691,6 @@ Partial Class Meleth_Anelkysthra
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(952, 50)
         Me.Panel6.TabIndex = 10
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(11, 81)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(119, 13)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Ύψος Κτιρίου: h [ m ] ="
-        '
-        'YpsosKtirioutxt
-        '
-        Me.YpsosKtirioutxt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.YpsosKtirioutxt.ForeColor = System.Drawing.Color.Red
-        Me.YpsosKtirioutxt.Location = New System.Drawing.Point(205, 81)
-        Me.YpsosKtirioutxt.Name = "YpsosKtirioutxt"
-        Me.YpsosKtirioutxt.Size = New System.Drawing.Size(35, 13)
-        Me.YpsosKtirioutxt.TabIndex = 6
-        Me.YpsosKtirioutxt.Text = "-"
-        Me.YpsosKtirioutxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Meleth_Anelkysthra
         '

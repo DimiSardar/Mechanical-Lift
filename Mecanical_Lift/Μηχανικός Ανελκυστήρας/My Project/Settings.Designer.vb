@@ -58,10 +58,10 @@ Namespace My
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
          Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\GitHub\Mechanical Lift\Mecanica"& _ 
-            "l_Lift\Libraries\DataAccess_Libraries\Table.Max_UseFull_Chamber_Area.accdb""")>  _
-        Public ReadOnly Property Table_Max_UseFull_Chamber_AreaConnectionString() As String
+            "l_Lift\Libraries\DataAccess_Libraries\Table.Min_UseFull_Chamber_Area.accdb""")>  _
+        Public ReadOnly Property Table_Min_UseFull_Chamber_AreaConnectionString() As String
             Get
-                Return CType(Me("Table_Max_UseFull_Chamber_AreaConnectionString"),String)
+                Return CType(Me("Table_Min_UseFull_Chamber_AreaConnectionString"),String)
             End Get
         End Property
         
@@ -69,10 +69,10 @@ Namespace My
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
          Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\GitHub\Mechanical Lift\Mecanica"& _ 
-            "l_Lift\Libraries\DataAccess_Libraries\Table.Min_UseFull_Chamber_Area.accdb""")>  _
-        Public ReadOnly Property Table_Min_UseFull_Chamber_AreaConnectionString() As String
+            "l_Lift\Libraries\DataAccess_Libraries\Table.Max_UseFull_Chamber_Area.accdb""")>  _
+        Public ReadOnly Property Table_Max_UseFull_Chamber_AreaConnectionString() As String
             Get
-                Return CType(Me("Table_Min_UseFull_Chamber_AreaConnectionString"),String)
+                Return CType(Me("Table_Max_UseFull_Chamber_AreaConnectionString"),String)
             End Get
         End Property
     End Class

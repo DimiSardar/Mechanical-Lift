@@ -775,29 +775,29 @@ Namespace _Table_Max_UseFull_Chamber_AreaDataSetTableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM `Maximum_Useful_Chamber` WHERE ((`Useful_ Load_kg` = ?) AND ((? = 1 A"& _ 
-                "ND `Maximum_Useful_Chamber_Area_m2` IS NULL) OR (`Maximum_Useful_Chamber_Area_m2"& _ 
-                "` = ?)))"
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM `Maximum_Useful_Chamber` WHERE ((`Useful_Load_kg` = ?) AND ((? = 1 AN"& _ 
+                "D `Maximum_Useful_Chamber_Area_m2` IS NULL) OR (`Maximum_Useful_Chamber_Area_m2`"& _ 
+                " = ?)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Useful__Load_kg", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Useful_ Load_kg", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Useful_Load_kg", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Useful_Load_kg", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Maximum_Useful_Chamber_Area_m2", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Maximum_Useful_Chamber_Area_m2", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Maximum_Useful_Chamber_Area_m2", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Maximum_Useful_Chamber_Area_m2", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.InsertCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO `Maximum_Useful_Chamber` (`Useful_ Load_kg`, `Maximum_Useful_Chamber_"& _ 
-                "Area_m2`) VALUES (?, ?)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `Maximum_Useful_Chamber` (`Useful_Load_kg`, `Maximum_Useful_Chamber_A"& _ 
+                "rea_m2`) VALUES (?, ?)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Useful__Load_kg", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Useful_ Load_kg", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Useful_Load_kg", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Useful_Load_kg", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Maximum_Useful_Chamber_Area_m2", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Maximum_Useful_Chamber_Area_m2", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand = New Global.System.Data.OleDb.OleDbCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE `Maximum_Useful_Chamber` SET `Useful_ Load_kg` = ?, `Maximum_Useful_Chambe"& _ 
-                "r_Area_m2` = ? WHERE ((`Useful_ Load_kg` = ?) AND ((? = 1 AND `Maximum_Useful_Ch"& _ 
-                "amber_Area_m2` IS NULL) OR (`Maximum_Useful_Chamber_Area_m2` = ?)))"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE `Maximum_Useful_Chamber` SET `Useful_Load_kg` = ?, `Maximum_Useful_Chamber"& _ 
+                "_Area_m2` = ? WHERE ((`Useful_Load_kg` = ?) AND ((? = 1 AND `Maximum_Useful_Cham"& _ 
+                "ber_Area_m2` IS NULL) OR (`Maximum_Useful_Chamber_Area_m2` = ?)))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Useful__Load_kg", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Useful_ Load_kg", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Useful_Load_kg", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Useful_Load_kg", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Maximum_Useful_Chamber_Area_m2", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Maximum_Useful_Chamber_Area_m2", Global.System.Data.DataRowVersion.Current, false, Nothing))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Useful__Load_kg", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Useful_ Load_kg", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Useful_Load_kg", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Useful_Load_kg", Global.System.Data.DataRowVersion.Original, false, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Maximum_Useful_Chamber_Area_m2", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Maximum_Useful_Chamber_Area_m2", Global.System.Data.DataRowVersion.Original, true, Nothing))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Maximum_Useful_Chamber_Area_m2", Global.System.Data.OleDb.OleDbType.[Double], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Maximum_Useful_Chamber_Area_m2", Global.System.Data.DataRowVersion.Original, false, Nothing))
         End Sub
@@ -815,8 +815,8 @@ Namespace _Table_Max_UseFull_Chamber_AreaDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.OleDb.OleDbCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.OleDb.OleDbCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT [Useful_ Load_kg], Maximum_Useful_Chamber_Area_m2 FROM Maximum_Useful_Cham"& _ 
-                "ber"
+            Me._commandCollection(0).CommandText = "SELECT Useful_Load_kg, Maximum_Useful_Chamber_Area_m2 FROM Maximum_Useful_Chamber"& _ 
+                ""
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -876,9 +876,9 @@ Namespace _Table_Max_UseFull_Chamber_AreaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_Useful__Load_kg As Global.System.Nullable(Of Double), ByVal Original_Maximum_Useful_Chamber_Area_m2 As Global.System.Nullable(Of Double)) As Integer
-            If (Original_Useful__Load_kg.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_Useful__Load_kg.Value,Double)
+        Public Overloads Overridable Function Delete(ByVal Original_Useful_Load_kg As Global.System.Nullable(Of Double), ByVal Original_Maximum_Useful_Chamber_Area_m2 As Global.System.Nullable(Of Double)) As Integer
+            If (Original_Useful_Load_kg.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_Useful_Load_kg.Value,Double)
             Else
                 Me.Adapter.DeleteCommand.Parameters(0).Value = Global.System.DBNull.Value
             End If
@@ -908,9 +908,9 @@ Namespace _Table_Max_UseFull_Chamber_AreaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal Useful__Load_kg As Global.System.Nullable(Of Double), ByVal Maximum_Useful_Chamber_Area_m2 As Global.System.Nullable(Of Double)) As Integer
-            If (Useful__Load_kg.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(Useful__Load_kg.Value,Double)
+        Public Overloads Overridable Function Insert(ByVal Useful_Load_kg As Global.System.Nullable(Of Double), ByVal Maximum_Useful_Chamber_Area_m2 As Global.System.Nullable(Of Double)) As Integer
+            If (Useful_Load_kg.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(Useful_Load_kg.Value,Double)
             Else
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             End If
@@ -938,9 +938,9 @@ Namespace _Table_Max_UseFull_Chamber_AreaDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal Useful__Load_kg As Global.System.Nullable(Of Double), ByVal Maximum_Useful_Chamber_Area_m2 As Global.System.Nullable(Of Double), ByVal Original_Useful__Load_kg As Global.System.Nullable(Of Double), ByVal Original_Maximum_Useful_Chamber_Area_m2 As Global.System.Nullable(Of Double)) As Integer
-            If (Useful__Load_kg.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(Useful__Load_kg.Value,Double)
+        Public Overloads Overridable Function Update(ByVal Useful_Load_kg As Global.System.Nullable(Of Double), ByVal Maximum_Useful_Chamber_Area_m2 As Global.System.Nullable(Of Double), ByVal Original_Useful_Load_kg As Global.System.Nullable(Of Double), ByVal Original_Maximum_Useful_Chamber_Area_m2 As Global.System.Nullable(Of Double)) As Integer
+            If (Useful_Load_kg.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(Useful_Load_kg.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(0).Value = Global.System.DBNull.Value
             End If
@@ -949,8 +949,8 @@ Namespace _Table_Max_UseFull_Chamber_AreaDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
             End If
-            If (Original_Useful__Load_kg.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(Original_Useful__Load_kg.Value,Double)
+            If (Original_Useful_Load_kg.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(Original_Useful_Load_kg.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
             End If
@@ -974,6 +974,14 @@ Namespace _Table_Max_UseFull_Chamber_AreaDataSetTableAdapters
                     Me.Adapter.UpdateCommand.Connection.Close
                 End If
             End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
+        Public Overloads Overridable Function Update(ByVal Maximum_Useful_Chamber_Area_m2 As Global.System.Nullable(Of Double), ByVal Original_Useful_Load_kg As Global.System.Nullable(Of Double), ByVal Original_Maximum_Useful_Chamber_Area_m2 As Global.System.Nullable(Of Double)) As Integer
+            Return Me.Update(Original_Useful_Load_kg, Maximum_Useful_Chamber_Area_m2, Original_Useful_Load_kg, Original_Maximum_Useful_Chamber_Area_m2)
         End Function
     End Class
     
