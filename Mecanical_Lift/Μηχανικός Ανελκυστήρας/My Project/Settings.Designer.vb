@@ -75,6 +75,17 @@ Namespace My
                 Return CType(Me("Table_Max_UseFull_Chamber_AreaConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\GitHub\Mechanical Lift\Mecanica"& _ 
+            "l_Lift\Libraries\DataAccess_Libraries\Table.Standard_Lift_Chambers.accdb""")>  _
+        Public ReadOnly Property Table_Standard_Lift_ChambersConnectionString() As String
+            Get
+                Return CType(Me("Table_Standard_Lift_ChambersConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

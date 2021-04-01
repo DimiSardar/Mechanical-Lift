@@ -1,6 +1,8 @@
 ﻿Public Class bibliothhkes
 
     Private Sub bibliothhkes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the '_Table_Standard_Lift_ChambersDataSet.Standard_Lift_Cabins' table. You can move, or remove it, as needed.
+        Me.Standard_Lift_CabinsTableAdapter.Fill(Me._Table_Standard_Lift_ChambersDataSet.Standard_Lift_Cabins)
         'TODO: This line of code loads data into the '_Table_Max_UseFull_Chamber_AreaDataSet.Maximum_Useful_Chamber' table. You can move, or remove it, as needed.
         Me.Maximum_Useful_ChamberTableAdapter.Fill(Me._Table_Max_UseFull_Chamber_AreaDataSet.Maximum_Useful_Chamber)
         'TODO: This line of code loads data into the '_Table_Min_UseFull_Chamber_AreaDataSet.Minimum_Useful_Chamber' table. You can move, or remove it, as needed.
@@ -13,6 +15,9 @@
             TabControl1.SelectTab(0)
         ElseIf ListBox1.SelectedItem = "Μεγ. Ωφέλ. Επιφ. Θαλάμ." Then
             TabControl1.SelectTab(1)
+        ElseIf ListBox1.SelectedItem = "Τυποποίηση θαλάμων" Then
+            TabControl1.SelectTab(2)
+
 
         End If
 
@@ -25,6 +30,8 @@
             MinimumUsefulChamberBindingSource.AddNew()
         ElseIf TabControl1.SelectedTab.Text = "TabPage2" Then
             MaximumUsefulChamberBindingSource.AddNew()
+        ElseIf TabControl1.SelectedTab.Text = "TabPage3" Then
+            StandardLiftCabinsBindingSource.AddNew()
 
 
         End If
@@ -43,7 +50,8 @@ Errr:
             MinimumUsefulChamberBindingSource.RemoveCurrent()
         ElseIf TabControl1.SelectedTab.Text = "TabPage2" Then
             MaximumUsefulChamberBindingSource.RemoveCurrent()
-
+        ElseIf TabControl1.SelectedTab.Text = "TabPage3" Then
+            StandardLiftCabinsBindingSource.RemoveCurrent()
 
         End If
 
@@ -67,6 +75,12 @@ Errr:
 
             MaximumUsefulChamberBindingSource.EndEdit()
             Maximum_Useful_ChamberTableAdapter.Update(_Table_Max_UseFull_Chamber_AreaDataSet.Maximum_Useful_Chamber)
+            MessageBox.Show("Η προσθήκη ήταν επιτυχής!")
+
+        ElseIf TabControl1.SelectedTab.Text = "TabPage3" Then
+
+            StandardLiftCabinsBindingSource.EndEdit()
+            Standard_Lift_CabinsTableAdapter.Update(_Table_Standard_Lift_ChambersDataSet.Standard_Lift_Cabins)
             MessageBox.Show("Η προσθήκη ήταν επιτυχής!")
 
         End If

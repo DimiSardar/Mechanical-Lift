@@ -118,6 +118,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_Table_Min_UseFull_Chamber_AreaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_Table_Standard_Lift_ChambersDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Table_Standard_Lift_ChambersDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="bibliothhkes.resx">
@@ -170,6 +175,17 @@
     </None>
     <None Include="_Table_Min_UseFull_Chamber_AreaDataSet.xss">
       <DependentUpon>_Table_Min_UseFull_Chamber_AreaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Table_Standard_Lift_ChambersDataSet.xsc">
+      <DependentUpon>_Table_Standard_Lift_ChambersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Table_Standard_Lift_ChambersDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Table_Standard_Lift_ChambersDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Table_Standard_Lift_ChambersDataSet.xss">
+      <DependentUpon>_Table_Standard_Lift_ChambersDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
