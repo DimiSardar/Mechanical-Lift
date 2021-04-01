@@ -56,7 +56,7 @@ Public Class Meleth_Anelkysthra
 
     Private Sub Wfelimotxt_TextChanged(sender As Object, e As EventArgs) Handles WfelimoFortioField.TextChanged, WfelimoFortiolist.SelectedIndexChanged
 
-        If WfelimoFortiolist.SelectedIndex = 0 Then
+        If WfelimoFortiolist.SelectedIndex = 0 And WfelimoFortioField.Text <> "" Then
             Wfelimotxt.Text = Val(WfelimoFortioField.Text) * 75
         ElseIf WfelimoFortiolist.SelectedIndex = 1 Then
             Wfelimotxt.Text = Val(WfelimoFortioField.Text)
@@ -69,7 +69,7 @@ Public Class Meleth_Anelkysthra
 
         Dim d As Double
 
-        If WfelimoFortiolist.SelectedIndex = 0 Then
+        If WfelimoFortiolist.SelectedIndex = 0 And WfelimoFortioField.Text <> "" Then
             ArithmAtomwntxt.Text = Val(WfelimoFortioField.Text)
         ElseIf WfelimoFortiolist.SelectedIndex = 1 Then
             d = (Val(WfelimoFortioField.Text) / 75)
@@ -119,8 +119,13 @@ Public Class Meleth_Anelkysthra
 
             ElaxEmbadtxt.ReadOnly = False
             ElaxEmbadtxt.Text = ""
+            elxtEmbtxt.Text = ""
+            ElaxEmbadtxt.BorderStyle = BorderStyle.Fixed3D
+            ElaxEmbadtxt.ForeColor = Color.Black
 
         ElseIf EmbadonBox.SelectedIndex = 1 Then
+
+            elxtEmbtxt.Text = ""
 
             ElaxEmbadtxt.Text = ""
 
@@ -142,9 +147,11 @@ Public Class Meleth_Anelkysthra
             If (myreader.Read()) Then
 
                 ElaxEmbadtxt.Text = myreader("Minimum_Useful_Chamber_Area_m2")
-
+                elxtEmbtxt.Text = "( Από πίνακα )"
                 ElaxEmbadtxt.ReadOnly = True
-                MegEmbadtxt.ReadOnly = True
+                ElaxEmbadtxt.BorderStyle = BorderStyle.None
+                ElaxEmbadtxt.ForeColor = Color.Green
+                ElaxEmbadtxt.BackColor = ElaxEmbadtxt.BackColor
 
             End If
 
@@ -165,8 +172,13 @@ Err:
 
             MegEmbadtxt.ReadOnly = False
             MegEmbadtxt.Text = ""
+            megEmbtxt.Text = ""
+            MegEmbadtxt.BorderStyle = BorderStyle.Fixed3D
+            MegEmbadtxt.ForeColor = Color.Black
 
         ElseIf EmbadonBox.SelectedIndex = 1 Then
+
+            megEmbtxt.Text = ""
 
             MegEmbadtxt.Text = ""
 
@@ -187,6 +199,11 @@ Err:
             If (myreader.Read()) Then
 
                 MegEmbadtxt.Text = myreader("Maximum_Useful_Chamber_Area_m2")
+                megEmbtxt.Text = "( Από πίνακα )"
+                MegEmbadtxt.ReadOnly = True
+                MegEmbadtxt.BorderStyle = BorderStyle.None
+                MegEmbadtxt.ForeColor = Color.Green
+                MegEmbadtxt.BackColor = MegEmbadtxt.BackColor
 
             ElseIf ArithmAtomwntxt.Text = 1 Then
                 MegEmbadtxt.Text = 0.37
@@ -223,8 +240,15 @@ Err:
             BathosField.ReadOnly = False
             PlatosField.Text = ""
             BathosField.Text = ""
+            PlatosField.BorderStyle = BorderStyle.Fixed3D
+            BathosField.BorderStyle = BorderStyle.Fixed3D
+            platTxt.Text = ""
+            bathosTxt.Text = ""
 
         ElseIf ThalamosBox.SelectedIndex = 1 Then
+
+            platTxt.Text = ""
+            bathosTxt.Text = ""
 
             PlatosField.Text = ""
             BathosField.Text = ""
@@ -252,6 +276,14 @@ Err:
                 BathosField.Text = myreader("Depth_mm")
                 PlatosField.ReadOnly = True
                 BathosField.ReadOnly = True
+                PlatosField.ForeColor = Color.Green
+                PlatosField.BackColor = PlatosField.BackColor
+                BathosField.ForeColor = Color.Green
+                BathosField.BackColor = BathosField.BackColor
+                PlatosField.BorderStyle = BorderStyle.None
+                BathosField.BorderStyle = BorderStyle.None
+                platTxt.Text = "( Από πίνακα )"
+                bathosTxt.Text = "( Από πίνακα )"
 
             End If
 
@@ -270,14 +302,17 @@ Err:
 
         If TestMode.Checked = True Then
 
-            'MhxEpanw
+            'MhxEpanw.Checked = True
             MhxKatw.Checked = True
 
-            'anarthsh1pros1
+            'anarthsh1pros1.Checked = True
             anarthsh2pros1.Checked = True
 
-            WfelimoFortiolist.SelectedIndex = 1
-            WfelimoFortioField.Text = 2000
+            ' WfelimoFortiolist.SelectedIndex = 1
+            ' WfelimoFortioField.Text = 2000
+
+            WfelimoFortiolist.SelectedIndex = 0
+            WfelimoFortioField.Text = 8
 
             TaxuthtaAnupswshs.Text = 0.64
 
@@ -320,8 +355,44 @@ Err:
 
             ThalamosBox.SelectedIndex = False
 
+            idibarosBox.Text = ""
+
         End If
 
     End Sub
 
+    Private Sub idibarosBox_TextChanged(sender As Object, e As EventArgs) Handles PlatosField.TextChanged, BathosField.TextChanged
+
+        Dim a, b, ee, temp As Integer
+
+        a = Val(PlatosField.Text) / 1000
+        b = Val(BathosField.Text) / 1000
+        ee = Val(a) * Val(b)
+
+        If Val(Wfelimotxt.Text) < 500 Then
+
+            temp = 300 + 100 * ee
+            idibarosBox.ForeColor = Color.Red
+            idibarosBox.BackColor = idibarosBox.BackColor
+            idibarosBox.Text = temp
+
+        ElseIf Val(Wfelimotxt.Text) >= 500 And Val(Wfelimotxt.Text) <= 1000 Then
+
+            temp = 300 + 125 * ee
+            idibarosBox.ForeColor = Color.Red
+            idibarosBox.BackColor = idibarosBox.BackColor
+            idibarosBox.Text = temp
+
+        ElseIf Val(Wfelimotxt.Text) > 1000 Then
+
+            temp = 300 + 150 * ee
+            idibarosBox.ForeColor = Color.Red
+            idibarosBox.BackColor = idibarosBox.BackColor
+            idibarosBox.Text = temp
+
+        End If
+
+
+
+    End Sub
 End Class
