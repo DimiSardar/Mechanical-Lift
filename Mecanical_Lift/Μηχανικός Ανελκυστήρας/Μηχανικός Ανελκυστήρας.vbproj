@@ -189,6 +189,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\blank_image.png" />
     <Content Include="Resources\freatio_epanw.png" />
     <None Include="Resources\freatio_katw1.png" />
     <None Include="Resources\freatio_epanw1.png" />

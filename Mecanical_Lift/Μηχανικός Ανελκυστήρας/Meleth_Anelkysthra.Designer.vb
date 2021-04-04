@@ -29,13 +29,12 @@ Partial Class Meleth_Anelkysthra
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.AnalytBarosCheck = New System.Windows.Forms.CheckBox()
+        Me.IdioBarosCheck = New System.Windows.Forms.CheckBox()
         Me.idibarosBox = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.BarosThalamBox = New System.Windows.Forms.TextBox()
         Me.AnalytikaBarosThalam = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.BarosSasiBox = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.freatio_img = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -56,10 +55,11 @@ Partial Class Meleth_Anelkysthra
         Me.elxtEmbtxt = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.PosostoAntistath = New System.Windows.Forms.TextBox()
+        Me.BarosAntibarouBox = New System.Windows.Forms.TextBox()
+        Me.PosostoAntistathmishs = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TestMode = New System.Windows.Forms.CheckBox()
         Me.YpsosOrofwnList = New System.Windows.Forms.ComboBox()
@@ -170,87 +170,77 @@ Partial Class Meleth_Anelkysthra
         'Panel7
         '
         Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel7.Controls.Add(Me.AnalytBarosCheck)
+        Me.Panel7.Controls.Add(Me.IdioBarosCheck)
         Me.Panel7.Controls.Add(Me.idibarosBox)
-        Me.Panel7.Controls.Add(Me.TextBox3)
-        Me.Panel7.Controls.Add(Me.TextBox1)
+        Me.Panel7.Controls.Add(Me.BarosThalamBox)
         Me.Panel7.Controls.Add(Me.AnalytikaBarosThalam)
-        Me.Panel7.Controls.Add(Me.Label4)
-        Me.Panel7.Controls.Add(Me.Label7)
-        Me.Panel7.Controls.Add(Me.Label12)
+        Me.Panel7.Controls.Add(Me.BarosSasiBox)
         Me.Panel7.Controls.Add(Me.Label15)
-        Me.Panel7.Location = New System.Drawing.Point(498, 341)
+        Me.Panel7.Location = New System.Drawing.Point(498, 351)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(442, 137)
+        Me.Panel7.Size = New System.Drawing.Size(442, 119)
         Me.Panel7.TabIndex = 13
+        '
+        'AnalytBarosCheck
+        '
+        Me.AnalytBarosCheck.Location = New System.Drawing.Point(14, 58)
+        Me.AnalytBarosCheck.Name = "AnalytBarosCheck"
+        Me.AnalytBarosCheck.Size = New System.Drawing.Size(171, 48)
+        Me.AnalytBarosCheck.TabIndex = 6
+        Me.AnalytBarosCheck.Text = " Βάρος Σασί: Pσ [ kg ]  =  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " Βάρος Θαλάμου: Pθ [ kg ]  =  "
+        Me.AnalytBarosCheck.UseVisualStyleBackColor = True
+        '
+        'IdioBarosCheck
+        '
+        Me.IdioBarosCheck.AutoSize = True
+        Me.IdioBarosCheck.Location = New System.Drawing.Point(14, 18)
+        Me.IdioBarosCheck.Name = "IdioBarosCheck"
+        Me.IdioBarosCheck.Size = New System.Drawing.Size(184, 17)
+        Me.IdioBarosCheck.TabIndex = 5
+        Me.IdioBarosCheck.Text = "Ίδιο Βάρος Θαλάμου: P [ kg ]  =  "
+        Me.IdioBarosCheck.UseVisualStyleBackColor = True
         '
         'idibarosBox
         '
         Me.idibarosBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.idibarosBox.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.idibarosBox.Location = New System.Drawing.Point(206, 16)
+        Me.idibarosBox.Location = New System.Drawing.Point(206, 19)
         Me.idibarosBox.Name = "idibarosBox"
-        Me.idibarosBox.ReadOnly = True
         Me.idibarosBox.Size = New System.Drawing.Size(36, 13)
         Me.idibarosBox.TabIndex = 4
         Me.idibarosBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TextBox3
+        'BarosThalamBox
         '
-        Me.TextBox3.Location = New System.Drawing.Point(206, 101)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(36, 20)
-        Me.TextBox3.TabIndex = 4
-        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(206, 77)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(36, 20)
-        Me.TextBox1.TabIndex = 4
-        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.BarosThalamBox.Location = New System.Drawing.Point(206, 84)
+        Me.BarosThalamBox.Name = "BarosThalamBox"
+        Me.BarosThalamBox.Size = New System.Drawing.Size(36, 20)
+        Me.BarosThalamBox.TabIndex = 4
+        Me.BarosThalamBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'AnalytikaBarosThalam
         '
-        Me.AnalytikaBarosThalam.Location = New System.Drawing.Point(300, 77)
+        Me.AnalytikaBarosThalam.Location = New System.Drawing.Point(298, 58)
         Me.AnalytikaBarosThalam.Name = "AnalytikaBarosThalam"
-        Me.AnalytikaBarosThalam.Size = New System.Drawing.Size(104, 44)
+        Me.AnalytikaBarosThalam.Size = New System.Drawing.Size(104, 46)
         Me.AnalytikaBarosThalam.TabIndex = 3
         Me.AnalytikaBarosThalam.Text = "Με αναλυτικό τρόπο!"
         Me.AnalytikaBarosThalam.UseVisualStyleBackColor = True
         '
-        'Label4
+        'BarosSasiBox
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(11, 16)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(165, 13)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = "Ίδιο Βάρος Θαλάμου: P [ kg ]  =  "
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(13, 80)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(133, 13)
-        Me.Label7.TabIndex = 1
-        Me.Label7.Text = " Βάρος Σασί: Pσ [ kg ]  =  "
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(13, 104)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(152, 13)
-        Me.Label12.TabIndex = 1
-        Me.Label12.Text = " Βάρος Θαλάμου: Pθ [ kg ]  =  "
+        Me.BarosSasiBox.Location = New System.Drawing.Point(206, 59)
+        Me.BarosSasiBox.Name = "BarosSasiBox"
+        Me.BarosSasiBox.Size = New System.Drawing.Size(36, 20)
+        Me.BarosSasiBox.TabIndex = 4
+        Me.BarosSasiBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.ForeColor = System.Drawing.Color.DimGray
-        Me.Label15.Location = New System.Drawing.Point(274, 12)
+        Me.Label15.Location = New System.Drawing.Point(274, 19)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(143, 13)
         Me.Label15.TabIndex = 2
@@ -259,7 +249,7 @@ Partial Class Meleth_Anelkysthra
         'freatio_img
         '
         Me.freatio_img.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.freatio_img.Image = Global.Μηχανικός_Ανελκυστήρας.My.Resources.Resource1.freatio_epanw
+        Me.freatio_img.Image = Global.Μηχανικός_Ανελκυστήρας.My.Resources.Resource1.blank_image
         Me.freatio_img.Location = New System.Drawing.Point(234, 23)
         Me.freatio_img.Name = "freatio_img"
         Me.freatio_img.Size = New System.Drawing.Size(258, 344)
@@ -288,7 +278,7 @@ Partial Class Meleth_Anelkysthra
         Me.Panel1.Controls.Add(Me.Label20)
         Me.Panel1.Location = New System.Drawing.Point(498, 124)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(442, 211)
+        Me.Panel1.Size = New System.Drawing.Size(442, 221)
         Me.Panel1.TabIndex = 4
         '
         'MegEmbadtxt
@@ -312,7 +302,7 @@ Partial Class Meleth_Anelkysthra
         'BathosField
         '
         Me.BathosField.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.BathosField.Location = New System.Drawing.Point(206, 180)
+        Me.BathosField.Location = New System.Drawing.Point(206, 185)
         Me.BathosField.Name = "BathosField"
         Me.BathosField.Size = New System.Drawing.Size(36, 20)
         Me.BathosField.TabIndex = 11
@@ -321,7 +311,7 @@ Partial Class Meleth_Anelkysthra
         'PlatosField
         '
         Me.PlatosField.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.PlatosField.Location = New System.Drawing.Point(206, 155)
+        Me.PlatosField.Location = New System.Drawing.Point(206, 160)
         Me.PlatosField.Name = "PlatosField"
         Me.PlatosField.Size = New System.Drawing.Size(36, 20)
         Me.PlatosField.TabIndex = 11
@@ -330,7 +320,7 @@ Partial Class Meleth_Anelkysthra
         'Label25
         '
         Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(11, 183)
+        Me.Label25.Location = New System.Drawing.Point(11, 188)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(99, 13)
         Me.Label25.TabIndex = 10
@@ -339,7 +329,7 @@ Partial Class Meleth_Anelkysthra
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(11, 158)
+        Me.Label24.Location = New System.Drawing.Point(11, 163)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(108, 13)
         Me.Label24.TabIndex = 10
@@ -361,7 +351,7 @@ Partial Class Meleth_Anelkysthra
         Me.ThalamosBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ThalamosBox.FormattingEnabled = True
         Me.ThalamosBox.Items.AddRange(New Object() {"Άλλες Τιμές ( κατά προτίμηση ):", "Τυποποιημένες Τιμές  (από πίνακα ): "})
-        Me.ThalamosBox.Location = New System.Drawing.Point(14, 119)
+        Me.ThalamosBox.Location = New System.Drawing.Point(14, 124)
         Me.ThalamosBox.Name = "ThalamosBox"
         Me.ThalamosBox.Size = New System.Drawing.Size(249, 21)
         Me.ThalamosBox.Sorted = True
@@ -390,7 +380,7 @@ Partial Class Meleth_Anelkysthra
         '
         Me.Label26.AutoSize = True
         Me.Label26.ForeColor = System.Drawing.Color.DimGray
-        Me.Label26.Location = New System.Drawing.Point(284, 122)
+        Me.Label26.Location = New System.Drawing.Point(284, 127)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(121, 13)
         Me.Label26.TabIndex = 2
@@ -400,7 +390,7 @@ Partial Class Meleth_Anelkysthra
         '
         Me.bathosTxt.AutoSize = True
         Me.bathosTxt.ForeColor = System.Drawing.Color.Green
-        Me.bathosTxt.Location = New System.Drawing.Point(309, 183)
+        Me.bathosTxt.Location = New System.Drawing.Point(309, 188)
         Me.bathosTxt.Name = "bathosTxt"
         Me.bathosTxt.Size = New System.Drawing.Size(75, 13)
         Me.bathosTxt.TabIndex = 2
@@ -420,7 +410,7 @@ Partial Class Meleth_Anelkysthra
         '
         Me.platTxt.AutoSize = True
         Me.platTxt.ForeColor = System.Drawing.Color.Green
-        Me.platTxt.Location = New System.Drawing.Point(309, 158)
+        Me.platTxt.Location = New System.Drawing.Point(309, 163)
         Me.platTxt.Name = "platTxt"
         Me.platTxt.Size = New System.Drawing.Size(75, 13)
         Me.platTxt.TabIndex = 2
@@ -448,30 +438,34 @@ Partial Class Meleth_Anelkysthra
         'Panel4
         '
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel4.Controls.Add(Me.TextBox4)
-        Me.Panel4.Controls.Add(Me.PosostoAntistath)
+        Me.Panel4.Controls.Add(Me.BarosAntibarouBox)
+        Me.Panel4.Controls.Add(Me.PosostoAntistathmishs)
         Me.Panel4.Controls.Add(Me.Label10)
         Me.Panel4.Controls.Add(Me.Label9)
-        Me.Panel4.Location = New System.Drawing.Point(498, 484)
+        Me.Panel4.Controls.Add(Me.Label7)
+        Me.Panel4.Location = New System.Drawing.Point(498, 476)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(442, 69)
+        Me.Panel4.Size = New System.Drawing.Size(442, 77)
         Me.Panel4.TabIndex = 8
         '
-        'TextBox4
+        'BarosAntibarouBox
         '
-        Me.TextBox4.Location = New System.Drawing.Point(206, 38)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(36, 20)
-        Me.TextBox4.TabIndex = 2
-        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.BarosAntibarouBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.BarosAntibarouBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BarosAntibarouBox.Location = New System.Drawing.Point(206, 44)
+        Me.BarosAntibarouBox.Name = "BarosAntibarouBox"
+        Me.BarosAntibarouBox.ReadOnly = True
+        Me.BarosAntibarouBox.Size = New System.Drawing.Size(36, 13)
+        Me.BarosAntibarouBox.TabIndex = 2
+        Me.BarosAntibarouBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'PosostoAntistath
+        'PosostoAntistathmishs
         '
-        Me.PosostoAntistath.Location = New System.Drawing.Point(206, 14)
-        Me.PosostoAntistath.Name = "PosostoAntistath"
-        Me.PosostoAntistath.Size = New System.Drawing.Size(36, 20)
-        Me.PosostoAntistath.TabIndex = 2
-        Me.PosostoAntistath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.PosostoAntistathmishs.Location = New System.Drawing.Point(206, 14)
+        Me.PosostoAntistathmishs.Name = "PosostoAntistathmishs"
+        Me.PosostoAntistathmishs.Size = New System.Drawing.Size(36, 20)
+        Me.PosostoAntistathmishs.TabIndex = 2
+        Me.PosostoAntistathmishs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label10
         '
@@ -485,11 +479,21 @@ Partial Class Meleth_Anelkysthra
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(13, 41)
+        Me.Label9.Location = New System.Drawing.Point(13, 44)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(153, 13)
         Me.Label9.TabIndex = 5
         Me.Label9.Text = "Βάρος Αντιβάρου: G [ kg ]  =  "
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.ForeColor = System.Drawing.Color.DimGray
+        Me.Label7.Location = New System.Drawing.Point(293, 17)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(112, 13)
+        Me.Label7.TabIndex = 2
+        Me.Label7.Text = "( Συνήθως: 0,4 ή 0,5 )"
         '
         'Panel2
         '
@@ -742,7 +746,7 @@ Partial Class Meleth_Anelkysthra
         'imglift
         '
         Me.imglift.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.imglift.Image = Global.Μηχανικός_Ανελκυστήρας.My.Resources.Resource1._1προς1_Μηχανικός
+        Me.imglift.Image = Global.Μηχανικός_Ανελκυστήρας.My.Resources.Resource1.blank_image
         Me.imglift.Location = New System.Drawing.Point(6, 23)
         Me.imglift.Name = "imglift"
         Me.imglift.Size = New System.Drawing.Size(222, 344)
@@ -905,14 +909,11 @@ Partial Class Meleth_Anelkysthra
     Friend WithEvents WfelimoFortioField As TextBox
     Friend WithEvents TaxuthtaAnupswshs As TextBox
     Friend WithEvents YpsosKtirioy As TextBox
-    Friend WithEvents Label4 As Label
     Friend WithEvents AnalytikaBarosThalam As Button
-    Friend WithEvents Label7 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents PosostoAntistath As TextBox
-    Friend WithEvents Label12 As Label
+    Friend WithEvents PosostoAntistathmishs As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents freatio_img As PictureBox
@@ -953,8 +954,11 @@ Partial Class Meleth_Anelkysthra
     Friend WithEvents Wfelimotxt As TextBox
     Friend WithEvents Panel7 As Panel
     Friend WithEvents idibarosBox As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents BarosThalamBox As TextBox
+    Friend WithEvents BarosSasiBox As TextBox
+    Friend WithEvents BarosAntibarouBox As TextBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents AnalytBarosCheck As CheckBox
+    Friend WithEvents IdioBarosCheck As CheckBox
+    Friend WithEvents Label7 As Label
 End Class

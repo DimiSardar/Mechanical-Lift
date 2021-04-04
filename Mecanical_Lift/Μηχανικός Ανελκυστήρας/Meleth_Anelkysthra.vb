@@ -8,6 +8,8 @@ Public Class Meleth_Anelkysthra
         YpsosOrofwnList.SelectedIndex = (1)
         EmbadonBox.SelectedIndex = (1)
         ThalamosBox.SelectedIndex = (1)
+        IdioBarosCheck.Checked = True
+        PosostoAntistathmishs.Text = 0.5
 
     End Sub
 
@@ -18,9 +20,19 @@ Public Class Meleth_Anelkysthra
 
     Private Sub NextCentralTab_Click(sender As Object, e As EventArgs) Handles NextCentralTab1.Click
 
-        If Not CentralTabControl.SelectedTab Is TabPage5 Then
+        If (MhxEpanw.Checked = False And MhxKatw.Checked = False) Or (anarthsh1pros1.Checked = False And anarthsh2pros1.Checked = False) Or WfelimoFortiolist.Text = "" _
+            Or YpsosOrofwnList.Text = "" Or EmbadonBox.Text = "" Or ThalamosBox.Text = "" Or (IdioBarosCheck.Checked = False And AnalytBarosCheck.Checked = False) _
+           Or Wfelimotxt.Text = "" Or ArithmAtomwntxt.Text = "" Or YpsosKtirioutxt.Text = "" Or (ElaxEmbadtxt.Text = "" And MegEmbadtxt.Text = "") Or (PlatosField.Text = "" And BathosField.Text = "") _
+           Or (idibarosBox.Text = "" And BarosSasiBox.Text = "" And BarosThalamBox.Text = "") Or PosostoAntistathmishs.Text = "" Or BarosAntibarouBox.Text = "" _
+           Or WfelimoFortioField.Text = "" Or TaxuthtaAnupswshs.Text = "" Or YpsosKtirioy.Text = "" Then
 
-            CentralTabControl.SelectedIndex = CentralTabControl.SelectedIndex + 1
+            MessageBox.Show("Συμπληρώστε όλα τα πεδία για να συνεχίσετε!")
+
+        Else
+
+            If Not CentralTabControl.SelectedTab Is TabPage5 Then
+                CentralTabControl.SelectedIndex = CentralTabControl.SelectedIndex + 1
+            End If
 
         End If
 
@@ -41,6 +53,9 @@ Public Class Meleth_Anelkysthra
         If anarthsh1pros1.Checked = True Then
             anarthsh2pros1.Checked = False
             imglift.Image = My.Resources.Resource1._1προς1_Μηχανικός
+
+        ElseIf anarthsh1pros1.Checked = False And anarthsh2pros1.Checked = False Then
+            imglift.Image = My.Resources.Resource1.blank_image
         End If
 
     End Sub
@@ -50,6 +65,9 @@ Public Class Meleth_Anelkysthra
         If anarthsh2pros1.Checked = True Then
             anarthsh1pros1.Checked = False
             imglift.Image = My.Resources.Resource1._2προς1_Μηχανικός2
+
+        ElseIf anarthsh1pros1.Checked = False And anarthsh2pros1.Checked = False Then
+            imglift.Image = My.Resources.Resource1.blank_image
         End If
 
     End Sub
@@ -100,6 +118,8 @@ Public Class Meleth_Anelkysthra
         If MhxEpanw.Checked = True Then
             MhxKatw.Checked = False
             freatio_img.Image = My.Resources.Resource1.freatio_epanw
+        ElseIf MhxEpanw.Checked = False And MhxKatw.Checked = False Then
+            freatio_img.Image = My.Resources.Resource1.blank_image
         End If
 
     End Sub
@@ -109,6 +129,8 @@ Public Class Meleth_Anelkysthra
         If MhxKatw.Checked = True Then
             MhxEpanw.Checked = False
             freatio_img.Image = My.Resources.Resource1.freatio_katw
+        ElseIf MhxEpanw.Checked = False And MhxKatw.Checked = False Then
+            freatio_img.Image = My.Resources.Resource1.blank_image
         End If
 
     End Sub
@@ -236,6 +258,8 @@ Err:
 
         If ThalamosBox.SelectedIndex = 0 Then
 
+            PlatosField.ForeColor = Color.Black
+            BathosField.ForeColor = Color.Black
             PlatosField.ReadOnly = False
             BathosField.ReadOnly = False
             PlatosField.Text = ""
@@ -249,6 +273,12 @@ Err:
 
             platTxt.Text = ""
             bathosTxt.Text = ""
+
+            PlatosField.BorderStyle = BorderStyle.None
+            BathosField.BorderStyle = BorderStyle.None
+
+            PlatosField.ReadOnly = True
+            BathosField.ReadOnly = True
 
             PlatosField.Text = ""
             BathosField.Text = ""
@@ -274,14 +304,10 @@ Err:
 
                 PlatosField.Text = myreader("Width_mm")
                 BathosField.Text = myreader("Depth_mm")
-                PlatosField.ReadOnly = True
-                BathosField.ReadOnly = True
                 PlatosField.ForeColor = Color.Green
                 PlatosField.BackColor = PlatosField.BackColor
                 BathosField.ForeColor = Color.Green
                 BathosField.BackColor = BathosField.BackColor
-                PlatosField.BorderStyle = BorderStyle.None
-                BathosField.BorderStyle = BorderStyle.None
                 platTxt.Text = "( Από πίνακα )"
                 bathosTxt.Text = "( Από πίνακα )"
 
@@ -323,6 +349,7 @@ Err:
 
             ThalamosBox.SelectedIndex = 1
 
+            PosostoAntistathmishs.Text = 0.4
 
 
         ElseIf TestMode.Checked = False Then
@@ -357,11 +384,13 @@ Err:
 
             idibarosBox.Text = ""
 
+            PosostoAntistathmishs.Text = ""
+
         End If
 
     End Sub
 
-    Private Sub idibarosBox_TextChanged(sender As Object, e As EventArgs) Handles PlatosField.TextChanged, BathosField.TextChanged
+    Private Sub idibarosBox_TextChanged(sender As Object, e As EventArgs) Handles IdioBarosCheck.CheckedChanged, PlatosField.TextChanged, BathosField.TextChanged
 
         Dim a, b, ee, temp As Integer
 
@@ -369,30 +398,99 @@ Err:
         b = Val(BathosField.Text) / 1000
         ee = Val(a) * Val(b)
 
-        If Val(Wfelimotxt.Text) < 500 Then
-
+        If Val(Wfelimotxt.Text) < 500 And PlatosField.Text <> "" Or BathosField.Text <> "" Then
+            idibarosBox.Text = ""
             temp = 300 + 100 * ee
-            idibarosBox.ForeColor = Color.Red
-            idibarosBox.BackColor = idibarosBox.BackColor
             idibarosBox.Text = temp
 
-        ElseIf Val(Wfelimotxt.Text) >= 500 And Val(Wfelimotxt.Text) <= 1000 Then
-
+        ElseIf Val(Wfelimotxt.Text) >= 500 And Val(Wfelimotxt.Text) <= 1000 And PlatosField.Text <> "" Or BathosField.Text <> "" Then
+            idibarosBox.Text = ""
             temp = 300 + 125 * ee
-            idibarosBox.ForeColor = Color.Red
-            idibarosBox.BackColor = idibarosBox.BackColor
             idibarosBox.Text = temp
 
-        ElseIf Val(Wfelimotxt.Text) > 1000 Then
-
+        ElseIf Val(Wfelimotxt.Text) > 1000 And PlatosField.Text <> "" Or BathosField.Text <> "" Then
+            idibarosBox.Text = ""
             temp = 300 + 150 * ee
-            idibarosBox.ForeColor = Color.Red
-            idibarosBox.BackColor = idibarosBox.BackColor
             idibarosBox.Text = temp
 
         End If
 
+        If IdioBarosCheck.Checked = True Then
 
+            AnalytBarosCheck.Checked = False
+            BarosSasiBox.Text = ""
+            BarosThalamBox.Text = ""
+            BarosSasiBox.Enabled = False
+            BarosThalamBox.Enabled = False
+            AnalytBarosCheck.ForeColor = Color.Gray
+            AnalytBarosCheck.BackColor = AnalytBarosCheck.BackColor
+
+            idibarosBox.Enabled = True
+            idibarosBox.ReadOnly = True
+            idibarosBox.ForeColor = Color.Red
+            idibarosBox.BackColor = idibarosBox.BackColor
+            IdioBarosCheck.ForeColor = Color.Black
+            IdioBarosCheck.BackColor = IdioBarosCheck.BackColor
+
+        ElseIf IdioBarosCheck.Checked = False Then
+
+            IdioBarosCheck.Checked = False
+            idibarosBox.Text = ""
+            idibarosBox.Enabled = False
+            IdioBarosCheck.ForeColor = Color.Gray
+            IdioBarosCheck.BackColor = IdioBarosCheck.BackColor
+
+        End If
 
     End Sub
+
+    Private Sub AnalytBarosCheck_CheckedChanged(sender As Object, e As EventArgs) Handles AnalytBarosCheck.CheckedChanged, PlatosField.TextChanged, BathosField.TextChanged
+
+        If AnalytBarosCheck.Checked = True Then
+
+            BarosSasiBox.Enabled = True
+            BarosThalamBox.Enabled = True
+            AnalytBarosCheck.Checked = True
+            AnalytBarosCheck.ForeColor = Color.Black
+            AnalytBarosCheck.BackColor = AnalytBarosCheck.BackColor
+
+            IdioBarosCheck.Checked = False
+            idibarosBox.Text = ""
+            idibarosBox.Enabled = False
+            IdioBarosCheck.ForeColor = Color.Gray
+            IdioBarosCheck.BackColor = IdioBarosCheck.BackColor
+
+        ElseIf AnalytBarosCheck.Checked = False Then
+
+            AnalytBarosCheck.Checked = False
+            BarosSasiBox.Text = ""
+            BarosThalamBox.Text = ""
+            BarosSasiBox.Enabled = False
+            BarosThalamBox.Enabled = False
+            AnalytBarosCheck.ForeColor = Color.Gray
+            AnalytBarosCheck.BackColor = AnalytBarosCheck.BackColor
+
+        End If
+
+    End Sub
+
+    Private Sub PosostoAntistathmishs_TextChanged(sender As Object, e As EventArgs) Handles PosostoAntistathmishs.TextChanged, idibarosBox.TextChanged
+
+        If PosostoAntistathmishs.Text <> "" And Wfelimotxt.Text <> "" And idibarosBox.Text <> "" Then
+
+            BarosAntibarouBox.Text = Val(idibarosBox.Text) + Val(Wfelimotxt.Text) * Val(PosostoAntistathmishs.Text)
+
+            BarosAntibarouBox.ReadOnly = True
+            BarosAntibarouBox.ForeColor = Color.Red
+            BarosAntibarouBox.BackColor = BarosAntibarouBox.BackColor
+
+        ElseIf PosostoAntistathmishs.Text = "" Then
+
+            BarosAntibarouBox.Text = ""
+
+        End If
+
+    End Sub
+
+
 End Class
