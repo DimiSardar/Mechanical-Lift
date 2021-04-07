@@ -221,9 +221,9 @@ Partial Class Meleth_Anelkysthra
         '
         'AnalytikaBarosThalam
         '
-        Me.AnalytikaBarosThalam.Location = New System.Drawing.Point(298, 58)
+        Me.AnalytikaBarosThalam.Location = New System.Drawing.Point(298, 59)
         Me.AnalytikaBarosThalam.Name = "AnalytikaBarosThalam"
-        Me.AnalytikaBarosThalam.Size = New System.Drawing.Size(104, 46)
+        Me.AnalytikaBarosThalam.Size = New System.Drawing.Size(97, 45)
         Me.AnalytikaBarosThalam.TabIndex = 3
         Me.AnalytikaBarosThalam.Text = "Με αναλυτικό τρόπο!"
         Me.AnalytikaBarosThalam.UseVisualStyleBackColor = True

@@ -81,10 +81,10 @@
     <Compile Include="bibliothhkes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="AnalytikoBarosThalamou.Designer.vb">
+      <DependentUpon>AnalytikoBarosThalamou.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="AnalytikoBarosThalamou.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Meleth_Anelkysthra.Designer.vb">
@@ -134,8 +134,8 @@
     <EmbeddedResource Include="bibliothhkes.resx">
       <DependentUpon>bibliothhkes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="AnalytikoBarosThalamou.resx">
+      <DependentUpon>AnalytikoBarosThalamou.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Meleth_Anelkysthra.resx">
       <DependentUpon>Meleth_Anelkysthra.vb</DependentUpon>

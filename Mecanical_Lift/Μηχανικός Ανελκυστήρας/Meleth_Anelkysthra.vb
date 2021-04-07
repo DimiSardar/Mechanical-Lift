@@ -322,6 +322,7 @@ Err:
         Else
         End If
 
+
     End Sub
 
     Private Sub TestMode_CheckedChanged(sender As Object, e As EventArgs) Handles TestMode.CheckedChanged
@@ -346,8 +347,14 @@ Err:
             YpsosKtirioy.Text = 7
 
             EmbadonBox.SelectedIndex = 1
+            'EmbadonBox.SelectedIndex = 0
 
-            ThalamosBox.SelectedIndex = 1
+            ' ThalamosBox.SelectedIndex = 1
+            ThalamosBox.SelectedIndex = 0
+
+            PlatosField.Text = 1000
+            BathosField.Text = 1000
+
 
             PosostoAntistathmishs.Text = 0.4
 
@@ -444,10 +451,12 @@ Err:
 
     End Sub
 
-    Private Sub AnalytBarosCheck_CheckedChanged(sender As Object, e As EventArgs) Handles AnalytBarosCheck.CheckedChanged, PlatosField.TextChanged, BathosField.TextChanged
+    Private Sub AnalytBarosCheck_CheckedChanged(sender As Object, e As EventArgs) Handles AnalytBarosCheck.CheckedChanged, PlatosField.TextChanged, BathosField.TextChanged, AnalytikaBarosThalam.Click
 
         If AnalytBarosCheck.Checked = True Then
 
+            BarosSasiBox.Text = ""
+            BarosThalamBox.Text = ""
             BarosSasiBox.Enabled = True
             BarosThalamBox.Enabled = True
             AnalytBarosCheck.Checked = True
@@ -470,6 +479,10 @@ Err:
             AnalytBarosCheck.ForeColor = Color.Gray
             AnalytBarosCheck.BackColor = AnalytBarosCheck.BackColor
 
+            If BarosThalamBox.Text = "" Then
+                AnalytikaBarosThalam.ForeColor = Color.Black
+            End If
+
         End If
 
     End Sub
@@ -490,6 +503,24 @@ Err:
 
         End If
 
+    End Sub
+
+    Private Sub AnalytikaBarosThalam_Click(sender As Object, e As EventArgs) Handles IdioBarosCheck.CheckedChanged, AnalytBarosCheck.CheckedChanged
+
+        If IdioBarosCheck.Checked = False And AnalytBarosCheck.Checked = False Then
+            AnalytikaBarosThalam.Enabled = True
+        ElseIf IdioBarosCheck.Checked = True Or AnalytBarosCheck.Checked = True Then
+            AnalytikaBarosThalam.Enabled = False
+        End If
+
+    End Sub
+
+    Private Sub AnalytikaBarosThalam2_Click(sender As Object, e As EventArgs) Handles AnalytikaBarosThalam.Click
+
+        AnalytikaBarosThalam.Enabled = True
+        If IdioBarosCheck.Checked = False And AnalytBarosCheck.Checked = False Then
+            BarosThalamAnalytika.Show()
+        End If
     End Sub
 
 
