@@ -48,6 +48,7 @@ Partial Class BarosThalamAnalytika
         Me.SynexeiaStoProgramma = New System.Windows.Forms.Button()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.Ypsos_Thalamou = New System.Windows.Forms.NumericUpDown()
+        Me.BarosThalamTestMode = New System.Windows.Forms.CheckBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.Ypsos_Thalamou, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -312,12 +313,24 @@ Partial Class BarosThalamAnalytika
         Me.Ypsos_Thalamou.Size = New System.Drawing.Size(50, 20)
         Me.Ypsos_Thalamou.TabIndex = 11
         Me.Ypsos_Thalamou.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Ypsos_Thalamou.Value = New Decimal(New Integer() {21, 0, 0, 65536})
+        '
+        'BarosThalamTestMode
+        '
+        Me.BarosThalamTestMode.AutoSize = True
+        Me.BarosThalamTestMode.Location = New System.Drawing.Point(895, 672)
+        Me.BarosThalamTestMode.Name = "BarosThalamTestMode"
+        Me.BarosThalamTestMode.Size = New System.Drawing.Size(77, 17)
+        Me.BarosThalamTestMode.TabIndex = 12
+        Me.BarosThalamTestMode.Text = "Test Mode"
+        Me.BarosThalamTestMode.UseVisualStyleBackColor = True
         '
         'BarosThalamAnalytika
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(984, 701)
+        Me.Controls.Add(Me.BarosThalamTestMode)
         Me.Controls.Add(Me.Ypsos_Thalamou)
         Me.Controls.Add(Me.SynexeiaStoProgramma)
         Me.Controls.Add(Me.Label11)
@@ -362,4 +375,5 @@ Partial Class BarosThalamAnalytika
     Friend WithEvents SynexeiaStoProgramma As Button
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents Ypsos_Thalamou As NumericUpDown
+    Friend WithEvents BarosThalamTestMode As CheckBox
 End Class

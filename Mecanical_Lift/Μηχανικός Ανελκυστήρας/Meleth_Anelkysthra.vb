@@ -356,7 +356,7 @@ Err:
             BathosField.Text = 1000
 
 
-            PosostoAntistathmishs.Text = 0.4
+            PosostoAntistathmishs.Text = 0.5
 
 
         ElseIf TestMode.Checked = False Then
@@ -399,25 +399,25 @@ Err:
 
     Private Sub idibarosBox_TextChanged(sender As Object, e As EventArgs) Handles IdioBarosCheck.CheckedChanged, PlatosField.TextChanged, BathosField.TextChanged
 
-        Dim a, b, ee, temp As Integer
+        Dim a, b, ee, temp As String
 
         a = Val(PlatosField.Text) / 1000
         b = Val(BathosField.Text) / 1000
-        ee = Val(a) * Val(b)
+        ee = (a) * (b)
 
-        If Val(Wfelimotxt.Text) < 500 And PlatosField.Text <> "" Or BathosField.Text <> "" Then
+        If Val(Wfelimotxt.Text) < 500 And PlatosField.Text <> "" And BathosField.Text <> "" Then
             idibarosBox.Text = ""
-            temp = 300 + 100 * ee
+            temp = (300 + 100 * ee)
             idibarosBox.Text = temp
 
-        ElseIf Val(Wfelimotxt.Text) >= 500 And Val(Wfelimotxt.Text) <= 1000 And PlatosField.Text <> "" Or BathosField.Text <> "" Then
+        ElseIf Val(Wfelimotxt.Text) >= 500 And Val(Wfelimotxt.Text) <= 1000 And PlatosField.Text <> "" And BathosField.Text <> "" Then
             idibarosBox.Text = ""
-            temp = 300 + 125 * ee
+            temp = (300 + 125 * ee)
             idibarosBox.Text = temp
 
-        ElseIf Val(Wfelimotxt.Text) > 1000 And PlatosField.Text <> "" Or BathosField.Text <> "" Then
+        ElseIf Val(Wfelimotxt.Text) > 1000 And PlatosField.Text <> "" And BathosField.Text <> "" Then
             idibarosBox.Text = ""
-            temp = 300 + 150 * ee
+            temp = (300 + 150 * ee)
             idibarosBox.Text = temp
 
         End If
@@ -487,21 +487,48 @@ Err:
 
     End Sub
 
-    Private Sub PosostoAntistathmishs_TextChanged(sender As Object, e As EventArgs) Handles PosostoAntistathmishs.TextChanged, idibarosBox.TextChanged
+    Private Sub PosostoAntistathmishs_TextChanged(sender As Object, e As EventArgs) Handles PosostoAntistathmishs.TextChanged, idibarosBox.TextChanged, IdioBarosCheck.CheckedChanged, AnalytBarosCheck.CheckedChanged, BarosSasiBox.TextChanged, BarosThalamBox.TextChanged
 
-        If PosostoAntistathmishs.Text <> "" And Wfelimotxt.Text <> "" And idibarosBox.Text <> "" Then
+        On Error GoTo Errr
 
-            BarosAntibarouBox.Text = Val(idibarosBox.Text) + Val(Wfelimotxt.Text) * Val(PosostoAntistathmishs.Text)
+        Dim IdioBaross As Integer
+
+
+        If PosostoAntistathmishs.Text.Contains(".") Then
+
+            PosostoAntistathmishs.Text = PosostoAntistathmishs.Text.Replace(".", ",")
+            PosostoAntistathmishs.Focus()
+            PosostoAntistathmishs.Select(PosostoAntistathmishs.Text.Length, 0)
+
+        End If
+
+
+        If idibarosBox.Text <> "" And IdioBarosCheck.Checked = True Then
 
             BarosAntibarouBox.ReadOnly = True
             BarosAntibarouBox.ForeColor = Color.Red
             BarosAntibarouBox.BackColor = BarosAntibarouBox.BackColor
 
-        ElseIf PosostoAntistathmishs.Text = "" Then
+            BarosAntibarouBox.Text = Format(idibarosBox.Text) + Format(Wfelimotxt.Text) * Format(PosostoAntistathmishs.Text)
 
+        ElseIf BarosSasiBox.Text <> "" And BarosThalamBox.Text <> "" And AnalytBarosCheck.Checked = True Then
+
+
+            IdioBaross = Val(BarosSasiBox.Text) + Val(BarosThalamBox.Text)
+
+            BarosAntibarouBox.Text = Val(IdioBaross) + Format(Wfelimotxt.Text) * Format(PosostoAntistathmishs.Text)
+
+
+            BarosAntibarouBox.ReadOnly = True
+            BarosAntibarouBox.ForeColor = Color.Red
+            BarosAntibarouBox.BackColor = BarosAntibarouBox.BackColor
+
+        Else
             BarosAntibarouBox.Text = ""
 
         End If
+Errr:
+        Exit Sub
 
     End Sub
 
@@ -522,6 +549,5 @@ Err:
             BarosThalamAnalytika.Show()
         End If
     End Sub
-
 
 End Class

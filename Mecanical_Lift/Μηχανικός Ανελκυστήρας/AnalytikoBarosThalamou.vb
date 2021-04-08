@@ -3,21 +3,12 @@
     Private Sub Baros_Thalamou_TextChanged(sender As Object, e As EventArgs) Handles Orofh.SelectedIndexChanged, Pseudorofh.SelectedIndexChanged, Plaina.SelectedIndexChanged, Ypostrwma_Plainwn.SelectedIndexChanged, Epikalupsh_Plainwn.SelectedIndexChanged, Metalliko_Dapedo.SelectedIndexChanged, Ypostrwma_Dapedou.SelectedIndexChanged, Epistrwsh_Dapedou.SelectedIndexChanged
         On Error GoTo Errr
 
-        Orofh.SelectedIndex = 1
-        Pseudorofh.SelectedIndex = 0
-        Plaina.SelectedIndex = 1
-        Ypostrwma_Plainwn.SelectedIndex = 1
-        Epikalupsh_Plainwn.SelectedIndex = 1
-        Metalliko_Dapedo.SelectedIndex = 1
-        Ypostrwma_Dapedou.SelectedIndex = 1
-        Epistrwsh_Dapedou.SelectedIndex = 4
-        Ypsos_Thalamou.Value = 2.1
-
         Dim axb, orofi, pseudorofi, PlainaThalamou, YpostPlainwn, EpiklPlainwn, MetalDapedo, YpostDapedou, EpistDapedou As Integer
         Dim U, EmbPlainwn, platos, bathos, axbxu As String
 
         platos = Meleth_Anelkysthra.PlatosField.Text
         bathos = Meleth_Anelkysthra.BathosField.Text
+        Ypsos_Thalamou.Text = 2.1
         U = Ypsos_Thalamou.Text
         axb = (Val(platos) / 1000 * Val(bathos) / 1000)  ' Εμβαδόν δαπέδου
         axbxu = ((Val(platos) / 1000) + 2 * (Val(bathos) / 1000)) * U ' Εμβαδόν πλαϊνών
@@ -100,4 +91,35 @@ Errr:
         Me.Close()
 
     End Sub
+
+    Private Sub BarosThalamTestMode_CheckedChanged(sender As Object, e As EventArgs) Handles BarosThalamTestMode.CheckedChanged
+
+        If BarosThalamTestMode.Checked = True Then
+
+            Orofh.SelectedIndex = 1
+            Pseudorofh.SelectedIndex = 0
+            Plaina.SelectedIndex = 1
+            Ypostrwma_Plainwn.SelectedIndex = 1
+            Epikalupsh_Plainwn.SelectedIndex = 1
+            Metalliko_Dapedo.SelectedIndex = 1
+            Ypostrwma_Dapedou.SelectedIndex = 1
+            Epistrwsh_Dapedou.SelectedIndex = 4
+            Ypsos_Thalamou.Value = 2.1
+
+        ElseIf BarosThalamTestMode.Checked = False Then
+
+            Orofh.SelectedIndex = False
+            Pseudorofh.SelectedIndex = False
+            Plaina.SelectedIndex = False
+            Ypostrwma_Plainwn.SelectedIndex = False
+            Epikalupsh_Plainwn.SelectedIndex = False
+            Metalliko_Dapedo.SelectedIndex = False
+            Ypostrwma_Dapedou.SelectedIndex = False
+            Epistrwsh_Dapedou.SelectedIndex = False
+            Ypsos_Thalamou.Value = 0
+
+        End If
+
+    End Sub
+
 End Class

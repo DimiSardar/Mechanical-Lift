@@ -465,6 +465,7 @@ Partial Class Meleth_Anelkysthra
         Me.PosostoAntistathmishs.Name = "PosostoAntistathmishs"
         Me.PosostoAntistathmishs.Size = New System.Drawing.Size(36, 20)
         Me.PosostoAntistathmishs.TabIndex = 2
+        Me.PosostoAntistathmishs.Text = "0.5"
         Me.PosostoAntistathmishs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label10
