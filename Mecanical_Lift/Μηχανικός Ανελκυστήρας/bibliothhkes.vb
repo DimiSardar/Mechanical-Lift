@@ -3,11 +3,14 @@
     Private Sub bibliothhkes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the '_Table_Standard_Lift_ChambersDataSet.Standard_Lift_Cabins' table. You can move, or remove it, as needed.
         Me.Standard_Lift_CabinsTableAdapter.Fill(Me._Table_Standard_Lift_ChambersDataSet.Standard_Lift_Cabins)
+        'TODO: This line of code loads data into the '_Table_Standard_Lift_ChambersDataSet.Standard_Lift_Cabins' table. You can move, or remove it, as needed.
+        Me.Standard_Lift_CabinsTableAdapter.Fill(Me._Table_Standard_Lift_ChambersDataSet.Standard_Lift_Cabins)
+        'TODO: This line of code loads data into the '_Table_Standard_Lift_ChambersDataSet.Standard_Lift_Cabins' table. You can move, or remove it, as needed.
+        Me.Standard_Lift_CabinsTableAdapter.Fill(Me._Table_Standard_Lift_ChambersDataSet.Standard_Lift_Cabins)
         'TODO: This line of code loads data into the '_Table_Max_UseFull_Chamber_AreaDataSet.Maximum_Useful_Chamber' table. You can move, or remove it, as needed.
         Me.Maximum_Useful_ChamberTableAdapter.Fill(Me._Table_Max_UseFull_Chamber_AreaDataSet.Maximum_Useful_Chamber)
         'TODO: This line of code loads data into the '_Table_Min_UseFull_Chamber_AreaDataSet.Minimum_Useful_Chamber' table. You can move, or remove it, as needed.
         Me.Minimum_Useful_ChamberTableAdapter.Fill(Me._Table_Min_UseFull_Chamber_AreaDataSet.Minimum_Useful_Chamber)
-
     End Sub
 
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged

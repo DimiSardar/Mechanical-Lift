@@ -74,6 +74,8 @@ Public Class Meleth_Anelkysthra
 
     Private Sub Wfelimotxt_TextChanged(sender As Object, e As EventArgs) Handles WfelimoFortioField.TextChanged, WfelimoFortiolist.SelectedIndexChanged
 
+        Wfelimotxt.ReadOnly = True
+
         If WfelimoFortiolist.SelectedIndex = 0 And WfelimoFortioField.Text <> "" Then
             Wfelimotxt.Text = Val(WfelimoFortioField.Text) * 75
         ElseIf WfelimoFortiolist.SelectedIndex = 1 Then
@@ -87,6 +89,8 @@ Public Class Meleth_Anelkysthra
 
         Dim d As Double
 
+        ArithmAtomwntxt.ReadOnly = True
+
         If WfelimoFortiolist.SelectedIndex = 0 And WfelimoFortioField.Text <> "" Then
             ArithmAtomwntxt.Text = Val(WfelimoFortioField.Text)
         ElseIf WfelimoFortiolist.SelectedIndex = 1 Then
@@ -98,9 +102,11 @@ Public Class Meleth_Anelkysthra
 
     End Sub
 
-    Private Sub YpsosKtirioutxt_TextChanged(sender As Object, e As EventArgs) Handles YpsosKtirioy.TextChanged
+    Private Sub YpsosKtirioutxt_TextChanged(sender As Object, e As EventArgs) Handles YpsosKtirioy.TextChanged, WfelimoFortioField.TextChanged, WfelimoFortiolist.SelectedIndexChanged
 
         Dim d As Integer
+
+        YpsosKtirioutxt.ReadOnly = True
 
         If YpsosOrofwnList.SelectedIndex = 0 Then
             YpsosKtirioutxt.Text = Val(YpsosKtirioy.Text)
@@ -149,7 +155,14 @@ Public Class Meleth_Anelkysthra
 
             elxtEmbtxt.Text = ""
 
+            ElaxEmbadtxt.BorderStyle = BorderStyle.None
+            MegEmbadtxt.BorderStyle = BorderStyle.None
+
+            ElaxEmbadtxt.ReadOnly = True
+            MegEmbadtxt.ReadOnly = True
+
             ElaxEmbadtxt.Text = ""
+            MegEmbadtxt.Text = ""
 
             On Error GoTo Err
             Dim conn As New OleDbConnection
@@ -170,8 +183,6 @@ Public Class Meleth_Anelkysthra
 
                 ElaxEmbadtxt.Text = myreader("Minimum_Useful_Chamber_Area_m2")
                 elxtEmbtxt.Text = "( Από πίνακα )"
-                ElaxEmbadtxt.ReadOnly = True
-                ElaxEmbadtxt.BorderStyle = BorderStyle.None
                 ElaxEmbadtxt.ForeColor = Color.Green
                 ElaxEmbadtxt.BackColor = ElaxEmbadtxt.BackColor
 
@@ -202,7 +213,11 @@ Err:
 
             megEmbtxt.Text = ""
 
-            MegEmbadtxt.Text = ""
+            ElaxEmbadtxt.BorderStyle = BorderStyle.None
+            MegEmbadtxt.BorderStyle = BorderStyle.None
+
+            ElaxEmbadtxt.ReadOnly = True
+            MegEmbadtxt.ReadOnly = True
 
             On Error GoTo Err
             Dim conn As New OleDbConnection
@@ -222,8 +237,6 @@ Err:
 
                 MegEmbadtxt.Text = myreader("Maximum_Useful_Chamber_Area_m2")
                 megEmbtxt.Text = "( Από πίνακα )"
-                MegEmbadtxt.ReadOnly = True
-                MegEmbadtxt.BorderStyle = BorderStyle.None
                 MegEmbadtxt.ForeColor = Color.Green
                 MegEmbadtxt.BackColor = MegEmbadtxt.BackColor
 
@@ -397,7 +410,7 @@ Err:
 
     End Sub
 
-    Private Sub idibarosBox_TextChanged(sender As Object, e As EventArgs) Handles IdioBarosCheck.CheckedChanged, PlatosField.TextChanged, BathosField.TextChanged
+    Private Sub idibarosBox_TextChanged(sender As Object, e As EventArgs) Handles IdioBarosCheck.CheckedChanged, PlatosField.TextChanged, BathosField.TextChanged, ThalamosBox.SelectedIndexChanged
 
         Dim a, b, ee, temp As String
 
@@ -421,6 +434,14 @@ Err:
             idibarosBox.Text = temp
 
         End If
+
+
+        If PlatosField.Text = "" Or BathosField.Text = "" Then
+
+            idibarosBox.Text = ""
+
+        End If
+
 
         If IdioBarosCheck.Checked = True Then
 
