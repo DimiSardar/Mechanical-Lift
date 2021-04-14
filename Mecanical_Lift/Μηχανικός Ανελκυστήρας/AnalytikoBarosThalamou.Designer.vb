@@ -66,79 +66,80 @@ Partial Class BarosThalamAnalytika
         Me.Panel1.Controls.Add(Me.Orofh)
         Me.Panel1.Location = New System.Drawing.Point(19, 142)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(946, 157)
+        Me.Panel1.Size = New System.Drawing.Size(946, 105)
         Me.Panel1.TabIndex = 0
         '
         'Epistrwsh_Dapedou
         '
+        Me.Epistrwsh_Dapedou.ForeColor = System.Drawing.SystemColors.WindowText
         Me.Epistrwsh_Dapedou.FormattingEnabled = True
-        Me.Epistrwsh_Dapedou.Items.AddRange(New Object() {"        Πλαστικό", "Μέταλλο 1.0 [ mm ]", "Μέταλλο 2.0 [ mm ]", "Μέταλλο 3.0 [ mm ]", "Μέταλλο 5.0 [ mm ]"})
+        Me.Epistrwsh_Dapedou.Items.AddRange(New Object() {"       ", "        Πλαστικό", "Μέταλλο 1.0 [ mm ]", "Μέταλλο 2.0 [ mm ]", "Μέταλλο 3.0 [ mm ]", "Μέταλλο 5.0 [ mm ]"})
         Me.Epistrwsh_Dapedou.Location = New System.Drawing.Point(828, 5)
         Me.Epistrwsh_Dapedou.Name = "Epistrwsh_Dapedou"
-        Me.Epistrwsh_Dapedou.Size = New System.Drawing.Size(99, 147)
+        Me.Epistrwsh_Dapedou.Size = New System.Drawing.Size(99, 95)
         Me.Epistrwsh_Dapedou.TabIndex = 0
         '
         'Ypostrwma_Plainwn
         '
         Me.Ypostrwma_Plainwn.FormattingEnabled = True
-        Me.Ypostrwma_Plainwn.Items.AddRange(New Object() {"Ξύλο - Χαρτόνι 3.0 [ mm ]", "Ξύλο - Χαρτόνι 5.0 [ mm ]", "Ξύλο - Χαρτόνι 7.0 [ mm ]"})
+        Me.Ypostrwma_Plainwn.Items.AddRange(New Object() {"", "", "Ξύλο - Χαρτόνι 3.0 [ mm ]", "Ξύλο - Χαρτόνι 5.0 [ mm ]", "Ξύλο - Χαρτόνι 7.0 [ mm ]"})
         Me.Ypostrwma_Plainwn.Location = New System.Drawing.Point(351, 5)
         Me.Ypostrwma_Plainwn.Name = "Ypostrwma_Plainwn"
-        Me.Ypostrwma_Plainwn.Size = New System.Drawing.Size(131, 147)
+        Me.Ypostrwma_Plainwn.Size = New System.Drawing.Size(131, 95)
         Me.Ypostrwma_Plainwn.TabIndex = 0
         '
         'Ypostrwma_Dapedou
         '
         Me.Ypostrwma_Dapedou.FormattingEnabled = True
-        Me.Ypostrwma_Dapedou.Items.AddRange(New Object() {"Ξύλο 20 [ mm ]", "Ξύλο 30 [ mm ]", "Ξύλο 40 [ mm ]", ""})
+        Me.Ypostrwma_Dapedou.Items.AddRange(New Object() {"", "", "Ξύλο 20 [ mm ]", "Ξύλο 30 [ mm ]", "Ξύλο 40 [ mm ]"})
         Me.Ypostrwma_Dapedou.Location = New System.Drawing.Point(744, 5)
         Me.Ypostrwma_Dapedou.Name = "Ypostrwma_Dapedou"
-        Me.Ypostrwma_Dapedou.Size = New System.Drawing.Size(78, 147)
+        Me.Ypostrwma_Dapedou.Size = New System.Drawing.Size(78, 95)
         Me.Ypostrwma_Dapedou.TabIndex = 0
         '
         'Plaina
         '
         Me.Plaina.FormattingEnabled = True
-        Me.Plaina.Items.AddRange(New Object() {"Λαμαρίνα 1,5 [ mm ] ", "Λαμαρίνα 2,0 [ mm ] "})
+        Me.Plaina.Items.AddRange(New Object() {"", "", "Λαμαρίνα 1,5 [ mm ] ", "Λαμαρίνα 2,0 [ mm ] "})
         Me.Plaina.Location = New System.Drawing.Point(239, 5)
         Me.Plaina.Name = "Plaina"
-        Me.Plaina.Size = New System.Drawing.Size(106, 147)
+        Me.Plaina.Size = New System.Drawing.Size(106, 95)
         Me.Plaina.TabIndex = 0
         '
         'Metalliko_Dapedo
         '
         Me.Metalliko_Dapedo.FormattingEnabled = True
-        Me.Metalliko_Dapedo.Items.AddRange(New Object() {"      Στήριξη Σε Πηρούνι", "Στήριξη Σε Κεντρικό Σασσί"})
+        Me.Metalliko_Dapedo.Items.AddRange(New Object() {"  ", "", "    Στήριξη Σε Πηρούνι", "Στήριξη Σε Κεντρικό Σασσί"})
         Me.Metalliko_Dapedo.Location = New System.Drawing.Point(594, 5)
         Me.Metalliko_Dapedo.Name = "Metalliko_Dapedo"
-        Me.Metalliko_Dapedo.Size = New System.Drawing.Size(144, 147)
+        Me.Metalliko_Dapedo.Size = New System.Drawing.Size(144, 95)
         Me.Metalliko_Dapedo.TabIndex = 0
         '
         'Pseudorofh
         '
         Me.Pseudorofh.FormattingEnabled = True
-        Me.Pseudorofh.Items.AddRange(New Object() {"Ψευδοροφή 7 [ kg ] "})
+        Me.Pseudorofh.Items.AddRange(New Object() {"", "", "Ψευδοροφή 7 [ kg ] "})
         Me.Pseudorofh.Location = New System.Drawing.Point(131, 5)
         Me.Pseudorofh.Name = "Pseudorofh"
-        Me.Pseudorofh.Size = New System.Drawing.Size(102, 147)
+        Me.Pseudorofh.Size = New System.Drawing.Size(102, 95)
         Me.Pseudorofh.TabIndex = 0
         '
         'Epikalupsh_Plainwn
         '
         Me.Epikalupsh_Plainwn.FormattingEnabled = True
-        Me.Epikalupsh_Plainwn.Items.AddRange(New Object() {"       Φορμάικα", "Μέταλλο 1.0 [ mm ]"})
+        Me.Epikalupsh_Plainwn.Items.AddRange(New Object() {"", "", "       Φορμάικα", "Μέταλλο 1.0 [ mm ]"})
         Me.Epikalupsh_Plainwn.Location = New System.Drawing.Point(488, 5)
         Me.Epikalupsh_Plainwn.Name = "Epikalupsh_Plainwn"
-        Me.Epikalupsh_Plainwn.Size = New System.Drawing.Size(100, 147)
+        Me.Epikalupsh_Plainwn.Size = New System.Drawing.Size(100, 95)
         Me.Epikalupsh_Plainwn.TabIndex = 0
         '
         'Orofh
         '
         Me.Orofh.FormattingEnabled = True
-        Me.Orofh.Items.AddRange(New Object() {"Λαμαρίνα 1,5 [ mm ] ", "Λαμαρίνα 2,0 [ mm ] "})
+        Me.Orofh.Items.AddRange(New Object() {"", "", "Λαμαρίνα 1,5 [ mm ] ", "Λαμαρίνα 2,0 [ mm ] "})
         Me.Orofh.Location = New System.Drawing.Point(19, 5)
         Me.Orofh.Name = "Orofh"
-        Me.Orofh.Size = New System.Drawing.Size(106, 147)
+        Me.Orofh.Size = New System.Drawing.Size(106, 95)
         Me.Orofh.TabIndex = 0
         '
         'Label1
@@ -161,7 +162,7 @@ Partial Class BarosThalamAnalytika
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(946, 84)
         Me.Label9.TabIndex = 2
-        Me.Label9.Text = "Αναλυτικός Υπολογισμός Βάρους Θαλάμου Ανελκυστήρα"
+        Me.Label9.Text = "Αναλυτικός Υπολογισμός Βάρους και Σασί Θαλάμου Ανελκυστήρα"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel2
@@ -266,7 +267,7 @@ Partial Class BarosThalamAnalytika
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(35, 386)
+        Me.Label10.Location = New System.Drawing.Point(35, 271)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(127, 13)
         Me.Label10.TabIndex = 5
@@ -275,18 +276,20 @@ Partial Class BarosThalamAnalytika
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(35, 425)
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        Me.Label11.Location = New System.Drawing.Point(35, 316)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(150, 13)
+        Me.Label11.Size = New System.Drawing.Size(212, 18)
         Me.Label11.TabIndex = 6
         Me.Label11.Text = "Βάρος Θαλάμου: Βολ  [ kg ] = "
         '
         'Baros_Thalamou
         '
         Me.Baros_Thalamou.AutoSize = True
-        Me.Baros_Thalamou.Location = New System.Drawing.Point(191, 425)
+        Me.Baros_Thalamou.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        Me.Baros_Thalamou.Location = New System.Drawing.Point(255, 316)
         Me.Baros_Thalamou.Name = "Baros_Thalamou"
-        Me.Baros_Thalamou.Size = New System.Drawing.Size(10, 13)
+        Me.Baros_Thalamou.Size = New System.Drawing.Size(14, 18)
         Me.Baros_Thalamou.TabIndex = 5
         Me.Baros_Thalamou.Text = "-"
         '
@@ -308,7 +311,7 @@ Partial Class BarosThalamAnalytika
         '
         Me.Ypsos_Thalamou.DecimalPlaces = 1
         Me.Ypsos_Thalamou.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
-        Me.Ypsos_Thalamou.Location = New System.Drawing.Point(168, 384)
+        Me.Ypsos_Thalamou.Location = New System.Drawing.Point(168, 269)
         Me.Ypsos_Thalamou.Name = "Ypsos_Thalamou"
         Me.Ypsos_Thalamou.Size = New System.Drawing.Size(50, 20)
         Me.Ypsos_Thalamou.TabIndex = 11

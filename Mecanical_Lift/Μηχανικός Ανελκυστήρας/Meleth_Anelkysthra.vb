@@ -20,21 +20,30 @@ Public Class Meleth_Anelkysthra
 
     Private Sub NextCentralTab_Click(sender As Object, e As EventArgs) Handles NextCentralTab1.Click
 
+        If TestMode.Checked = True Then GoTo parabiash
+
+
         If (MhxEpanw.Checked = False And MhxKatw.Checked = False) Or (anarthsh1pros1.Checked = False And anarthsh2pros1.Checked = False) Or WfelimoFortiolist.Text = "" _
             Or YpsosOrofwnList.Text = "" Or EmbadonBox.Text = "" Or ThalamosBox.Text = "" Or (IdioBarosCheck.Checked = False And AnalytBarosCheck.Checked = False) _
            Or Wfelimotxt.Text = "" Or ArithmAtomwntxt.Text = "" Or YpsosKtirioutxt.Text = "" Or (ElaxEmbadtxt.Text = "" And MegEmbadtxt.Text = "") Or (PlatosField.Text = "" And BathosField.Text = "") _
-           Or (idibarosBox.Text = "" And BarosSasiBox.Text = "" And BarosThalamBox.Text = "") Or PosostoAntistathmishs.Text = "" Or BarosAntibarouBox.Text = "" _
-           Or WfelimoFortioField.Text = "" Or TaxuthtaAnupswshs.Text = "" Or YpsosKtirioy.Text = "" Then
+           Or (idibarosBox.Text = "" And BarosSasiBox.Text = "" And BarosThalamBox.Text = "") Or WfelimoFortioField.Text = "" Or TaxuthtaAnupswshs.Text = "" Or YpsosKtirioy.Text = "" _
+           Or EmbadonThalam.Text = "" Then
 
-            MessageBox.Show("Συμπληρώστε όλα τα πεδία για να συνεχίσετε!")
+                MessageBox.Show("Συμπληρώστε όλα τα πεδία για να συνεχίσετε!")
 
-        Else
+            ElseIf ElegxosEmbadThalam.ForeColor = Color.Red Then
 
+                MessageBox.Show("Τα όρια δεν είναι στα επιτρεπτά πλαίσια που ορίζει ο κανονισμός!")
+
+            Else
+parabiash:
             If Not CentralTabControl.SelectedTab Is TabPage5 Then
-                CentralTabControl.SelectedIndex = CentralTabControl.SelectedIndex + 1
+                    CentralTabControl.SelectedIndex = CentralTabControl.SelectedIndex + 1
+                End If
+
             End If
 
-        End If
+
 
     End Sub
 
@@ -75,6 +84,8 @@ Public Class Meleth_Anelkysthra
     Private Sub Wfelimotxt_TextChanged(sender As Object, e As EventArgs) Handles WfelimoFortioField.TextChanged, WfelimoFortiolist.SelectedIndexChanged
 
         Wfelimotxt.ReadOnly = True
+        Wfelimotxt.ForeColor = Color.Red
+        Wfelimotxt.BackColor = Wfelimotxt.BackColor
 
         If WfelimoFortiolist.SelectedIndex = 0 And WfelimoFortioField.Text <> "" Then
             Wfelimotxt.Text = Val(WfelimoFortioField.Text) * 75
@@ -90,6 +101,8 @@ Public Class Meleth_Anelkysthra
         Dim d As Double
 
         ArithmAtomwntxt.ReadOnly = True
+        ArithmAtomwntxt.ForeColor = Color.Red
+        ArithmAtomwntxt.BackColor = ArithmAtomwntxt.BackColor
 
         If WfelimoFortiolist.SelectedIndex = 0 And WfelimoFortioField.Text <> "" Then
             ArithmAtomwntxt.Text = Val(WfelimoFortioField.Text)
@@ -107,6 +120,8 @@ Public Class Meleth_Anelkysthra
         Dim d As Integer
 
         YpsosKtirioutxt.ReadOnly = True
+        YpsosKtirioutxt.ForeColor = Color.Red
+        YpsosKtirioutxt.BackColor = YpsosKtirioutxt.BackColor
 
         If YpsosOrofwnList.SelectedIndex = 0 Then
             YpsosKtirioutxt.Text = Val(YpsosKtirioy.Text)
@@ -338,6 +353,47 @@ Err:
 
     End Sub
 
+    Private Sub EmbadonThalam_TextChanged(sender As Object, e As EventArgs) Handles EmbadonThalam.TextChanged, PlatosField.TextChanged, BathosField.TextChanged
+
+        On Error GoTo Errr
+
+        If PlatosField.Text = "" And BathosField.Text = "" Then
+
+            ElegxosEmbadThalam.Text = ""
+            EmbadonThalam.Text = ""
+
+        Else
+
+            EmbadonThalam.Text = (Val(PlatosField.Text) / 1000) * (Val(BathosField.Text) / 1000)
+            EmbadonThalam.ReadOnly = True
+            EmbadonThalam.ForeColor = Color.Red
+            EmbadonThalam.BackColor = BathosField.BackColor
+
+            If EmbadonThalam.Text >= ElaxEmbadtxt.Text And EmbadonThalam.Text <= MegEmbadtxt.Text Then
+
+                ElegxosEmbadThalam.Text = "( Είναι στα επιτρεπτά όρια! )"
+                EmbadonThalam.ForeColor = Color.Green
+                EmbadonThalam.BackColor = EmbadonThalam.BackColor
+                ElegxosEmbadThalam.ForeColor = Color.Green
+                ElegxosEmbadThalam.BackColor = ElegxosEmbadThalam.BackColor
+
+
+            ElseIf EmbadonThalam.Text < ElaxEmbadtxt.Text Or EmbadonThalam.Text > MegEmbadtxt.Text And PlatosField.Text <> "" Or BathosField.Text <> "" Then
+
+                ElegxosEmbadThalam.Text = "( Δεν είναι στα επιτρεπτά όρια! )"
+                EmbadonThalam.ForeColor = Color.Red
+                EmbadonThalam.BackColor = EmbadonThalam.BackColor
+                ElegxosEmbadThalam.ForeColor = Color.Red
+                ElegxosEmbadThalam.BackColor = ElegxosEmbadThalam.BackColor
+
+            End If
+
+        End If
+Errr:
+        Exit Sub
+
+    End Sub
+
     Private Sub TestMode_CheckedChanged(sender As Object, e As EventArgs) Handles TestMode.CheckedChanged
 
         If TestMode.Checked = True Then
@@ -368,6 +424,7 @@ Err:
             PlatosField.Text = 1000
             BathosField.Text = 1000
 
+            IdioBarosCheck.Checked = True
 
             PosostoAntistathmishs.Text = 0.5
 
@@ -398,11 +455,13 @@ Err:
             PlatosField.Text = ""
             BathosField.Text = ""
 
-            EmbadonBox.SelectedIndex = False
+            EmbadonBox.SelectedIndex = 1
 
-            ThalamosBox.SelectedIndex = False
+            ThalamosBox.SelectedIndex = 1
 
-            idibarosBox.Text = ""
+            EmbadonThalam.Text = ""
+
+            IdioBarosCheck.Checked = False
 
             PosostoAntistathmishs.Text = ""
 
@@ -508,7 +567,7 @@ Err:
 
     End Sub
 
-    Private Sub PosostoAntistathmishs_TextChanged(sender As Object, e As EventArgs) Handles PosostoAntistathmishs.TextChanged, idibarosBox.TextChanged, IdioBarosCheck.CheckedChanged, AnalytBarosCheck.CheckedChanged, BarosSasiBox.TextChanged, BarosThalamBox.TextChanged
+    Private Sub PosostoAntistathmishs_TextChanged(sender As Object, e As EventArgs) Handles idibarosBox.TextChanged, IdioBarosCheck.CheckedChanged, AnalytBarosCheck.CheckedChanged, BarosSasiBox.TextChanged, BarosThalamBox.TextChanged
 
         On Error GoTo Errr
 
@@ -570,5 +629,7 @@ Errr:
             BarosThalamAnalytika.Show()
         End If
     End Sub
+
+
 
 End Class
