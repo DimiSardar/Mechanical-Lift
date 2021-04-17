@@ -2,6 +2,8 @@
 
 Public Class Meleth_Anelkysthra
 
+
+
     Private Sub Meleth_Anelkysthra_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         WfelimoFortiolist.SelectedIndex = (0)
@@ -20,28 +22,28 @@ Public Class Meleth_Anelkysthra
 
     Private Sub NextCentralTab_Click(sender As Object, e As EventArgs) Handles NextCentralTab1.Click
 
-        If TestMode.Checked = True Then GoTo parabiash
+        If TestMode2.Checked = True Then GoTo parabiash
 
 
         If (MhxEpanw.Checked = False And MhxKatw.Checked = False) Or (anarthsh1pros1.Checked = False And anarthsh2pros1.Checked = False) Or WfelimoFortiolist.Text = "" _
             Or YpsosOrofwnList.Text = "" Or EmbadonBox.Text = "" Or ThalamosBox.Text = "" Or (IdioBarosCheck.Checked = False And AnalytBarosCheck.Checked = False) _
            Or Wfelimotxt.Text = "" Or ArithmAtomwntxt.Text = "" Or YpsosKtirioutxt.Text = "" Or (ElaxEmbadtxt.Text = "" And MegEmbadtxt.Text = "") Or (PlatosField.Text = "" And BathosField.Text = "") _
            Or (idibarosBox.Text = "" And BarosSasiBox.Text = "" And BarosThalamBox.Text = "") Or WfelimoFortioField.Text = "" Or TaxuthtaAnupswshs.Text = "" Or YpsosKtirioy.Text = "" _
-           Or EmbadonThalam.Text = "" Then
+           Or EmbadonThalam.Text = "" Or PosostoAntistathmishs.Text = "" Or BarosAntibarouBox.Text = "" Then
 
-                MessageBox.Show("Συμπληρώστε όλα τα πεδία για να συνεχίσετε!")
+            MessageBox.Show("Συμπληρώστε όλα τα πεδία για να συνεχίσετε!")
 
-            ElseIf ElegxosEmbadThalam.ForeColor = Color.Red Then
+        ElseIf ElegxosEmbadThalam.ForeColor = Color.Red Then
 
-                MessageBox.Show("Τα όρια δεν είναι στα επιτρεπτά πλαίσια που ορίζει ο κανονισμός!")
+            MessageBox.Show("Τα όρια δεν είναι στα επιτρεπτά πλαίσια που ορίζει ο κανονισμός!")
 
-            Else
+        Else
 parabiash:
             If Not CentralTabControl.SelectedTab Is TabPage5 Then
-                    CentralTabControl.SelectedIndex = CentralTabControl.SelectedIndex + 1
-                End If
-
+                CentralTabControl.SelectedIndex = CentralTabControl.SelectedIndex + 1
             End If
+
+        End If
 
 
 
@@ -394,88 +396,85 @@ Errr:
 
     End Sub
 
-    Private Sub TestMode_CheckedChanged(sender As Object, e As EventArgs) Handles TestMode.CheckedChanged
+    Private Sub ClearAllbtn_Click(sender As Object, e As EventArgs) Handles ClearAllbtn.Click
 
-        If TestMode.Checked = True Then
+        'MhxEpanw
+        MhxKatw.Checked = False
 
-            'MhxEpanw.Checked = True
-            MhxKatw.Checked = True
+        'anarthsh1pros1
+        anarthsh2pros1.Checked = False
 
-            'anarthsh1pros1.Checked = True
-            anarthsh2pros1.Checked = True
+        WfelimoFortiolist.SelectedIndex = False
+        WfelimoFortioField.Text = ""
 
-            ' WfelimoFortiolist.SelectedIndex = 1
-            ' WfelimoFortioField.Text = 2000
+        TaxuthtaAnupswshs.Text = ""
 
-            WfelimoFortiolist.SelectedIndex = 0
-            WfelimoFortioField.Text = 8
+        YpsosOrofwnList.SelectedIndex = False
+        YpsosKtirioy.Text = ""
 
-            TaxuthtaAnupswshs.Text = 0.64
+        Wfelimotxt.Text = ""
+        ArithmAtomwntxt.Text = ""
+        YpsosKtirioutxt.Text = ""
 
-            YpsosOrofwnList.SelectedIndex = 1
-            YpsosKtirioy.Text = 7
+        ElaxEmbadtxt.Text = ""
+        MegEmbadtxt.Text = ""
 
-            EmbadonBox.SelectedIndex = 1
-            'EmbadonBox.SelectedIndex = 0
+        PlatosField.Text = ""
+        BathosField.Text = ""
 
-            ' ThalamosBox.SelectedIndex = 1
-            ThalamosBox.SelectedIndex = 0
+        EmbadonBox.SelectedIndex = 1
 
-            PlatosField.Text = 1000
-            BathosField.Text = 1000
+        ThalamosBox.SelectedIndex = 1
 
-            IdioBarosCheck.Checked = True
+        EmbadonThalam.Text = ""
 
-            PosostoAntistathmishs.Text = 0.5
+        IdioBarosCheck.Checked = False
+
+        PosostoAntistathmishs.Text = ""
+
+    End Sub
+
+    Private Sub TestMode_Click(sender As Object, e As EventArgs) Handles TestMode.Click
 
 
-        ElseIf TestMode.Checked = False Then
+        'MhxEpanw.Checked = True
+        MhxKatw.Checked = True
 
-            'MhxEpanw
-            MhxKatw.Checked = False
+        'anarthsh1pros1.Checked = True
+        anarthsh2pros1.Checked = True
 
-            'anarthsh1pros1
-            anarthsh2pros1.Checked = False
+        ' WfelimoFortiolist.SelectedIndex = 1
+        ' WfelimoFortioField.Text = 2000
 
-            WfelimoFortiolist.SelectedIndex = False
-            WfelimoFortioField.Text = ""
+        WfelimoFortiolist.SelectedIndex = 1
+        WfelimoFortioField.Text = 2000
 
-            TaxuthtaAnupswshs.Text = ""
+        TaxuthtaAnupswshs.Text = 0.64
 
-            YpsosOrofwnList.SelectedIndex = False
-            YpsosKtirioy.Text = ""
+        YpsosOrofwnList.SelectedIndex = 1
+        YpsosKtirioy.Text = 7
 
-            Wfelimotxt.Text = ""
-            ArithmAtomwntxt.Text = ""
-            YpsosKtirioutxt.Text = ""
+        EmbadonBox.SelectedIndex = 1
+        'EmbadonBox.SelectedIndex = 0
 
-            ElaxEmbadtxt.Text = ""
-            MegEmbadtxt.Text = ""
+        ' ThalamosBox.SelectedIndex = 1
+        ThalamosBox.SelectedIndex = 0
 
-            PlatosField.Text = ""
-            BathosField.Text = ""
+        PlatosField.Text = 1000
+        BathosField.Text = 1000
 
-            EmbadonBox.SelectedIndex = 1
+        IdioBarosCheck.Checked = True
 
-            ThalamosBox.SelectedIndex = 1
+        PosostoAntistathmishs.Text = 0.5
 
-            EmbadonThalam.Text = ""
-
-            IdioBarosCheck.Checked = False
-
-            PosostoAntistathmishs.Text = ""
-
-        End If
 
     End Sub
 
     Private Sub idibarosBox_TextChanged(sender As Object, e As EventArgs) Handles IdioBarosCheck.CheckedChanged, PlatosField.TextChanged, BathosField.TextChanged, ThalamosBox.SelectedIndexChanged
 
-        Dim a, b, ee, temp As String
+        Dim ee, temp As String
 
-        a = Val(PlatosField.Text) / 1000
-        b = Val(BathosField.Text) / 1000
-        ee = (a) * (b)
+        ee = EmbadonThalam.Text
 
         If Val(Wfelimotxt.Text) < 500 And PlatosField.Text <> "" And BathosField.Text <> "" Then
             idibarosBox.Text = ""
@@ -567,7 +566,7 @@ Errr:
 
     End Sub
 
-    Private Sub PosostoAntistathmishs_TextChanged(sender As Object, e As EventArgs) Handles idibarosBox.TextChanged, IdioBarosCheck.CheckedChanged, AnalytBarosCheck.CheckedChanged, BarosSasiBox.TextChanged, BarosThalamBox.TextChanged
+    Private Sub PosostoAntistathmishs_TextChanged(sender As Object, e As EventArgs) Handles idibarosBox.TextChanged, IdioBarosCheck.CheckedChanged, AnalytBarosCheck.CheckedChanged, BarosSasiBox.TextChanged, BarosThalamBox.TextChanged, PosostoAntistathmishs.TextChanged
 
         On Error GoTo Errr
 
@@ -629,7 +628,5 @@ Errr:
             BarosThalamAnalytika.Show()
         End If
     End Sub
-
-
 
 End Class
