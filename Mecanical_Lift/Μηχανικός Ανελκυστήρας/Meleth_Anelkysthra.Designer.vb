@@ -24,7 +24,6 @@ Partial Class Meleth_Anelkysthra
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ΑρχείοToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ΒιβλιοθήκεςToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
@@ -99,6 +98,7 @@ Partial Class Meleth_Anelkysthra
         Me.PreviousCentralTab1 = New System.Windows.Forms.Button()
         Me.NextCentralTab1 = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.ΒιβλιοθήκεςToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.ElaxMegPlatBathEMbad.SuspendLayout()
@@ -115,7 +115,7 @@ Partial Class Meleth_Anelkysthra
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ΑρχείοToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ΑρχείοToolStripMenuItem, Me.ΒιβλιοθήκεςToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1001, 24)
@@ -124,16 +124,9 @@ Partial Class Meleth_Anelkysthra
         '
         'ΑρχείοToolStripMenuItem
         '
-        Me.ΑρχείοToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ΒιβλιοθήκεςToolStripMenuItem})
         Me.ΑρχείοToolStripMenuItem.Name = "ΑρχείοToolStripMenuItem"
         Me.ΑρχείοToolStripMenuItem.Size = New System.Drawing.Size(55, 20)
         Me.ΑρχείοToolStripMenuItem.Text = "Αρχείο"
-        '
-        'ΒιβλιοθήκεςToolStripMenuItem
-        '
-        Me.ΒιβλιοθήκεςToolStripMenuItem.Name = "ΒιβλιοθήκεςToolStripMenuItem"
-        Me.ΒιβλιοθήκεςToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
-        Me.ΒιβλιοθήκεςToolStripMenuItem.Text = "Βιβλιοθήκες"
         '
         'ProgressBar1
         '
@@ -926,6 +919,12 @@ Partial Class Meleth_Anelkysthra
         Me.Panel6.Size = New System.Drawing.Size(974, 35)
         Me.Panel6.TabIndex = 10
         '
+        'ΒιβλιοθήκεςToolStripMenuItem1
+        '
+        Me.ΒιβλιοθήκεςToolStripMenuItem1.Name = "ΒιβλιοθήκεςToolStripMenuItem1"
+        Me.ΒιβλιοθήκεςToolStripMenuItem1.Size = New System.Drawing.Size(83, 20)
+        Me.ΒιβλιοθήκεςToolStripMenuItem1.Text = "Βιβλιοθήκες"
+        '
         'Meleth_Anelkysthra
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -968,7 +967,6 @@ Partial Class Meleth_Anelkysthra
 
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ΑρχείοToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ΒιβλιοθήκεςToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents TabPage1 As TabPage
@@ -1043,4 +1041,5 @@ Partial Class Meleth_Anelkysthra
     Friend WithEvents Panel1 As Panel
     Friend WithEvents ClearAllbtn As Button
     Friend WithEvents TestMode As Button
+    Friend WithEvents ΒιβλιοθήκεςToolStripMenuItem1 As ToolStripMenuItem
 End Class

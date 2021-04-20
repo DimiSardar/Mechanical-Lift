@@ -2,7 +2,11 @@
 
 Public Class Meleth_Anelkysthra
 
+    Private Sub ΒιβλιοθήκεςToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ΒιβλιοθήκεςToolStripMenuItem1.Click
 
+        bibliothhkes.Show()
+
+    End Sub
 
     Private Sub Meleth_Anelkysthra_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -13,11 +17,6 @@ Public Class Meleth_Anelkysthra
         IdioBarosCheck.Checked = True
         PosostoAntistathmishs.Text = 0.5
 
-    End Sub
-
-
-    Private Sub ΒιβλιοθήκεςToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ΒιβλιοθήκεςToolStripMenuItem.Click
-        bibliothhkes.Show()
     End Sub
 
     Private Sub NextCentralTab_Click(sender As Object, e As EventArgs) Handles NextCentralTab1.Click
@@ -571,7 +570,7 @@ Errr:
         On Error GoTo Errr
 
         Dim IdioBaross As Integer
-
+        Dim Epanalhpsh As String
 
         If PosostoAntistathmishs.Text.Contains(".") Then
 
@@ -582,16 +581,17 @@ Errr:
         End If
 
 
-        If idibarosBox.Text <> "" And IdioBarosCheck.Checked = True Then
+        If idibarosBox.Text <> "" And IdioBarosCheck.Checked = True And PosostoAntistathmishs.Text <> "" Then
 
             BarosAntibarouBox.ReadOnly = True
             BarosAntibarouBox.ForeColor = Color.Red
             BarosAntibarouBox.BackColor = BarosAntibarouBox.BackColor
 
-            BarosAntibarouBox.Text = Format(idibarosBox.Text) + Format(Wfelimotxt.Text) * Format(PosostoAntistathmishs.Text)
+            BarosAntibarouBox.Text = Format(idibarosBox.Text) + (Format(Wfelimotxt.Text) * Format(PosostoAntistathmishs.Text))
 
-        ElseIf BarosSasiBox.Text <> "" And BarosThalamBox.Text <> "" And AnalytBarosCheck.Checked = True Then
+        ElseIf BarosSasiBox.Text <> "" And BarosThalamBox.Text <> "" And AnalytBarosCheck.Checked = True And PosostoAntistathmishs.Text <> "" Then
 
+Epanalhpsh:
 
             IdioBaross = Val(BarosSasiBox.Text) + Val(BarosThalamBox.Text)
 
@@ -602,7 +602,11 @@ Errr:
             BarosAntibarouBox.ForeColor = Color.Red
             BarosAntibarouBox.BackColor = BarosAntibarouBox.BackColor
 
+        ElseIf BarosSasiBox.Text <> "" And BarosThalamBox.Text <> "" And AnalytBarosCheck.Checked = False And PosostoAntistathmishs.Text <> "" Then
+            GoTo Epanalhpsh
+
         Else
+
             BarosAntibarouBox.Text = ""
 
         End If
