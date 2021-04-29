@@ -1,4 +1,5 @@
-﻿Public Class BarosThalamAnalytika
+﻿Imports System.Data.OleDb
+Public Class BarosThalamAnalytika
 
     Private Sub Baros_Thalamou_TextChanged(sender As Object, e As EventArgs) Handles Orofh.SelectedIndexChanged, Pseudorofh.SelectedIndexChanged, Plaina.SelectedIndexChanged, Ypostrwma_Plainwn.SelectedIndexChanged, Epikalupsh_Plainwn.SelectedIndexChanged, Metalliko_Dapedo.SelectedIndexChanged, Ypostrwma_Dapedou.SelectedIndexChanged, Epistrwsh_Dapedou.SelectedIndexChanged
         On Error GoTo Errr
@@ -76,15 +77,115 @@ Errr:
 
     End Sub
 
+    Private Sub AnoigmaOdhgApo_Click(sender As Object, e As EventArgs) Handles EpiloghMazasSasi.TextChanged, Orofh.SelectedIndexChanged, Pseudorofh.SelectedIndexChanged, Plaina.SelectedIndexChanged, Ypostrwma_Plainwn.SelectedIndexChanged, Epikalupsh_Plainwn.SelectedIndexChanged, Metalliko_Dapedo.SelectedIndexChanged, Ypostrwma_Dapedou.SelectedIndexChanged, Epistrwsh_Dapedou.SelectedIndexChanged
+
+        WfelimoAnalThalam.Text = Meleth_Anelkysthra.Wfelimotxt.Text
+        ArithAtomAnalThalam.Text = Meleth_Anelkysthra.ArithmAtomwntxt.Text
+
+        On Error GoTo Err
+        Dim conn As New OleDbConnection
+
+        conn.ConnectionString = ("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\GitHub\Mechanical Lift\Mecanical_Lift\Libraries\DataAccess_Libraries\Table.Suspension_Frame_Weights.accdb")
+        conn.Open()
+
+        Dim strql As String
+
+        strql = "SELECT Drivers_Distance_mm_From, Drivers_Distance_mm_To,Weight_Of_Frame_Suspension_kg_From,Weight_Of_Frame_Suspension_kg_To FROM Detailed_Weight_Of_Chassis WHERE Useful_Load_Mass_kg =" + WfelimoAnalThalam.Text + ""
+
+
+        Dim cmd As New OleDbCommand(strql, conn)
+        Dim myreader As OleDbDataReader
+
+        myreader = cmd.ExecuteReader
+
+
+        If (myreader.Read()) Then
+
+            AnoigmaOdhgApo.Text = myreader("Drivers_Distance_mm_From")
+            AnoigmaOdhgEws.Text = myreader("Drivers_Distance_mm_To")
+
+            BarosPlaisiouApo.Text = myreader("Weight_Of_Frame_Suspension_kg_From")
+            BarosPlaisiouEws.Text = myreader("Weight_Of_Frame_Suspension_kg_To")
+
+            AnoigmaOdhgApo.ForeColor = Color.Green
+            AnoigmaOdhgApo.BackColor = AnoigmaOdhgApo.BackColor
+            AnoigmaOdhgEws.ForeColor = Color.Green
+            AnoigmaOdhgEws.BackColor = AnoigmaOdhgEws.BackColor
+
+            BarosPlaisiouApo.ForeColor = Color.Green
+            BarosPlaisiouApo.BackColor = BarosPlaisiouApo.BackColor
+            BarosPlaisiouEws.ForeColor = Color.Green
+            BarosPlaisiouEws.BackColor = BarosPlaisiouEws.BackColor
+
+        End If
+
+
+        If EpiloghMazasSasi.Value <= BarosPlaisiouEws.Text And EpiloghMazasSasi.Value >= BarosPlaisiouApo.Text Then
+            MazaSasi.Text = EpiloghMazasSasi.Text
+        End If
+
+        If MazaSasi.Text <= BarosPlaisiouEws.Text And MazaSasi.Text >= BarosPlaisiouApo.Text And EpiloghMazasSasi.Text <> "" _
+            And Orofh.SelectedIndex > 1 _
+            And Pseudorofh.SelectedIndex > 1 _
+            And Plaina.SelectedIndex > 1 _
+            And Ypostrwma_Plainwn.SelectedIndex > 1 _
+            And Epikalupsh_Plainwn.SelectedIndex > 1 _
+            And Metalliko_Dapedo.SelectedIndex > 1 _
+            And Ypostrwma_Dapedou.SelectedIndex > 1 _
+            And Epistrwsh_Dapedou.SelectedIndex > 0 Then
+
+            SynexeiaStoProgramma.Enabled = True
+            SynexeiaStoProgramma.ForeColor = Color.Green
+            SynexeiaStoProgramma.BackColor = SynexeiaStoProgramma.BackColor
+        Else
+            SynexeiaStoProgramma.ForeColor = Color.Gray
+            SynexeiaStoProgramma.BackColor = SynexeiaStoProgramma.BackColor
+            SynexeiaStoProgramma.Enabled = False
+        End If
+
+        myreader.Close()
+        conn.Close()
+
+Err:
+        Exit Sub
+
+    End Sub
+
     Private Sub SynexeiaStoProgramma_Click(sender As Object, e As EventArgs) Handles SynexeiaStoProgramma.Click
 
-        Meleth_Anelkysthra.BarosThalamBox.Text = Baros_Thalamou.Text
-        Meleth_Anelkysthra.AnalytikaBarosThalam.ForeColor = Color.Green
-        Meleth_Anelkysthra.BarosThalamBox.Enabled = True
-        Meleth_Anelkysthra.BarosThalamBox.ReadOnly = True
-        Meleth_Anelkysthra.BarosThalamBox.ForeColor = Color.Green
-        Meleth_Anelkysthra.BarosThalamBox.BackColor = Meleth_Anelkysthra.BarosThalamBox.BackColor
-        Me.Close()
+        If MazaSasi.Text <= BarosPlaisiouEws.Text And MazaSasi.Text >= BarosPlaisiouApo.Text And EpiloghMazasSasi.Text <> "" _
+            And Orofh.SelectedIndex > 1 _
+            And Pseudorofh.SelectedIndex > 1 _
+            And Plaina.SelectedIndex > 1 _
+            And Ypostrwma_Plainwn.SelectedIndex > 1 _
+            And Epikalupsh_Plainwn.SelectedIndex > 1 _
+            And Metalliko_Dapedo.SelectedIndex > 1 _
+            And Ypostrwma_Dapedou.SelectedIndex > 1 _
+            And Epistrwsh_Dapedou.SelectedIndex > 0 Then
+
+            SynexeiaStoProgramma.ForeColor = Color.Green
+            SynexeiaStoProgramma.BackColor = SynexeiaStoProgramma.BackColor
+
+            Meleth_Anelkysthra.BarosThalamBox.Text = Baros_Thalamou.Text
+            Meleth_Anelkysthra.BarosSasiBox.Text = MazaSasi.Text
+
+            Meleth_Anelkysthra.AnalytikaBarosThalam.ForeColor = Color.Green
+
+            Meleth_Anelkysthra.BarosThalamBox.Enabled = True
+            Meleth_Anelkysthra.BarosThalamBox.ReadOnly = True
+
+            Meleth_Anelkysthra.BarosSasiBox.Enabled = True
+            Meleth_Anelkysthra.BarosSasiBox.ReadOnly = True
+
+            Meleth_Anelkysthra.BarosThalamBox.ForeColor = Color.Green
+            Meleth_Anelkysthra.BarosThalamBox.BackColor = Meleth_Anelkysthra.BarosThalamBox.BackColor
+
+            Meleth_Anelkysthra.BarosSasiBox.ForeColor = Color.Green
+            Meleth_Anelkysthra.BarosSasiBox.BackColor = Meleth_Anelkysthra.BarosSasiBox.BackColor
+
+            Me.WindowState = FormWindowState.Minimized
+
+        End If
 
     End Sub
 
@@ -101,6 +202,9 @@ Errr:
             Ypostrwma_Dapedou.SelectedIndex = 4
             Epistrwsh_Dapedou.SelectedIndex = 5
 
+            EpiloghMazasSasi.Text = (Val(BarosPlaisiouApo.Text) + Val(BarosPlaisiouEws.Text)) / 2
+
+
         ElseIf BarosThalamTestMode.Checked = False Then
 
             Orofh.SelectedIndex = False
@@ -116,9 +220,6 @@ Errr:
         End If
 
     End Sub
-
-
-
 
 
 End Class

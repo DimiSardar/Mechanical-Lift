@@ -129,6 +129,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_Table_Standard_Lift_ChambersDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_Table_Suspension_Frame_WeightsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Table_Suspension_Frame_WeightsDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="bibliothhkes.resx">
@@ -195,6 +200,17 @@
     </None>
     <None Include="_Table_Standard_Lift_ChambersDataSet.xss">
       <DependentUpon>_Table_Standard_Lift_ChambersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Table_Suspension_Frame_WeightsDataSet.xsc">
+      <DependentUpon>_Table_Suspension_Frame_WeightsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Table_Suspension_Frame_WeightsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Table_Suspension_Frame_WeightsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Table_Suspension_Frame_WeightsDataSet.xss">
+      <DependentUpon>_Table_Suspension_Frame_WeightsDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

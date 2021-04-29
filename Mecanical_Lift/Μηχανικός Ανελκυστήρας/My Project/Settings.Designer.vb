@@ -86,6 +86,17 @@ Namespace My
                 Return CType(Me("Table_Standard_Lift_ChambersConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\GitHub\Mechanical Lift\Mecanica"& _ 
+            "l_Lift\Libraries\DataAccess_Libraries\Table.Suspension_Frame_Weights.accdb""")>  _
+        Public ReadOnly Property Table_Suspension_Frame_WeightsConnectionString() As String
+            Get
+                Return CType(Me("Table_Suspension_Frame_WeightsConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 
