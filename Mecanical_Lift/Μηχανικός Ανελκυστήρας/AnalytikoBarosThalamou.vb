@@ -119,10 +119,20 @@ Errr:
 
         End If
 
+        ' Αν η τιμή Επιλογής Σασί είναι στα επιτρεπτά όρια τότε η τελική τιμή πρασινη είτε κόκκινη!
 
         If EpiloghMazasSasi.Value <= BarosPlaisiouEws.Text And EpiloghMazasSasi.Value >= BarosPlaisiouApo.Text Then
             MazaSasi.Text = EpiloghMazasSasi.Text
+            MazaSasi.ForeColor = Color.Green
+            MazaSasi.BackColor = MazaSasi.BackColor
+        ElseIf EpiloghMazasSasi.Value > BarosPlaisiouEws.Text Or EpiloghMazasSasi.Value < BarosPlaisiouApo.Text Then
+            MazaSasi.Text = EpiloghMazasSasi.Text
+                MazaSasi.ForeColor = Color.Red
+            MazaSasi.BackColor = MazaSasi.BackColor
+
         End If
+
+
 
         If MazaSasi.Text <= BarosPlaisiouEws.Text And MazaSasi.Text >= BarosPlaisiouApo.Text And EpiloghMazasSasi.Text <> "" _
             And Orofh.SelectedIndex > 1 _
@@ -137,10 +147,12 @@ Errr:
             SynexeiaStoProgramma.Enabled = True
             SynexeiaStoProgramma.ForeColor = Color.Green
             SynexeiaStoProgramma.BackColor = SynexeiaStoProgramma.BackColor
-        Else
-            SynexeiaStoProgramma.ForeColor = Color.Gray
+
+        ElseIf EpiloghMazasSasi.Value > BarosPlaisiouEws.Text Or EpiloghMazasSasi.Value < BarosPlaisiouApo.Text Then
+
+            SynexeiaStoProgramma.ForeColor = Color.Red
             SynexeiaStoProgramma.BackColor = SynexeiaStoProgramma.BackColor
-            SynexeiaStoProgramma.Enabled = False
+
         End If
 
         myreader.Close()

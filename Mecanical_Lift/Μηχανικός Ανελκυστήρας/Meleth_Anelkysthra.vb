@@ -25,7 +25,7 @@ Public Class Meleth_Anelkysthra
 
 
         If (MhxEpanw.Checked = False And MhxKatw.Checked = False) Or (anarthsh1pros1.Checked = False And anarthsh2pros1.Checked = False) Or WfelimoFortiolist.Text = "" _
-            Or YpsosOrofwnList.Text = "" Or EmbadonBox.Text = "" Or ThalamosBox.Text = "" Or (IdioBarosCheck.Checked = False And AnalytBarosCheck.Checked = False) _
+            Or YpsosOrofwnList.Text = "" Or EmbadonBox.Text = "" Or ThalamosBox.Text = "" Or (IdioBarosCheck.Checked = False And AnalytBarosCheck.Checked = False And BarosSasiBox.Text = "" And BarosThalamBox.Text = "") _
            Or Wfelimotxt.Text = "" Or ArithmAtomwntxt.Text = "" Or YpsosKtirioutxt.Text = "" Or (ElaxEmbadtxt.Text = "" And MegEmbadtxt.Text = "") Or (PlatosField.Text = "" And BathosField.Text = "") _
            Or (idibarosBox.Text = "" And BarosSasiBox.Text = "" And BarosThalamBox.Text = "") Or WfelimoFortioField.Text = "" Or TaxuthtaAnupswshs.Text = "" Or YpsosKtirioy.Text = "" _
            Or EmbadonThalam.Text = "" Or PosostoAntistathmishs.Text = "" Or BarosAntibarouBox.Text = "" Then
@@ -36,6 +36,9 @@ Public Class Meleth_Anelkysthra
 
             MessageBox.Show("Τα όρια δεν είναι στα επιτρεπτά πλαίσια που ορίζει ο κανονισμός!")
 
+            NextCentralTab1.Enabled = True
+            NextCentralTab1.ForeColor = Color.Red
+            NextCentralTab1.BackColor = NextCentralTab1.BackColor
         Else
 parabiash:
             If Not CentralTabControl.SelectedTab Is TabPage5 Then
@@ -85,7 +88,7 @@ parabiash:
     Private Sub Wfelimotxt_TextChanged(sender As Object, e As EventArgs) Handles WfelimoFortioField.TextChanged, WfelimoFortiolist.SelectedIndexChanged
 
         Wfelimotxt.ReadOnly = True
-        Wfelimotxt.ForeColor = Color.Red
+        Wfelimotxt.ForeColor = Color.Blue
         Wfelimotxt.BackColor = Wfelimotxt.BackColor
 
         If WfelimoFortiolist.SelectedIndex = 0 And WfelimoFortioField.Text <> "" Then
@@ -102,7 +105,7 @@ parabiash:
         Dim d As Double
 
         ArithmAtomwntxt.ReadOnly = True
-        ArithmAtomwntxt.ForeColor = Color.Red
+        ArithmAtomwntxt.ForeColor = Color.Blue
         ArithmAtomwntxt.BackColor = ArithmAtomwntxt.BackColor
 
         If WfelimoFortiolist.SelectedIndex = 0 And WfelimoFortioField.Text <> "" Then
@@ -121,7 +124,7 @@ parabiash:
         Dim d As Integer
 
         YpsosKtirioutxt.ReadOnly = True
-        YpsosKtirioutxt.ForeColor = Color.Red
+        YpsosKtirioutxt.ForeColor = Color.Blue
         YpsosKtirioutxt.BackColor = YpsosKtirioutxt.BackColor
 
         If YpsosOrofwnList.SelectedIndex = 0 Then
@@ -158,6 +161,23 @@ parabiash:
     End Sub
 
     Private Sub ElaxEmbadtxt_TextChanged(sender As Object, e As EventArgs) Handles ArithmAtomwntxt.TextChanged, Wfelimotxt.TextChanged, EmbadonBox.SelectedIndexChanged
+
+        If ElaxEmbadtxt.Text.Contains(".") Then
+
+            ElaxEmbadtxt.Text = ElaxEmbadtxt.Text.Replace(".", ",")
+            ElaxEmbadtxt.Focus()
+            ElaxEmbadtxt.Select(ElaxEmbadtxt.Text.Length, 0)
+
+        End If
+
+        If MegEmbadtxt.Text.Contains(".") Then
+
+            MegEmbadtxt.Text = MegEmbadtxt.Text.Replace(".", ",")
+            MegEmbadtxt.Focus()
+            MegEmbadtxt.Select(MegEmbadtxt.Text.Length, 0)
+
+        End If
+
 
         If EmbadonBox.SelectedIndex = 0 Then
 
@@ -370,7 +390,7 @@ Err:
             EmbadonThalam.ForeColor = Color.Red
             EmbadonThalam.BackColor = BathosField.BackColor
 
-            If EmbadonThalam.Text >= ElaxEmbadtxt.Text And EmbadonThalam.Text <= MegEmbadtxt.Text Then
+            If Val(EmbadonThalam.Text) >= Val(ElaxEmbadtxt.Text) And Val(EmbadonThalam.Text) <= Val(MegEmbadtxt.Text) Then
 
                 ElegxosEmbadThalam.Text = "( Είναι στα επιτρεπτά όρια! )"
                 EmbadonThalam.ForeColor = Color.Green
@@ -379,7 +399,7 @@ Err:
                 ElegxosEmbadThalam.BackColor = ElegxosEmbadThalam.BackColor
 
 
-            ElseIf EmbadonThalam.Text < ElaxEmbadtxt.Text Or EmbadonThalam.Text > MegEmbadtxt.Text And PlatosField.Text <> "" Or BathosField.Text <> "" Then
+            ElseIf Val(EmbadonThalam.Text) < Val(ElaxEmbadtxt.Text) Or Val(EmbadonThalam.Text) > Val(MegEmbadtxt.Text) And (PlatosField.Text) <> "" Or (BathosField.Text) <> "" Then
 
                 ElegxosEmbadThalam.Text = "( Δεν είναι στα επιτρεπτά όρια! )"
                 EmbadonThalam.ForeColor = Color.Red
@@ -469,11 +489,29 @@ Errr:
 
     End Sub
 
-    Private Sub idibarosBox_TextChanged(sender As Object, e As EventArgs) Handles IdioBarosCheck.CheckedChanged, PlatosField.TextChanged, BathosField.TextChanged, ThalamosBox.SelectedIndexChanged
+    Private Sub idibarosBox_TextChanged(sender As Object, e As EventArgs) Handles IdioBarosCheck.CheckedChanged, PlatosField.TextChanged, BathosField.TextChanged
 
-        Dim ee, temp As String
+        Dim ee, temp As Double
 
-        ee = EmbadonThalam.Text
+        If PlatosField.Text.Contains(".") Then
+
+            PlatosField.Text = PlatosField.Text.Replace(".", ",")
+            PlatosField.Focus()
+            PlatosField.Select(PlatosField.Text.Length, 0)
+
+        End If
+
+        If BathosField.Text.Contains(".") Then
+
+            BathosField.Text = BathosField.Text.Replace(".", ",")
+            BathosField.Focus()
+            BathosField.Select(BathosField.Text.Length, 0)
+
+        End If
+
+
+
+        ee = Val(EmbadonThalam.Text)
 
         If Val(Wfelimotxt.Text) < 500 And PlatosField.Text <> "" And BathosField.Text <> "" Then
             idibarosBox.Text = ""
@@ -502,6 +540,7 @@ Errr:
 
         If IdioBarosCheck.Checked = True Then
 
+            BarosThalamAnalytika.Close()
             AnalytBarosCheck.Checked = False
             BarosSasiBox.Text = ""
             BarosThalamBox.Text = ""
@@ -512,14 +551,14 @@ Errr:
 
             idibarosBox.Enabled = True
             idibarosBox.ReadOnly = True
-            idibarosBox.ForeColor = Color.Red
+            idibarosBox.ForeColor = Color.Blue
             idibarosBox.BackColor = idibarosBox.BackColor
             IdioBarosCheck.ForeColor = Color.Black
             IdioBarosCheck.BackColor = IdioBarosCheck.BackColor
 
         ElseIf IdioBarosCheck.Checked = False Then
 
-            IdioBarosCheck.Checked = False
+            'BarosThalamAnalytika.Close()
             idibarosBox.Text = ""
             idibarosBox.Enabled = False
             IdioBarosCheck.ForeColor = Color.Gray
@@ -529,10 +568,21 @@ Errr:
 
     End Sub
 
-    Private Sub AnalytBarosCheck_CheckedChanged(sender As Object, e As EventArgs) Handles AnalytBarosCheck.CheckedChanged, PlatosField.TextChanged, BathosField.TextChanged, AnalytikaBarosThalam.Click
+    Private Sub AnalytBarosCheck2_CheckedChanged(sender As Object, e As EventArgs) Handles AnalytikaBarosThalam.Click
+
+        If AnalytikaBarosThalam.ForeColor = Color.Green And BarosSasiBox.Text <> "" And BarosThalamBox.Text <> "" Then
+
+            BarosThalamAnalytika.WindowState = FormWindowState.Normal
+
+        End If
+
+    End Sub
+
+    Private Sub AnalytBarosCheck_CheckedChanged(sender As Object, e As EventArgs) Handles AnalytBarosCheck.CheckedChanged, AnalytikaBarosThalam.Click
 
         If AnalytBarosCheck.Checked = True Then
 
+            BarosThalamAnalytika.Close()
             BarosSasiBox.Text = ""
             BarosThalamBox.Text = ""
             BarosSasiBox.Enabled = True
@@ -549,7 +599,7 @@ Errr:
 
         ElseIf AnalytBarosCheck.Checked = False Then
 
-            AnalytBarosCheck.Checked = False
+            'BarosThalamAnalytika.Close()
             BarosSasiBox.Text = ""
             BarosThalamBox.Text = ""
             BarosSasiBox.Enabled = False
@@ -562,6 +612,7 @@ Errr:
             End If
 
         End If
+
 
     End Sub
 
@@ -584,7 +635,7 @@ Errr:
         If idibarosBox.Text <> "" And IdioBarosCheck.Checked = True And PosostoAntistathmishs.Text <> "" Then
 
             BarosAntibarouBox.ReadOnly = True
-            BarosAntibarouBox.ForeColor = Color.Red
+            BarosAntibarouBox.ForeColor = Color.Blue
             BarosAntibarouBox.BackColor = BarosAntibarouBox.BackColor
 
             BarosAntibarouBox.Text = Format(idibarosBox.Text) + (Format(Wfelimotxt.Text) * Format(PosostoAntistathmishs.Text))
@@ -599,7 +650,7 @@ Epanalhpsh:
 
 
             BarosAntibarouBox.ReadOnly = True
-            BarosAntibarouBox.ForeColor = Color.Red
+            BarosAntibarouBox.ForeColor = Color.Blue
             BarosAntibarouBox.BackColor = BarosAntibarouBox.BackColor
 
         ElseIf BarosSasiBox.Text <> "" And BarosThalamBox.Text <> "" And AnalytBarosCheck.Checked = False And PosostoAntistathmishs.Text <> "" Then

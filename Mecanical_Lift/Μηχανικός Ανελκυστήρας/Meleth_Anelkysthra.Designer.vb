@@ -24,6 +24,7 @@ Partial Class Meleth_Anelkysthra
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ΑρχείοToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ΒιβλιοθήκεςToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
@@ -98,7 +99,6 @@ Partial Class Meleth_Anelkysthra
         Me.PreviousCentralTab1 = New System.Windows.Forms.Button()
         Me.NextCentralTab1 = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.ΒιβλιοθήκεςToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.ElaxMegPlatBathEMbad.SuspendLayout()
@@ -127,6 +127,12 @@ Partial Class Meleth_Anelkysthra
         Me.ΑρχείοToolStripMenuItem.Name = "ΑρχείοToolStripMenuItem"
         Me.ΑρχείοToolStripMenuItem.Size = New System.Drawing.Size(55, 20)
         Me.ΑρχείοToolStripMenuItem.Text = "Αρχείο"
+        '
+        'ΒιβλιοθήκεςToolStripMenuItem1
+        '
+        Me.ΒιβλιοθήκεςToolStripMenuItem1.Name = "ΒιβλιοθήκεςToolStripMenuItem1"
+        Me.ΒιβλιοθήκεςToolStripMenuItem1.Size = New System.Drawing.Size(83, 20)
+        Me.ΒιβλιοθήκεςToolStripMenuItem1.Text = "Βιβλιοθήκες"
         '
         'ProgressBar1
         '
@@ -712,7 +718,7 @@ Partial Class Meleth_Anelkysthra
         Me.AnalytBarosCheck.Name = "AnalytBarosCheck"
         Me.AnalytBarosCheck.Size = New System.Drawing.Size(171, 48)
         Me.AnalytBarosCheck.TabIndex = 6
-        Me.AnalytBarosCheck.Text = " Βάρος Σασί: Pσ [ kg ]  =  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " Βάρος Θαλάμου: Pθ [ kg ]  =  "
+        Me.AnalytBarosCheck.Text = " Μάζα Σασί: Pσ [ kg ]  =  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " Μάζα Θαλάμου: Pθ [ kg ]  =  "
         Me.AnalytBarosCheck.UseVisualStyleBackColor = True
         '
         'IdioBarosCheck
@@ -918,12 +924,6 @@ Partial Class Meleth_Anelkysthra
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(974, 35)
         Me.Panel6.TabIndex = 10
-        '
-        'ΒιβλιοθήκεςToolStripMenuItem1
-        '
-        Me.ΒιβλιοθήκεςToolStripMenuItem1.Name = "ΒιβλιοθήκεςToolStripMenuItem1"
-        Me.ΒιβλιοθήκεςToolStripMenuItem1.Size = New System.Drawing.Size(83, 20)
-        Me.ΒιβλιοθήκεςToolStripMenuItem1.Text = "Βιβλιοθήκες"
         '
         'Meleth_Anelkysthra
         '
