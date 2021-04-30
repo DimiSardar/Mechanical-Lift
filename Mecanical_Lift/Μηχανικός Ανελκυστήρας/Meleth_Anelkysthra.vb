@@ -92,6 +92,14 @@ parabiash:
         Wfelimotxt.ForeColor = Color.Blue
         Wfelimotxt.BackColor = Wfelimotxt.BackColor
 
+        If WfelimoFortioField.Text.Contains(".") Then
+
+            WfelimoFortioField.Text = WfelimoFortioField.Text.Replace(".", ",")
+            WfelimoFortioField.Focus()
+            WfelimoFortioField.Select(WfelimoFortioField.Text.Length, 0)
+
+        End If
+
         If WfelimoFortiolist.SelectedIndex = 0 And WfelimoFortioField.Text <> "" Then
             Wfelimotxt.Text = Val(WfelimoFortioField.Text) * 75
         ElseIf WfelimoFortiolist.SelectedIndex = 1 Then
@@ -120,6 +128,18 @@ parabiash:
 
     End Sub
 
+    Private Sub TaxuthtaAnupswshs_TextChanged(sender As Object, e As EventArgs) Handles TaxuthtaAnupswshs.TextChanged
+
+        If TaxuthtaAnupswshs.Text.Contains(".") Then
+
+            TaxuthtaAnupswshs.Text = TaxuthtaAnupswshs.Text.Replace(".", ",")
+            TaxuthtaAnupswshs.Focus()
+            TaxuthtaAnupswshs.Select(TaxuthtaAnupswshs.Text.Length, 0)
+
+        End If
+
+    End Sub
+
     Private Sub YpsosKtirioutxt_TextChanged(sender As Object, e As EventArgs) Handles YpsosKtirioy.TextChanged, WfelimoFortioField.TextChanged, WfelimoFortiolist.SelectedIndexChanged
 
         Dim d As Integer
@@ -127,6 +147,14 @@ parabiash:
         YpsosKtirioutxt.ReadOnly = True
         YpsosKtirioutxt.ForeColor = Color.Blue
         YpsosKtirioutxt.BackColor = YpsosKtirioutxt.BackColor
+
+        If YpsosKtirioy.Text.Contains(".") Then
+
+            YpsosKtirioy.Text = YpsosKtirioy.Text.Replace(".", ",")
+            YpsosKtirioy.Focus()
+            YpsosKtirioy.Select(YpsosKtirioy.Text.Length, 0)
+
+        End If
 
         If YpsosOrofwnList.SelectedIndex = 0 Then
             YpsosKtirioutxt.Text = Val(YpsosKtirioy.Text)
@@ -240,6 +268,11 @@ Err:
 
         If EmbadonBox.SelectedIndex = 0 Then
 
+            ElaxEmbadtxt.BackColor = Color.White
+            ElaxEmbadtxt.BackColor = ElaxEmbadtxt.BackColor
+            MegEmbadtxt.BackColor = Color.White
+            MegEmbadtxt.BackColor = MegEmbadtxt.BackColor
+
             MegEmbadtxt.ReadOnly = False
             MegEmbadtxt.Text = ""
             megEmbtxt.Text = ""
@@ -247,6 +280,11 @@ Err:
             MegEmbadtxt.ForeColor = Color.Black
 
         ElseIf EmbadonBox.SelectedIndex = 1 Then
+
+            ElaxEmbadtxt.BackColor = System.Drawing.SystemColors.InactiveCaption
+            ElaxEmbadtxt.BackColor = ElaxEmbadtxt.BackColor
+            MegEmbadtxt.BackColor = System.Drawing.SystemColors.InactiveCaption
+            MegEmbadtxt.BackColor = MegEmbadtxt.BackColor
 
             megEmbtxt.Text = ""
 
@@ -308,6 +346,11 @@ Err:
 
         If ThalamosBox.SelectedIndex = 0 Then
 
+            PlatosField.BackColor = Color.White
+            PlatosField.BackColor = PlatosField.BackColor
+            BathosField.BackColor = Color.White
+            BathosField.BackColor = BathosField.BackColor
+
             PlatosField.ForeColor = Color.Black
             BathosField.ForeColor = Color.Black
             PlatosField.ReadOnly = False
@@ -320,6 +363,11 @@ Err:
             bathosTxt.Text = ""
 
         ElseIf ThalamosBox.SelectedIndex = 1 Then
+
+            PlatosField.BackColor = System.Drawing.SystemColors.InactiveCaption
+            PlatosField.BackColor = PlatosField.BackColor
+            BathosField.BackColor = System.Drawing.SystemColors.InactiveCaption
+            BathosField.BackColor = BathosField.BackColor
 
             platTxt.Text = ""
             bathosTxt.Text = ""
@@ -396,6 +444,7 @@ Err:
                 DenEinaiStaEpitrepta.Text = ""
                 EinaiStaEpitrepta.Text = "( Είναι στα επιτρεπτά όρια! )"
                 EmbadonThalam.ForeColor = Color.Green
+                EmbadonThalam.BackColor = System.Drawing.SystemColors.InactiveCaption
                 EmbadonThalam.BackColor = EmbadonThalam.BackColor
                 EinaiStaEpitrepta.ForeColor = Color.Green
                 EinaiStaEpitrepta.BackColor = EinaiStaEpitrepta.BackColor
@@ -406,6 +455,7 @@ Err:
                 EinaiStaEpitrepta.Text = ""
                 DenEinaiStaEpitrepta.Text = "( Δεν είναι στα επιτρεπτά όρια! )"
                 EmbadonThalam.ForeColor = Color.Red
+                EmbadonThalam.BackColor = System.Drawing.SystemColors.InactiveCaption
                 EmbadonThalam.BackColor = EmbadonThalam.BackColor
                 DenEinaiStaEpitrepta.ForeColor = Color.Red
                 DenEinaiStaEpitrepta.BackColor = DenEinaiStaEpitrepta.BackColor
@@ -451,6 +501,8 @@ Errr:
         EmbadonThalam.Text = ""
 
         IdioBarosCheck.Checked = False
+        AnalytBarosCheck.Checked = False
+        BarosThalamAnalytika.Close()
 
         PosostoAntistathmishs.Text = ""
 
@@ -479,11 +531,11 @@ Errr:
         EmbadonBox.SelectedIndex = 1
         'EmbadonBox.SelectedIndex = 0
 
-        ' ThalamosBox.SelectedIndex = 1
-        ThalamosBox.SelectedIndex = 0
+        ThalamosBox.SelectedIndex = 1
+        'ThalamosBox.SelectedIndex = 0
 
-        PlatosField.Text = 1000
-        BathosField.Text = 1000
+        'PlatosField.Text = 1000
+        'BathosField.Text = 1000
 
         IdioBarosCheck.Checked = True
 
@@ -573,7 +625,7 @@ Errr:
 
     Private Sub AnalytBarosCheck2_CheckedChanged(sender As Object, e As EventArgs) Handles AnalytikaBarosThalam.Click
 
-        If AnalytikaBarosThalam.ForeColor = Color.Green And BarosSasiBox.Text <> "" And BarosThalamBox.Text <> "" Then
+        If AnalytikaBarosThalam.ForeColor = Color.Green And BarosSasiBox.Text <> "" And BarosThalamBox.Text <> "" And PlatosField.Text <> "" And BathosField.Text <> "" Then
 
             BarosThalamAnalytika.WindowState = FormWindowState.Normal
 
@@ -581,16 +633,27 @@ Errr:
 
     End Sub
 
-    Private Sub AnalytBarosCheck_CheckedChanged(sender As Object, e As EventArgs) Handles AnalytBarosCheck.CheckedChanged, AnalytikaBarosThalam.Click
+    Private Sub AnalytBarosCheck_CheckedChanged(sender As Object, e As EventArgs) Handles AnalytBarosCheck.CheckedChanged, AnalytikaBarosThalam.Click, ClearAllbtn.Click
 
         If AnalytBarosCheck.Checked = True Then
 
+            BarosSasiBox.BackColor = Color.White
+            BarosSasiBox.ForeColor = Color.Black
+            BarosSasiBox.BackColor = BarosSasiBox.BackColor
+            BarosThalamBox.BackColor = Color.White
+            BarosThalamBox.ForeColor = Color.Black
+            BarosThalamBox.BackColor = BarosThalamBox.BackColor
+            BarosSasiBox.BorderStyle = BorderStyle.Fixed3D
+            BarosThalamBox.BorderStyle = BorderStyle.Fixed3D
+
             BarosThalamAnalytika.Close()
+
             BarosSasiBox.Text = ""
             BarosThalamBox.Text = ""
+            BarosSasiBox.ReadOnly = False
+            BarosThalamBox.ReadOnly = False
             BarosSasiBox.Enabled = True
             BarosThalamBox.Enabled = True
-            AnalytBarosCheck.Checked = True
             AnalytBarosCheck.ForeColor = Color.Black
             AnalytBarosCheck.BackColor = AnalytBarosCheck.BackColor
 
@@ -602,6 +665,14 @@ Errr:
 
         ElseIf AnalytBarosCheck.Checked = False Then
 
+            BarosSasiBox.BackColor = System.Drawing.SystemColors.InactiveCaption
+            BarosSasiBox.BackColor = BarosSasiBox.BackColor
+            BarosThalamBox.BackColor = System.Drawing.SystemColors.InactiveCaption
+            BarosThalamBox.BackColor = BarosThalamBox.BackColor
+
+            BarosSasiBox.BorderStyle = BorderStyle.None
+            BarosThalamBox.BorderStyle = BorderStyle.None
+
             'BarosThalamAnalytika.Close()
             BarosSasiBox.Text = ""
             BarosThalamBox.Text = ""
@@ -610,12 +681,11 @@ Errr:
             AnalytBarosCheck.ForeColor = Color.Gray
             AnalytBarosCheck.BackColor = AnalytBarosCheck.BackColor
 
-            If BarosThalamBox.Text = "" Then
+            If BarosThalamBox.Text = "" Or PlatosField.Text = "" Or BathosField.Text = "" Then
                 AnalytikaBarosThalam.ForeColor = Color.Black
             End If
 
         End If
-
 
     End Sub
 
@@ -669,11 +739,11 @@ Errr:
 
     End Sub
 
-    Private Sub AnalytikaBarosThalam_Click(sender As Object, e As EventArgs) Handles IdioBarosCheck.CheckedChanged, AnalytBarosCheck.CheckedChanged
+    Private Sub AnalytikaBarosThalam_Click(sender As Object, e As EventArgs) Handles IdioBarosCheck.CheckedChanged, AnalytBarosCheck.CheckedChanged, ClearAllbtn.Click
 
-        If IdioBarosCheck.Checked = False And AnalytBarosCheck.Checked = False Then
+        If IdioBarosCheck.Checked = False And AnalytBarosCheck.Checked = False And PlatosField.Text <> "" And BathosField.Text <> "" Then
             AnalytikaBarosThalam.Enabled = True
-        ElseIf IdioBarosCheck.Checked = True Or AnalytBarosCheck.Checked = True Then
+        ElseIf IdioBarosCheck.Checked = True Or AnalytBarosCheck.Checked = True Or PlatosField.Text = "" Or BathosField.Text = "" Then
             AnalytikaBarosThalam.Enabled = False
         End If
 

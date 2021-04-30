@@ -205,14 +205,14 @@ Err:
 
         If BarosThalamTestMode.Checked = True Then
 
-            Orofh.SelectedIndex = 3
+            Orofh.SelectedIndex = 2
             Pseudorofh.SelectedIndex = 2
-            Plaina.SelectedIndex = 3
-            Ypostrwma_Plainwn.SelectedIndex = 4
-            Epikalupsh_Plainwn.SelectedIndex = 3
+            Plaina.SelectedIndex = 2
+            Ypostrwma_Plainwn.SelectedIndex = 2
+            Epikalupsh_Plainwn.SelectedIndex = 2
             Metalliko_Dapedo.SelectedIndex = 3
-            Ypostrwma_Dapedou.SelectedIndex = 4
-            Epistrwsh_Dapedou.SelectedIndex = 5
+            Ypostrwma_Dapedou.SelectedIndex = 2
+            Epistrwsh_Dapedou.SelectedIndex = 1
 
             EpiloghMazasSasi.Text = (Val(BarosPlaisiouApo.Text) + Val(BarosPlaisiouEws.Text)) / 2
 

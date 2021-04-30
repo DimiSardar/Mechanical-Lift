@@ -99,6 +99,7 @@ Partial Class BarosThalamAnalytika
         '
         'Epistrwsh_Dapedou
         '
+        Me.Epistrwsh_Dapedou.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Epistrwsh_Dapedou.ForeColor = System.Drawing.SystemColors.WindowText
         Me.Epistrwsh_Dapedou.FormattingEnabled = True
         Me.Epistrwsh_Dapedou.Items.AddRange(New Object() {"       ", "        Πλαστικό", "Μέταλλο 1.0 [ mm ]", "Μέταλλο 2.0 [ mm ]", "Μέταλλο 3.0 [ mm ]", "Μέταλλο 5.0 [ mm ]"})
@@ -109,6 +110,7 @@ Partial Class BarosThalamAnalytika
         '
         'Ypostrwma_Plainwn
         '
+        Me.Ypostrwma_Plainwn.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Ypostrwma_Plainwn.FormattingEnabled = True
         Me.Ypostrwma_Plainwn.Items.AddRange(New Object() {"", "", "Ξύλο - Χαρτόνι 3.0 [ mm ]", "Ξύλο - Χαρτόνι 5.0 [ mm ]", "Ξύλο - Χαρτόνι 7.0 [ mm ]"})
         Me.Ypostrwma_Plainwn.Location = New System.Drawing.Point(351, 5)
@@ -118,6 +120,7 @@ Partial Class BarosThalamAnalytika
         '
         'Ypostrwma_Dapedou
         '
+        Me.Ypostrwma_Dapedou.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Ypostrwma_Dapedou.FormattingEnabled = True
         Me.Ypostrwma_Dapedou.Items.AddRange(New Object() {"", "", "Ξύλο 20 [ mm ]", "Ξύλο 30 [ mm ]", "Ξύλο 40 [ mm ]"})
         Me.Ypostrwma_Dapedou.Location = New System.Drawing.Point(744, 5)
@@ -127,6 +130,7 @@ Partial Class BarosThalamAnalytika
         '
         'Plaina
         '
+        Me.Plaina.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Plaina.FormattingEnabled = True
         Me.Plaina.Items.AddRange(New Object() {"", "", "Λαμαρίνα 1,5 [ mm ] ", "Λαμαρίνα 2,0 [ mm ] "})
         Me.Plaina.Location = New System.Drawing.Point(239, 5)
@@ -136,6 +140,7 @@ Partial Class BarosThalamAnalytika
         '
         'Metalliko_Dapedo
         '
+        Me.Metalliko_Dapedo.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Metalliko_Dapedo.FormattingEnabled = True
         Me.Metalliko_Dapedo.Items.AddRange(New Object() {"  ", "", "    Στήριξη Σε Πηρούνι", "Στήριξη Σε Κεντρικό Σασσί"})
         Me.Metalliko_Dapedo.Location = New System.Drawing.Point(594, 5)
@@ -145,6 +150,7 @@ Partial Class BarosThalamAnalytika
         '
         'Pseudorofh
         '
+        Me.Pseudorofh.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Pseudorofh.FormattingEnabled = True
         Me.Pseudorofh.Items.AddRange(New Object() {"", "", "Ψευδοροφή 7 [ kg ] "})
         Me.Pseudorofh.Location = New System.Drawing.Point(131, 5)
@@ -154,6 +160,7 @@ Partial Class BarosThalamAnalytika
         '
         'Epikalupsh_Plainwn
         '
+        Me.Epikalupsh_Plainwn.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Epikalupsh_Plainwn.FormattingEnabled = True
         Me.Epikalupsh_Plainwn.Items.AddRange(New Object() {"", "", "       Φορμάικα", "Μέταλλο 1.0 [ mm ]"})
         Me.Epikalupsh_Plainwn.Location = New System.Drawing.Point(488, 5)
@@ -163,6 +170,7 @@ Partial Class BarosThalamAnalytika
         '
         'Orofh
         '
+        Me.Orofh.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Orofh.FormattingEnabled = True
         Me.Orofh.Items.AddRange(New Object() {"", "", "Λαμαρίνα 1,5 [ mm ] ", "Λαμαρίνα 2,0 [ mm ] "})
         Me.Orofh.Location = New System.Drawing.Point(19, 5)
@@ -184,7 +192,8 @@ Partial Class BarosThalamAnalytika
         '
         'Label9
         '
-        Me.Label9.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label9.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.Label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Label9.Location = New System.Drawing.Point(19, 9)
         Me.Label9.Name = "Label9"
@@ -501,6 +510,7 @@ Partial Class BarosThalamAnalytika
         '
         'Panel3
         '
+        Me.Panel3.BackColor = System.Drawing.Color.MediumSeaGreen
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel3.Controls.Add(Me.Label12)
         Me.Panel3.Controls.Add(Me.Label13)
@@ -513,6 +523,7 @@ Partial Class BarosThalamAnalytika
         '
         'Panel4
         '
+        Me.Panel4.BackColor = System.Drawing.Color.Khaki
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel4.Controls.Add(Me.Label14)
         Me.Panel4.Controls.Add(Me.Label15)
@@ -526,6 +537,7 @@ Partial Class BarosThalamAnalytika
         '
         'Panel5
         '
+        Me.Panel5.BackColor = System.Drawing.Color.Khaki
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel5.Controls.Add(Me.Label20)
         Me.Panel5.Controls.Add(Me.BarosPlaisiouApo)
@@ -539,6 +551,7 @@ Partial Class BarosThalamAnalytika
         '
         'Panel6
         '
+        Me.Panel6.BackColor = System.Drawing.Color.Goldenrod
         Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel6.Controls.Add(Me.Label17)
         Me.Panel6.Controls.Add(Me.EpiloghMazasSasi)
@@ -559,7 +572,8 @@ Partial Class BarosThalamAnalytika
         '
         'Label18
         '
-        Me.Label18.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label18.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.Label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Label18.Location = New System.Drawing.Point(19, 348)
         Me.Label18.Name = "Label18"
@@ -592,6 +606,7 @@ Partial Class BarosThalamAnalytika
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.ClientSize = New System.Drawing.Size(984, 701)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.BarosThalamTestMode)

@@ -27,11 +27,13 @@ Partial Class bibliothhkes
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(bibliothhkes))
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(bibliothhkes))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -49,6 +51,12 @@ Partial Class bibliothhkes
         Me.MaximumUsefulChamberBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me._Table_Max_UseFull_Chamber_AreaDataSet = New Μηχανικός_Ανελκυστήρας._Table_Max_UseFull_Chamber_AreaDataSet()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
+        Me.NumberOfPassengersDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.WidthmmDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DepthmmDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StandardLiftCabinsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me._Table_Standard_Lift_ChambersDataSet = New Μηχανικός_Ανελκυστήρας._Table_Standard_Lift_ChambersDataSet()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.DataGridView4 = New System.Windows.Forms.DataGridView()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
@@ -67,13 +75,15 @@ Partial Class bibliothhkes
         Me.PrintForm1 = New Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(Me.components)
         Me.Minimum_Useful_ChamberTableAdapter = New Μηχανικός_Ανελκυστήρας._Table_Min_UseFull_Chamber_AreaDataSetTableAdapters.Minimum_Useful_ChamberTableAdapter()
         Me.Maximum_Useful_ChamberTableAdapter = New Μηχανικός_Ανελκυστήρας._Table_Max_UseFull_Chamber_AreaDataSetTableAdapters.Maximum_Useful_ChamberTableAdapter()
-        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
-        Me._Table_Standard_Lift_ChambersDataSet = New Μηχανικός_Ανελκυστήρας._Table_Standard_Lift_ChambersDataSet()
-        Me.StandardLiftCabinsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Standard_Lift_CabinsTableAdapter = New Μηχανικός_Ανελκυστήρας._Table_Standard_Lift_ChambersDataSetTableAdapters.Standard_Lift_CabinsTableAdapter()
-        Me.NumberOfPassengersDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.WidthmmDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DepthmmDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me._Table_Suspension_Frame_WeightsDataSet = New Μηχανικός_Ανελκυστήρας._Table_Suspension_Frame_WeightsDataSet()
+        Me.DetailedWeightOfChassisBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Detailed_Weight_Of_ChassisTableAdapter = New Μηχανικός_Ανελκυστήρας._Table_Suspension_Frame_WeightsDataSetTableAdapters.Detailed_Weight_Of_ChassisTableAdapter()
+        Me.UsefulLoadMasskgDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DriversDistancemmFromDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DriversDistancemmToDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.WeightOfFrameSuspensionkgFromDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.WeightOfFrameSuspensionkgToDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -86,6 +96,9 @@ Partial Class bibliothhkes
         CType(Me.MaximumUsefulChamberBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._Table_Max_UseFull_Chamber_AreaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage3.SuspendLayout()
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.StandardLiftCabinsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me._Table_Standard_Lift_ChambersDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage4.SuspendLayout()
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage5.SuspendLayout()
@@ -95,9 +108,8 @@ Partial Class bibliothhkes
         Me.TabPage7.SuspendLayout()
         CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me._Table_Standard_Lift_ChambersDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.StandardLiftCabinsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me._Table_Suspension_Frame_WeightsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DetailedWeightOfChassisBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -285,6 +297,75 @@ Partial Class bibliothhkes
         Me.TabPage3.Text = "TabPage3"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
+        'DataGridView3
+        '
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridView3.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        Me.DataGridView3.AutoGenerateColumns = False
+        Me.DataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView3.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView3.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
+        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NumberOfPassengersDataGridViewTextBoxColumn, Me.WidthmmDataGridViewTextBoxColumn, Me.DepthmmDataGridViewTextBoxColumn})
+        Me.DataGridView3.DataSource = Me.StandardLiftCabinsBindingSource
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView3.DefaultCellStyle = DataGridViewCellStyle7
+        Me.DataGridView3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView3.Location = New System.Drawing.Point(3, 3)
+        Me.DataGridView3.Name = "DataGridView3"
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView3.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
+        Me.DataGridView3.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
+        Me.DataGridView3.Size = New System.Drawing.Size(788, 486)
+        Me.DataGridView3.TabIndex = 0
+        '
+        'NumberOfPassengersDataGridViewTextBoxColumn
+        '
+        Me.NumberOfPassengersDataGridViewTextBoxColumn.DataPropertyName = "Number_Of_Passengers"
+        Me.NumberOfPassengersDataGridViewTextBoxColumn.HeaderText = "Number_Of_Passengers"
+        Me.NumberOfPassengersDataGridViewTextBoxColumn.Name = "NumberOfPassengersDataGridViewTextBoxColumn"
+        '
+        'WidthmmDataGridViewTextBoxColumn
+        '
+        Me.WidthmmDataGridViewTextBoxColumn.DataPropertyName = "Width_mm"
+        Me.WidthmmDataGridViewTextBoxColumn.HeaderText = "Width_mm"
+        Me.WidthmmDataGridViewTextBoxColumn.Name = "WidthmmDataGridViewTextBoxColumn"
+        '
+        'DepthmmDataGridViewTextBoxColumn
+        '
+        Me.DepthmmDataGridViewTextBoxColumn.DataPropertyName = "Depth_mm"
+        Me.DepthmmDataGridViewTextBoxColumn.HeaderText = "Depth_mm"
+        Me.DepthmmDataGridViewTextBoxColumn.Name = "DepthmmDataGridViewTextBoxColumn"
+        '
+        'StandardLiftCabinsBindingSource
+        '
+        Me.StandardLiftCabinsBindingSource.DataMember = "Standard_Lift_Cabins"
+        Me.StandardLiftCabinsBindingSource.DataSource = Me._Table_Standard_Lift_ChambersDataSet
+        '
+        '_Table_Standard_Lift_ChambersDataSet
+        '
+        Me._Table_Standard_Lift_ChambersDataSet.DataSetName = "_Table_Standard_Lift_ChambersDataSet"
+        Me._Table_Standard_Lift_ChambersDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'TabPage4
         '
         Me.TabPage4.Controls.Add(Me.DataGridView4)
@@ -298,10 +379,26 @@ Partial Class bibliothhkes
         '
         'DataGridView4
         '
+        Me.DataGridView4.AutoGenerateColumns = False
+        Me.DataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView4.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.UsefulLoadMasskgDataGridViewTextBoxColumn, Me.DriversDistancemmFromDataGridViewTextBoxColumn, Me.DriversDistancemmToDataGridViewTextBoxColumn, Me.WeightOfFrameSuspensionkgFromDataGridViewTextBoxColumn, Me.WeightOfFrameSuspensionkgToDataGridViewTextBoxColumn})
+        Me.DataGridView4.DataSource = Me.DetailedWeightOfChassisBindingSource
         Me.DataGridView4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView4.Location = New System.Drawing.Point(3, 3)
         Me.DataGridView4.Name = "DataGridView4"
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView4.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridView4.RowsDefaultCellStyle = DataGridViewCellStyle10
+        Me.DataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.DataGridView4.Size = New System.Drawing.Size(788, 486)
         Me.DataGridView4.TabIndex = 0
         '
@@ -441,7 +538,7 @@ Partial Class bibliothhkes
         Me.ListBox1.BackColor = System.Drawing.Color.LightSkyBlue
         Me.ListBox1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"Ελάχ. Ωφέλ. Επιφ. Θαλάμ.", "Μεγ. Ωφέλ. Επιφ. Θαλάμ.", "Τυποποίηση θαλάμων"})
+        Me.ListBox1.Items.AddRange(New Object() {"Ελάχ. Ωφέλ. Επιφ. Θαλάμ.", "Μεγ. Ωφέλ. Επιφ. Θαλάμ.", "Τυποποίηση θαλάμων", "Μάζα Πλαισίων Ανάρτησης"})
         Me.ListBox1.Location = New System.Drawing.Point(12, 14)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(150, 667)
@@ -463,82 +560,59 @@ Partial Class bibliothhkes
         '
         Me.Maximum_Useful_ChamberTableAdapter.ClearBeforeFill = True
         '
-        'DataGridView3
-        '
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridView3.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
-        Me.DataGridView3.AutoGenerateColumns = False
-        Me.DataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView3.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
-        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NumberOfPassengersDataGridViewTextBoxColumn, Me.WidthmmDataGridViewTextBoxColumn, Me.DepthmmDataGridViewTextBoxColumn})
-        Me.DataGridView3.DataSource = Me.StandardLiftCabinsBindingSource
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView3.DefaultCellStyle = DataGridViewCellStyle7
-        Me.DataGridView3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView3.Location = New System.Drawing.Point(3, 3)
-        Me.DataGridView3.Name = "DataGridView3"
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView3.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
-        Me.DataGridView3.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
-        Me.DataGridView3.Size = New System.Drawing.Size(788, 486)
-        Me.DataGridView3.TabIndex = 0
-        '
-        '_Table_Standard_Lift_ChambersDataSet
-        '
-        Me._Table_Standard_Lift_ChambersDataSet.DataSetName = "_Table_Standard_Lift_ChambersDataSet"
-        Me._Table_Standard_Lift_ChambersDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'StandardLiftCabinsBindingSource
-        '
-        Me.StandardLiftCabinsBindingSource.DataMember = "Standard_Lift_Cabins"
-        Me.StandardLiftCabinsBindingSource.DataSource = Me._Table_Standard_Lift_ChambersDataSet
-        '
         'Standard_Lift_CabinsTableAdapter
         '
         Me.Standard_Lift_CabinsTableAdapter.ClearBeforeFill = True
         '
-        'NumberOfPassengersDataGridViewTextBoxColumn
+        '_Table_Suspension_Frame_WeightsDataSet
         '
-        Me.NumberOfPassengersDataGridViewTextBoxColumn.DataPropertyName = "Number_Of_Passengers"
-        Me.NumberOfPassengersDataGridViewTextBoxColumn.HeaderText = "Number_Of_Passengers"
-        Me.NumberOfPassengersDataGridViewTextBoxColumn.Name = "NumberOfPassengersDataGridViewTextBoxColumn"
+        Me._Table_Suspension_Frame_WeightsDataSet.DataSetName = "_Table_Suspension_Frame_WeightsDataSet"
+        Me._Table_Suspension_Frame_WeightsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'WidthmmDataGridViewTextBoxColumn
+        'DetailedWeightOfChassisBindingSource
         '
-        Me.WidthmmDataGridViewTextBoxColumn.DataPropertyName = "Width_mm"
-        Me.WidthmmDataGridViewTextBoxColumn.HeaderText = "Width_mm"
-        Me.WidthmmDataGridViewTextBoxColumn.Name = "WidthmmDataGridViewTextBoxColumn"
+        Me.DetailedWeightOfChassisBindingSource.DataMember = "Detailed_Weight_Of_Chassis"
+        Me.DetailedWeightOfChassisBindingSource.DataSource = Me._Table_Suspension_Frame_WeightsDataSet
         '
-        'DepthmmDataGridViewTextBoxColumn
+        'Detailed_Weight_Of_ChassisTableAdapter
         '
-        Me.DepthmmDataGridViewTextBoxColumn.DataPropertyName = "Depth_mm"
-        Me.DepthmmDataGridViewTextBoxColumn.HeaderText = "Depth_mm"
-        Me.DepthmmDataGridViewTextBoxColumn.Name = "DepthmmDataGridViewTextBoxColumn"
+        Me.Detailed_Weight_Of_ChassisTableAdapter.ClearBeforeFill = True
+        '
+        'UsefulLoadMasskgDataGridViewTextBoxColumn
+        '
+        Me.UsefulLoadMasskgDataGridViewTextBoxColumn.DataPropertyName = "Useful_Load_Mass_kg"
+        Me.UsefulLoadMasskgDataGridViewTextBoxColumn.HeaderText = "Useful_Load_Mass_kg"
+        Me.UsefulLoadMasskgDataGridViewTextBoxColumn.Name = "UsefulLoadMasskgDataGridViewTextBoxColumn"
+        '
+        'DriversDistancemmFromDataGridViewTextBoxColumn
+        '
+        Me.DriversDistancemmFromDataGridViewTextBoxColumn.DataPropertyName = "Drivers_Distance_mm_From"
+        Me.DriversDistancemmFromDataGridViewTextBoxColumn.HeaderText = "Drivers_Distance_mm_From"
+        Me.DriversDistancemmFromDataGridViewTextBoxColumn.Name = "DriversDistancemmFromDataGridViewTextBoxColumn"
+        '
+        'DriversDistancemmToDataGridViewTextBoxColumn
+        '
+        Me.DriversDistancemmToDataGridViewTextBoxColumn.DataPropertyName = "Drivers_Distance_mm_To"
+        Me.DriversDistancemmToDataGridViewTextBoxColumn.HeaderText = "Drivers_Distance_mm_To"
+        Me.DriversDistancemmToDataGridViewTextBoxColumn.Name = "DriversDistancemmToDataGridViewTextBoxColumn"
+        '
+        'WeightOfFrameSuspensionkgFromDataGridViewTextBoxColumn
+        '
+        Me.WeightOfFrameSuspensionkgFromDataGridViewTextBoxColumn.DataPropertyName = "Weight_Of_Frame_Suspension_kg_From"
+        Me.WeightOfFrameSuspensionkgFromDataGridViewTextBoxColumn.HeaderText = "Weight_Of_Frame_Suspension_kg_From"
+        Me.WeightOfFrameSuspensionkgFromDataGridViewTextBoxColumn.Name = "WeightOfFrameSuspensionkgFromDataGridViewTextBoxColumn"
+        '
+        'WeightOfFrameSuspensionkgToDataGridViewTextBoxColumn
+        '
+        Me.WeightOfFrameSuspensionkgToDataGridViewTextBoxColumn.DataPropertyName = "Weight_Of_Frame_Suspension_kg_To"
+        Me.WeightOfFrameSuspensionkgToDataGridViewTextBoxColumn.HeaderText = "Weight_Of_Frame_Suspension_kg_To"
+        Me.WeightOfFrameSuspensionkgToDataGridViewTextBoxColumn.Name = "WeightOfFrameSuspensionkgToDataGridViewTextBoxColumn"
         '
         'bibliothhkes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.ClientSize = New System.Drawing.Size(984, 693)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Panel1)
@@ -559,6 +633,9 @@ Partial Class bibliothhkes
         CType(Me.MaximumUsefulChamberBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me._Table_Max_UseFull_Chamber_AreaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage3.ResumeLayout(False)
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.StandardLiftCabinsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me._Table_Standard_Lift_ChambersDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage4.ResumeLayout(False)
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage5.ResumeLayout(False)
@@ -568,9 +645,8 @@ Partial Class bibliothhkes
         Me.TabPage7.ResumeLayout(False)
         CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me._Table_Standard_Lift_ChambersDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.StandardLiftCabinsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me._Table_Suspension_Frame_WeightsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DetailedWeightOfChassisBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -617,4 +693,12 @@ Partial Class bibliothhkes
     Friend WithEvents NumberOfPassengersDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents WidthmmDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents DepthmmDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents _Table_Suspension_Frame_WeightsDataSet As _Table_Suspension_Frame_WeightsDataSet
+    Friend WithEvents DetailedWeightOfChassisBindingSource As BindingSource
+    Friend WithEvents Detailed_Weight_Of_ChassisTableAdapter As _Table_Suspension_Frame_WeightsDataSetTableAdapters.Detailed_Weight_Of_ChassisTableAdapter
+    Friend WithEvents UsefulLoadMasskgDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DriversDistancemmFromDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DriversDistancemmToDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents WeightOfFrameSuspensionkgFromDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents WeightOfFrameSuspensionkgToDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class

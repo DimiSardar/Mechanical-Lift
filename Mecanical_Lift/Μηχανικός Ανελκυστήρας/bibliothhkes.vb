@@ -1,6 +1,8 @@
 ﻿Public Class bibliothhkes
 
     Private Sub bibliothhkes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the '_Table_Suspension_Frame_WeightsDataSet.Detailed_Weight_Of_Chassis' table. You can move, or remove it, as needed.
+        Me.Detailed_Weight_Of_ChassisTableAdapter.Fill(Me._Table_Suspension_Frame_WeightsDataSet.Detailed_Weight_Of_Chassis)
         'TODO: This line of code loads data into the '_Table_Standard_Lift_ChambersDataSet.Standard_Lift_Cabins' table. You can move, or remove it, as needed.
         Me.Standard_Lift_CabinsTableAdapter.Fill(Me._Table_Standard_Lift_ChambersDataSet.Standard_Lift_Cabins)
         'TODO: This line of code loads data into the '_Table_Standard_Lift_ChambersDataSet.Standard_Lift_Cabins' table. You can move, or remove it, as needed.
@@ -20,7 +22,8 @@
             TabControl1.SelectTab(1)
         ElseIf ListBox1.SelectedItem = "Τυποποίηση θαλάμων" Then
             TabControl1.SelectTab(2)
-
+        ElseIf ListBox1.SelectedItem = "Μάζα Πλαισίων Ανάρτησης" Then
+            TabControl1.SelectTab(3)
 
         End If
 
@@ -35,6 +38,8 @@
             MaximumUsefulChamberBindingSource.AddNew()
         ElseIf TabControl1.SelectedTab.Text = "TabPage3" Then
             StandardLiftCabinsBindingSource.AddNew()
+        ElseIf TabControl1.SelectedTab.Text = "TabPage4" Then
+            DetailedWeightOfChassisBindingSource.AddNew()
 
 
         End If
@@ -55,6 +60,9 @@ Errr:
             MaximumUsefulChamberBindingSource.RemoveCurrent()
         ElseIf TabControl1.SelectedTab.Text = "TabPage3" Then
             StandardLiftCabinsBindingSource.RemoveCurrent()
+        ElseIf TabControl1.SelectedTab.Text = "TabPage4" Then
+            DetailedWeightOfChassisBindingSource.RemoveCurrent()
+
 
         End If
 
@@ -85,6 +93,13 @@ Errr:
             StandardLiftCabinsBindingSource.EndEdit()
             Standard_Lift_CabinsTableAdapter.Update(_Table_Standard_Lift_ChambersDataSet.Standard_Lift_Cabins)
             MessageBox.Show("Η προσθήκη ήταν επιτυχής!")
+
+        ElseIf TabControl1.SelectedTab.Text = "TabPage4" Then
+
+            DetailedWeightOfChassisBindingSource.EndEdit()
+            Detailed_Weight_Of_ChassisTableAdapter.Update(_Table_Suspension_Frame_WeightsDataSet.Detailed_Weight_Of_Chassis)
+            MessageBox.Show("Η προσθήκη ήταν επιτυχής!")
+
 
         End If
 

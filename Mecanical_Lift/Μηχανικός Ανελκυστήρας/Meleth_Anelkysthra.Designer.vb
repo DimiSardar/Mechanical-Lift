@@ -42,6 +42,7 @@ Partial Class Meleth_Anelkysthra
         Me.ThalamosBox = New System.Windows.Forms.ComboBox()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
+        Me.DenEinaiStaEpitrepta = New System.Windows.Forms.Label()
         Me.EinaiStaEpitrepta = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.bathosTxt = New System.Windows.Forms.Label()
@@ -99,7 +100,6 @@ Partial Class Meleth_Anelkysthra
         Me.PreviousCentralTab1 = New System.Windows.Forms.Button()
         Me.NextCentralTab1 = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.DenEinaiStaEpitrepta = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.ElaxMegPlatBathEMbad.SuspendLayout()
@@ -116,6 +116,7 @@ Partial Class Meleth_Anelkysthra
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ΑρχείοToolStripMenuItem, Me.ΒιβλιοθήκεςToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
@@ -156,6 +157,7 @@ Partial Class Meleth_Anelkysthra
         'TabPage1
         '
         Me.TabPage1.AutoScroll = True
+        Me.TabPage1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.TabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TabPage1.Controls.Add(Me.Panel1)
         Me.TabPage1.Controls.Add(Me.ElaxMegPlatBathEMbad)
@@ -171,7 +173,6 @@ Partial Class Meleth_Anelkysthra
         Me.TabPage1.Size = New System.Drawing.Size(968, 543)
         Me.TabPage1.TabIndex = 2
         Me.TabPage1.Text = "TabPage1"
-        Me.TabPage1.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -182,6 +183,7 @@ Partial Class Meleth_Anelkysthra
         '
         'ElaxMegPlatBathEMbad
         '
+        Me.ElaxMegPlatBathEMbad.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ElaxMegPlatBathEMbad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ElaxMegPlatBathEMbad.Controls.Add(Me.EmbadonThalam)
         Me.ElaxMegPlatBathEMbad.Controls.Add(Me.MegEmbadtxt)
@@ -210,6 +212,7 @@ Partial Class Meleth_Anelkysthra
         '
         'EmbadonThalam
         '
+        Me.EmbadonThalam.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.EmbadonThalam.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.EmbadonThalam.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.EmbadonThalam.Location = New System.Drawing.Point(206, 227)
@@ -220,38 +223,42 @@ Partial Class Meleth_Anelkysthra
         '
         'MegEmbadtxt
         '
+        Me.MegEmbadtxt.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.MegEmbadtxt.ForeColor = System.Drawing.SystemColors.WindowText
         Me.MegEmbadtxt.Location = New System.Drawing.Point(206, 78)
         Me.MegEmbadtxt.Name = "MegEmbadtxt"
         Me.MegEmbadtxt.Size = New System.Drawing.Size(36, 20)
-        Me.MegEmbadtxt.TabIndex = 12
+        Me.MegEmbadtxt.TabIndex = 2
         Me.MegEmbadtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'ElaxEmbadtxt
         '
+        Me.ElaxEmbadtxt.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ElaxEmbadtxt.ForeColor = System.Drawing.SystemColors.WindowText
         Me.ElaxEmbadtxt.Location = New System.Drawing.Point(206, 52)
         Me.ElaxEmbadtxt.Name = "ElaxEmbadtxt"
         Me.ElaxEmbadtxt.Size = New System.Drawing.Size(36, 20)
-        Me.ElaxEmbadtxt.TabIndex = 12
+        Me.ElaxEmbadtxt.TabIndex = 1
         Me.ElaxEmbadtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'BathosField
         '
+        Me.BathosField.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.BathosField.ForeColor = System.Drawing.SystemColors.WindowText
         Me.BathosField.Location = New System.Drawing.Point(206, 177)
         Me.BathosField.Name = "BathosField"
         Me.BathosField.Size = New System.Drawing.Size(36, 20)
-        Me.BathosField.TabIndex = 11
+        Me.BathosField.TabIndex = 5
         Me.BathosField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'PlatosField
         '
+        Me.PlatosField.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.PlatosField.ForeColor = System.Drawing.SystemColors.WindowText
         Me.PlatosField.Location = New System.Drawing.Point(206, 152)
         Me.PlatosField.Name = "PlatosField"
         Me.PlatosField.Size = New System.Drawing.Size(36, 20)
-        Me.PlatosField.TabIndex = 11
+        Me.PlatosField.TabIndex = 4
         Me.PlatosField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label4
@@ -290,7 +297,7 @@ Partial Class Meleth_Anelkysthra
         Me.EmbadonBox.Name = "EmbadonBox"
         Me.EmbadonBox.Size = New System.Drawing.Size(249, 21)
         Me.EmbadonBox.Sorted = True
-        Me.EmbadonBox.TabIndex = 8
+        Me.EmbadonBox.TabIndex = 0
         '
         'ThalamosBox
         '
@@ -301,7 +308,7 @@ Partial Class Meleth_Anelkysthra
         Me.ThalamosBox.Name = "ThalamosBox"
         Me.ThalamosBox.Size = New System.Drawing.Size(249, 21)
         Me.ThalamosBox.Sorted = True
-        Me.ThalamosBox.TabIndex = 8
+        Me.ThalamosBox.TabIndex = 3
         '
         'Label27
         '
@@ -321,6 +328,16 @@ Partial Class Meleth_Anelkysthra
         Me.Label22.Size = New System.Drawing.Size(177, 13)
         Me.Label22.TabIndex = 7
         Me.Label22.Text = "Μέγιστο Εμβαδόν: E max [ m2 ]  =  "
+        '
+        'DenEinaiStaEpitrepta
+        '
+        Me.DenEinaiStaEpitrepta.AutoSize = True
+        Me.DenEinaiStaEpitrepta.ForeColor = System.Drawing.Color.DimGray
+        Me.DenEinaiStaEpitrepta.Location = New System.Drawing.Point(256, 227)
+        Me.DenEinaiStaEpitrepta.Name = "DenEinaiStaEpitrepta"
+        Me.DenEinaiStaEpitrepta.Size = New System.Drawing.Size(172, 13)
+        Me.DenEinaiStaEpitrepta.TabIndex = 2
+        Me.DenEinaiStaEpitrepta.Text = "( Δεν είναι στα επιτρεπτά όρια! )"
         '
         'EinaiStaEpitrepta
         '
@@ -393,6 +410,7 @@ Partial Class Meleth_Anelkysthra
         '
         'Panel4
         '
+        Me.Panel4.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel4.Controls.Add(Me.BarosAntibarouBox)
         Me.Panel4.Controls.Add(Me.PosostoAntistathmishs)
@@ -406,6 +424,7 @@ Partial Class Meleth_Anelkysthra
         '
         'BarosAntibarouBox
         '
+        Me.BarosAntibarouBox.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.BarosAntibarouBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BarosAntibarouBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BarosAntibarouBox.Location = New System.Drawing.Point(206, 48)
@@ -420,7 +439,7 @@ Partial Class Meleth_Anelkysthra
         Me.PosostoAntistathmishs.Location = New System.Drawing.Point(206, 13)
         Me.PosostoAntistathmishs.Name = "PosostoAntistathmishs"
         Me.PosostoAntistathmishs.Size = New System.Drawing.Size(36, 20)
-        Me.PosostoAntistathmishs.TabIndex = 2
+        Me.PosostoAntistathmishs.TabIndex = 0
         Me.PosostoAntistathmishs.Text = "0.5"
         Me.PosostoAntistathmishs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -454,6 +473,7 @@ Partial Class Meleth_Anelkysthra
         '
         'WfelArithYpsos
         '
+        Me.WfelArithYpsos.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.WfelArithYpsos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.WfelArithYpsos.Controls.Add(Me.YpsosKtirioutxt)
         Me.WfelArithYpsos.Controls.Add(Me.ArithmAtomwntxt)
@@ -470,32 +490,35 @@ Partial Class Meleth_Anelkysthra
         '
         'YpsosKtirioutxt
         '
+        Me.YpsosKtirioutxt.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.YpsosKtirioutxt.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.YpsosKtirioutxt.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.YpsosKtirioutxt.Location = New System.Drawing.Point(206, 70)
         Me.YpsosKtirioutxt.Name = "YpsosKtirioutxt"
         Me.YpsosKtirioutxt.Size = New System.Drawing.Size(36, 13)
-        Me.YpsosKtirioutxt.TabIndex = 9
+        Me.YpsosKtirioutxt.TabIndex = 2
         Me.YpsosKtirioutxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'ArithmAtomwntxt
         '
+        Me.ArithmAtomwntxt.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ArithmAtomwntxt.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ArithmAtomwntxt.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ArithmAtomwntxt.Location = New System.Drawing.Point(206, 40)
         Me.ArithmAtomwntxt.Name = "ArithmAtomwntxt"
         Me.ArithmAtomwntxt.Size = New System.Drawing.Size(36, 13)
-        Me.ArithmAtomwntxt.TabIndex = 8
+        Me.ArithmAtomwntxt.TabIndex = 1
         Me.ArithmAtomwntxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Wfelimotxt
         '
+        Me.Wfelimotxt.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.Wfelimotxt.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Wfelimotxt.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Wfelimotxt.Location = New System.Drawing.Point(206, 11)
         Me.Wfelimotxt.Name = "Wfelimotxt"
         Me.Wfelimotxt.Size = New System.Drawing.Size(36, 13)
-        Me.Wfelimotxt.TabIndex = 7
+        Me.Wfelimotxt.TabIndex = 0
         Me.Wfelimotxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label3
@@ -547,6 +570,7 @@ Partial Class Meleth_Anelkysthra
         '
         'Panel2
         '
+        Me.Panel2.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Controls.Add(Me.YpsosOrofwnList)
         Me.Panel2.Controls.Add(Me.MhxKatw)
@@ -573,7 +597,7 @@ Partial Class Meleth_Anelkysthra
         Me.YpsosOrofwnList.Location = New System.Drawing.Point(15, 148)
         Me.YpsosOrofwnList.Name = "YpsosOrofwnList"
         Me.YpsosOrofwnList.Size = New System.Drawing.Size(149, 21)
-        Me.YpsosOrofwnList.TabIndex = 13
+        Me.YpsosOrofwnList.TabIndex = 7
         '
         'MhxKatw
         '
@@ -583,7 +607,7 @@ Partial Class Meleth_Anelkysthra
         Me.MhxKatw.Location = New System.Drawing.Point(420, 43)
         Me.MhxKatw.Name = "MhxKatw"
         Me.MhxKatw.Size = New System.Drawing.Size(51, 17)
-        Me.MhxKatw.TabIndex = 12
+        Me.MhxKatw.TabIndex = 3
         Me.MhxKatw.Text = "Κάτω"
         Me.MhxKatw.UseVisualStyleBackColor = True
         '
@@ -592,7 +616,7 @@ Partial Class Meleth_Anelkysthra
         Me.YpsosKtirioy.Location = New System.Drawing.Point(207, 148)
         Me.YpsosKtirioy.Name = "YpsosKtirioy"
         Me.YpsosKtirioy.Size = New System.Drawing.Size(92, 20)
-        Me.YpsosKtirioy.TabIndex = 2
+        Me.YpsosKtirioy.TabIndex = 8
         Me.YpsosKtirioy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label17
@@ -610,7 +634,7 @@ Partial Class Meleth_Anelkysthra
         Me.TaxuthtaAnupswshs.Location = New System.Drawing.Point(207, 117)
         Me.TaxuthtaAnupswshs.Name = "TaxuthtaAnupswshs"
         Me.TaxuthtaAnupswshs.Size = New System.Drawing.Size(92, 20)
-        Me.TaxuthtaAnupswshs.TabIndex = 2
+        Me.TaxuthtaAnupswshs.TabIndex = 6
         Me.TaxuthtaAnupswshs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'MhxEpanw
@@ -621,7 +645,7 @@ Partial Class Meleth_Anelkysthra
         Me.MhxEpanw.Location = New System.Drawing.Point(251, 43)
         Me.MhxEpanw.Name = "MhxEpanw"
         Me.MhxEpanw.Size = New System.Drawing.Size(57, 17)
-        Me.MhxEpanw.TabIndex = 12
+        Me.MhxEpanw.TabIndex = 2
         Me.MhxEpanw.Text = "Επάνω"
         Me.MhxEpanw.UseVisualStyleBackColor = True
         '
@@ -631,7 +655,7 @@ Partial Class Meleth_Anelkysthra
         Me.WfelimoFortioField.Location = New System.Drawing.Point(207, 86)
         Me.WfelimoFortioField.Name = "WfelimoFortioField"
         Me.WfelimoFortioField.Size = New System.Drawing.Size(92, 20)
-        Me.WfelimoFortioField.TabIndex = 2
+        Me.WfelimoFortioField.TabIndex = 5
         Me.WfelimoFortioField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label5
@@ -662,7 +686,7 @@ Partial Class Meleth_Anelkysthra
         Me.WfelimoFortiolist.Location = New System.Drawing.Point(15, 86)
         Me.WfelimoFortiolist.Name = "WfelimoFortiolist"
         Me.WfelimoFortiolist.Size = New System.Drawing.Size(149, 21)
-        Me.WfelimoFortiolist.TabIndex = 11
+        Me.WfelimoFortiolist.TabIndex = 4
         '
         'anarthsh2pros1
         '
@@ -672,7 +696,7 @@ Partial Class Meleth_Anelkysthra
         Me.anarthsh2pros1.Location = New System.Drawing.Point(142, 43)
         Me.anarthsh2pros1.Name = "anarthsh2pros1"
         Me.anarthsh2pros1.Size = New System.Drawing.Size(66, 17)
-        Me.anarthsh2pros1.TabIndex = 10
+        Me.anarthsh2pros1.TabIndex = 1
         Me.anarthsh2pros1.Text = "2 προς 1" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.anarthsh2pros1.UseVisualStyleBackColor = True
         '
@@ -684,12 +708,13 @@ Partial Class Meleth_Anelkysthra
         Me.anarthsh1pros1.Location = New System.Drawing.Point(15, 43)
         Me.anarthsh1pros1.Name = "anarthsh1pros1"
         Me.anarthsh1pros1.Size = New System.Drawing.Size(66, 17)
-        Me.anarthsh1pros1.TabIndex = 9
+        Me.anarthsh1pros1.TabIndex = 0
         Me.anarthsh1pros1.Text = "1 προς 1"
         Me.anarthsh1pros1.UseVisualStyleBackColor = True
         '
         'freatio_img
         '
+        Me.freatio_img.BackColor = System.Drawing.Color.White
         Me.freatio_img.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.freatio_img.Image = Global.Μηχανικός_Ανελκυστήρας.My.Resources.Resource1.blank_image
         Me.freatio_img.Location = New System.Drawing.Point(231, 6)
@@ -701,6 +726,7 @@ Partial Class Meleth_Anelkysthra
         '
         'iDionBarThal
         '
+        Me.iDionBarThal.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.iDionBarThal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.iDionBarThal.Controls.Add(Me.AnalytBarosCheck)
         Me.iDionBarThal.Controls.Add(Me.IdioBarosCheck)
@@ -719,7 +745,7 @@ Partial Class Meleth_Anelkysthra
         Me.AnalytBarosCheck.Location = New System.Drawing.Point(14, 49)
         Me.AnalytBarosCheck.Name = "AnalytBarosCheck"
         Me.AnalytBarosCheck.Size = New System.Drawing.Size(171, 48)
-        Me.AnalytBarosCheck.TabIndex = 6
+        Me.AnalytBarosCheck.TabIndex = 2
         Me.AnalytBarosCheck.Text = " Μάζα Σασί: Pσ [ kg ]  =  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " Μάζα Θαλάμου: Pθ [ kg ]  =  "
         Me.AnalytBarosCheck.UseVisualStyleBackColor = True
         '
@@ -729,25 +755,28 @@ Partial Class Meleth_Anelkysthra
         Me.IdioBarosCheck.Location = New System.Drawing.Point(14, 14)
         Me.IdioBarosCheck.Name = "IdioBarosCheck"
         Me.IdioBarosCheck.Size = New System.Drawing.Size(184, 17)
-        Me.IdioBarosCheck.TabIndex = 5
+        Me.IdioBarosCheck.TabIndex = 0
         Me.IdioBarosCheck.Text = "Ίδιο Βάρος Θαλάμου: P [ kg ]  =  "
         Me.IdioBarosCheck.UseVisualStyleBackColor = True
         '
         'idibarosBox
         '
+        Me.idibarosBox.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.idibarosBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.idibarosBox.ForeColor = System.Drawing.SystemColors.WindowText
         Me.idibarosBox.Location = New System.Drawing.Point(206, 15)
         Me.idibarosBox.Name = "idibarosBox"
         Me.idibarosBox.Size = New System.Drawing.Size(36, 13)
-        Me.idibarosBox.TabIndex = 4
+        Me.idibarosBox.TabIndex = 1
         Me.idibarosBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'BarosThalamBox
         '
+        Me.BarosThalamBox.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.BarosThalamBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BarosThalamBox.Location = New System.Drawing.Point(206, 75)
         Me.BarosThalamBox.Name = "BarosThalamBox"
-        Me.BarosThalamBox.Size = New System.Drawing.Size(36, 20)
+        Me.BarosThalamBox.Size = New System.Drawing.Size(36, 13)
         Me.BarosThalamBox.TabIndex = 4
         Me.BarosThalamBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -756,16 +785,18 @@ Partial Class Meleth_Anelkysthra
         Me.AnalytikaBarosThalam.Location = New System.Drawing.Point(294, 50)
         Me.AnalytikaBarosThalam.Name = "AnalytikaBarosThalam"
         Me.AnalytikaBarosThalam.Size = New System.Drawing.Size(97, 45)
-        Me.AnalytikaBarosThalam.TabIndex = 3
+        Me.AnalytikaBarosThalam.TabIndex = 5
         Me.AnalytikaBarosThalam.Text = "Με αναλυτικό τρόπο!"
         Me.AnalytikaBarosThalam.UseVisualStyleBackColor = True
         '
         'BarosSasiBox
         '
+        Me.BarosSasiBox.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.BarosSasiBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BarosSasiBox.Location = New System.Drawing.Point(206, 49)
         Me.BarosSasiBox.Name = "BarosSasiBox"
-        Me.BarosSasiBox.Size = New System.Drawing.Size(36, 20)
-        Me.BarosSasiBox.TabIndex = 4
+        Me.BarosSasiBox.Size = New System.Drawing.Size(36, 13)
+        Me.BarosSasiBox.TabIndex = 3
         Me.BarosSasiBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label15
@@ -780,6 +811,7 @@ Partial Class Meleth_Anelkysthra
         '
         'imglift
         '
+        Me.imglift.BackColor = System.Drawing.Color.White
         Me.imglift.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.imglift.Image = Global.Μηχανικός_Ανελκυστήρας.My.Resources.Resource1.blank_image
         Me.imglift.Location = New System.Drawing.Point(6, 6)
@@ -812,13 +844,14 @@ Partial Class Meleth_Anelkysthra
         'TestMode2
         '
         Me.TestMode2.AutoSize = True
-        Me.TestMode2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TestMode2.BackColor = System.Drawing.Color.Transparent
+        Me.TestMode2.ForeColor = System.Drawing.Color.Indigo
         Me.TestMode2.Location = New System.Drawing.Point(512, 10)
         Me.TestMode2.Name = "TestMode2"
         Me.TestMode2.Size = New System.Drawing.Size(85, 17)
         Me.TestMode2.TabIndex = 14
         Me.TestMode2.Text = "Παραβίαση!"
-        Me.TestMode2.UseVisualStyleBackColor = True
+        Me.TestMode2.UseVisualStyleBackColor = False
         '
         'CentralTabControl
         '
@@ -870,7 +903,7 @@ Partial Class Meleth_Anelkysthra
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label1.BackColor = System.Drawing.Color.CornflowerBlue
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Label1.Location = New System.Drawing.Point(304, 14)
         Me.Label1.Name = "Label1"
@@ -880,7 +913,7 @@ Partial Class Meleth_Anelkysthra
         '
         'Panel5
         '
-        Me.Panel5.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel5.BackColor = System.Drawing.Color.CornflowerBlue
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel5.Controls.Add(Me.Label1)
         Me.Panel5.Location = New System.Drawing.Point(12, 27)
@@ -910,13 +943,14 @@ Partial Class Meleth_Anelkysthra
         Me.NextCentralTab1.Location = New System.Drawing.Point(867, 0)
         Me.NextCentralTab1.Name = "NextCentralTab1"
         Me.NextCentralTab1.Size = New System.Drawing.Size(100, 35)
-        Me.NextCentralTab1.TabIndex = 6
+        Me.NextCentralTab1.TabIndex = 0
         Me.NextCentralTab1.Text = "Επόμενο"
         Me.NextCentralTab1.UseVisualStyleBackColor = False
         '
         'Panel6
         '
         Me.Panel6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Panel6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.Panel6.Controls.Add(Me.TestMode2)
         Me.Panel6.Controls.Add(Me.ClearAllbtn)
         Me.Panel6.Controls.Add(Me.TestMode)
@@ -927,20 +961,11 @@ Partial Class Meleth_Anelkysthra
         Me.Panel6.Size = New System.Drawing.Size(974, 35)
         Me.Panel6.TabIndex = 10
         '
-        'DenEinaiStaEpitrepta
-        '
-        Me.DenEinaiStaEpitrepta.AutoSize = True
-        Me.DenEinaiStaEpitrepta.ForeColor = System.Drawing.Color.DimGray
-        Me.DenEinaiStaEpitrepta.Location = New System.Drawing.Point(256, 227)
-        Me.DenEinaiStaEpitrepta.Name = "DenEinaiStaEpitrepta"
-        Me.DenEinaiStaEpitrepta.Size = New System.Drawing.Size(172, 13)
-        Me.DenEinaiStaEpitrepta.TabIndex = 2
-        Me.DenEinaiStaEpitrepta.Text = "( Δεν είναι στα επιτρεπτά όρια! )"
-        '
         'Meleth_Anelkysthra
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.ClientSize = New System.Drawing.Size(1001, 701)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Panel5)
