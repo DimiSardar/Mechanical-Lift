@@ -126,6 +126,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
+    <Compile Include="Welcome Form.Designer.vb">
+      <DependentUpon>Welcome Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="_Table_Max_UseFull_Chamber_AreaDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -173,6 +179,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome Form.resx">
+      <DependentUpon>Welcome Form.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -232,22 +241,22 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icon-register1.png" />
-    <None Include="Resources\65-651790_user-icon-login-logo1.png" />
     <None Include="Resources\1pros1anarthsh.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\2pros1anarthsh.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\65-651790_user-icon-login-logo.png" />
-    <None Include="Resources\367-3670351_access-login-icon.png" />
-    <None Include="Resources\4051919-middle.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\blank_image.png" />
-    <None Include="Resources\depositphotos_62589313-stock-illustration-login-icon-glossy-button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\e3wfyllo.jpg" />
-    <None Include="Resources\freatio_katw1.png" />
-    <None Include="Resources\freatio_epanw1.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\freatio_epanw.png" />
-    <None Include="Resources\Εξώφυλλο.jpg" />
-    <None Include="Resources\2προς1_Μηχανικός2.png" />
-    <None Include="Resources\1προς1_Μηχανικός.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\freatio_katw.png" />
@@ -256,7 +265,22 @@
     <None Include="Resources\icon-register.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\αρχείο λήψης.png" />
+    <None Include="Resources\ΕΞΥΠΝΟ-ΣΠΙΤΙ-780x585.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\me.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alexikerafna-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rodosair-meletes-1024x640.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mep design.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Υδραυλικές Εγκαταστάσεις Παντός Τύπου 3.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -28,8 +28,8 @@ Partial Class Eisodos
         Me.OnomaXrhsthBox = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.EgrafhBtn = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -96,17 +96,6 @@ Partial Class Eisodos
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Όνομα Χρήστη:"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.DodgerBlue
-        Me.PictureBox1.Image = Global.Μηχανικός_Ανελκυστήρας.My.Resources.Resources._65_651790_user_icon_login_logo
-        Me.PictureBox1.Location = New System.Drawing.Point(41, 31)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(291, 246)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 14
-        Me.PictureBox1.TabStop = False
-        '
         'EgrafhBtn
         '
         Me.EgrafhBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
@@ -120,6 +109,17 @@ Partial Class Eisodos
         Me.EgrafhBtn.TabIndex = 15
         Me.EgrafhBtn.Text = "Εγγραφή"
         Me.EgrafhBtn.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.PictureBox1.Image = Global.Μηχανικός_Ανελκυστήρας.My.Resources.Resources._65_651790_user_icon_login_logo
+        Me.PictureBox1.Location = New System.Drawing.Point(41, 31)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(291, 246)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 14
+        Me.PictureBox1.TabStop = False
         '
         'Eisodos
         '

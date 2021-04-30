@@ -66,7 +66,7 @@ parabiash:
 
         If anarthsh1pros1.Checked = True Then
             anarthsh2pros1.Checked = False
-            imglift.Image = My.Resources.Resource1._1προς1_Μηχανικός
+            imglift.Image = My.Resources.Resource1._1pros1anarthsh
 
         ElseIf anarthsh1pros1.Checked = False And anarthsh2pros1.Checked = False Then
             imglift.Image = My.Resources.Resource1.blank_image
@@ -78,7 +78,7 @@ parabiash:
 
         If anarthsh2pros1.Checked = True Then
             anarthsh1pros1.Checked = False
-            imglift.Image = My.Resources.Resource1._2προς1_Μηχανικός2
+            imglift.Image = My.Resources.Resource1._2pros1anarthsh
 
         ElseIf anarthsh1pros1.Checked = False And anarthsh2pros1.Checked = False Then
             imglift.Image = My.Resources.Resource1.blank_image
