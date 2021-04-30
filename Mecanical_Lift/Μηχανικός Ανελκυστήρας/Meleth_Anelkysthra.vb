@@ -32,16 +32,17 @@ Public Class Meleth_Anelkysthra
 
             MessageBox.Show("Συμπληρώστε όλα τα πεδία για να συνεχίσετε!")
 
-        ElseIf ElegxosEmbadThalam.ForeColor = Color.Red Then
+        ElseIf EinaiStaEpitrepta.ForeColor = Color.Red Then
 
             MessageBox.Show("Τα όρια δεν είναι στα επιτρεπτά πλαίσια που ορίζει ο κανονισμός!")
 
-            NextCentralTab1.Enabled = True
             NextCentralTab1.ForeColor = Color.Red
             NextCentralTab1.BackColor = NextCentralTab1.BackColor
         Else
 parabiash:
             If Not CentralTabControl.SelectedTab Is TabPage5 Then
+                NextCentralTab1.ForeColor = Color.White
+                NextCentralTab1.BackColor = NextCentralTab1.BackColor
                 CentralTabControl.SelectedIndex = CentralTabControl.SelectedIndex + 1
             End If
 
@@ -380,7 +381,7 @@ Err:
 
         If PlatosField.Text = "" And BathosField.Text = "" Then
 
-            ElegxosEmbadThalam.Text = ""
+            EinaiStaEpitrepta.Text = ""
             EmbadonThalam.Text = ""
 
         Else
@@ -392,20 +393,22 @@ Err:
 
             If Val(EmbadonThalam.Text) >= Val(ElaxEmbadtxt.Text) And Val(EmbadonThalam.Text) <= Val(MegEmbadtxt.Text) Then
 
-                ElegxosEmbadThalam.Text = "( Είναι στα επιτρεπτά όρια! )"
+                DenEinaiStaEpitrepta.Text = ""
+                EinaiStaEpitrepta.Text = "( Είναι στα επιτρεπτά όρια! )"
                 EmbadonThalam.ForeColor = Color.Green
                 EmbadonThalam.BackColor = EmbadonThalam.BackColor
-                ElegxosEmbadThalam.ForeColor = Color.Green
-                ElegxosEmbadThalam.BackColor = ElegxosEmbadThalam.BackColor
+                EinaiStaEpitrepta.ForeColor = Color.Green
+                EinaiStaEpitrepta.BackColor = EinaiStaEpitrepta.BackColor
 
 
             ElseIf Val(EmbadonThalam.Text) < Val(ElaxEmbadtxt.Text) Or Val(EmbadonThalam.Text) > Val(MegEmbadtxt.Text) And (PlatosField.Text) <> "" Or (BathosField.Text) <> "" Then
 
-                ElegxosEmbadThalam.Text = "( Δεν είναι στα επιτρεπτά όρια! )"
+                EinaiStaEpitrepta.Text = ""
+                DenEinaiStaEpitrepta.Text = "( Δεν είναι στα επιτρεπτά όρια! )"
                 EmbadonThalam.ForeColor = Color.Red
                 EmbadonThalam.BackColor = EmbadonThalam.BackColor
-                ElegxosEmbadThalam.ForeColor = Color.Red
-                ElegxosEmbadThalam.BackColor = ElegxosEmbadThalam.BackColor
+                DenEinaiStaEpitrepta.ForeColor = Color.Red
+                DenEinaiStaEpitrepta.BackColor = DenEinaiStaEpitrepta.BackColor
 
             End If
 

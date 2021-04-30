@@ -42,7 +42,7 @@ Partial Class Meleth_Anelkysthra
         Me.ThalamosBox = New System.Windows.Forms.ComboBox()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.ElegxosEmbadThalam = New System.Windows.Forms.Label()
+        Me.EinaiStaEpitrepta = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.bathosTxt = New System.Windows.Forms.Label()
         Me.megEmbtxt = New System.Windows.Forms.Label()
@@ -99,6 +99,7 @@ Partial Class Meleth_Anelkysthra
         Me.PreviousCentralTab1 = New System.Windows.Forms.Button()
         Me.NextCentralTab1 = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.DenEinaiStaEpitrepta = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.ElaxMegPlatBathEMbad.SuspendLayout()
@@ -194,7 +195,8 @@ Partial Class Meleth_Anelkysthra
         Me.ElaxMegPlatBathEMbad.Controls.Add(Me.ThalamosBox)
         Me.ElaxMegPlatBathEMbad.Controls.Add(Me.Label27)
         Me.ElaxMegPlatBathEMbad.Controls.Add(Me.Label22)
-        Me.ElaxMegPlatBathEMbad.Controls.Add(Me.ElegxosEmbadThalam)
+        Me.ElaxMegPlatBathEMbad.Controls.Add(Me.DenEinaiStaEpitrepta)
+        Me.ElaxMegPlatBathEMbad.Controls.Add(Me.EinaiStaEpitrepta)
         Me.ElaxMegPlatBathEMbad.Controls.Add(Me.Label26)
         Me.ElaxMegPlatBathEMbad.Controls.Add(Me.bathosTxt)
         Me.ElaxMegPlatBathEMbad.Controls.Add(Me.megEmbtxt)
@@ -320,15 +322,15 @@ Partial Class Meleth_Anelkysthra
         Me.Label22.TabIndex = 7
         Me.Label22.Text = "Μέγιστο Εμβαδόν: E max [ m2 ]  =  "
         '
-        'ElegxosEmbadThalam
+        'EinaiStaEpitrepta
         '
-        Me.ElegxosEmbadThalam.AutoSize = True
-        Me.ElegxosEmbadThalam.ForeColor = System.Drawing.Color.DimGray
-        Me.ElegxosEmbadThalam.Location = New System.Drawing.Point(267, 227)
-        Me.ElegxosEmbadThalam.Name = "ElegxosEmbadThalam"
-        Me.ElegxosEmbadThalam.Size = New System.Drawing.Size(150, 13)
-        Me.ElegxosEmbadThalam.TabIndex = 2
-        Me.ElegxosEmbadThalam.Text = "( Είναι στα επιτρεπτά όρια! )"
+        Me.EinaiStaEpitrepta.AutoSize = True
+        Me.EinaiStaEpitrepta.ForeColor = System.Drawing.Color.DimGray
+        Me.EinaiStaEpitrepta.Location = New System.Drawing.Point(267, 227)
+        Me.EinaiStaEpitrepta.Name = "EinaiStaEpitrepta"
+        Me.EinaiStaEpitrepta.Size = New System.Drawing.Size(150, 13)
+        Me.EinaiStaEpitrepta.TabIndex = 2
+        Me.EinaiStaEpitrepta.Text = "( Είναι στα επιτρεπτά όρια! )"
         '
         'Label26
         '
@@ -925,6 +927,16 @@ Partial Class Meleth_Anelkysthra
         Me.Panel6.Size = New System.Drawing.Size(974, 35)
         Me.Panel6.TabIndex = 10
         '
+        'DenEinaiStaEpitrepta
+        '
+        Me.DenEinaiStaEpitrepta.AutoSize = True
+        Me.DenEinaiStaEpitrepta.ForeColor = System.Drawing.Color.DimGray
+        Me.DenEinaiStaEpitrepta.Location = New System.Drawing.Point(256, 227)
+        Me.DenEinaiStaEpitrepta.Name = "DenEinaiStaEpitrepta"
+        Me.DenEinaiStaEpitrepta.Size = New System.Drawing.Size(172, 13)
+        Me.DenEinaiStaEpitrepta.TabIndex = 2
+        Me.DenEinaiStaEpitrepta.Text = "( Δεν είναι στα επιτρεπτά όρια! )"
+        '
         'Meleth_Anelkysthra
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1017,7 +1029,7 @@ Partial Class Meleth_Anelkysthra
     Friend WithEvents IdioBarosCheck As CheckBox
     Friend WithEvents EmbadonThalam As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents ElegxosEmbadThalam As Label
+    Friend WithEvents EinaiStaEpitrepta As Label
     Friend WithEvents Panel4 As Panel
     Friend WithEvents BarosAntibarouBox As TextBox
     Friend WithEvents PosostoAntistathmishs As TextBox
@@ -1042,4 +1054,5 @@ Partial Class Meleth_Anelkysthra
     Friend WithEvents ClearAllbtn As Button
     Friend WithEvents TestMode As Button
     Friend WithEvents ΒιβλιοθήκεςToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents DenEinaiStaEpitrepta As Label
 End Class
