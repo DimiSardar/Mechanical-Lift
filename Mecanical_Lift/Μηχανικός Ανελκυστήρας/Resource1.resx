@@ -118,22 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="_2προς1_Μηχανικός2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\2προς1_Μηχανικός2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Εξώφυλλο" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Εξώφυλλο.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="freatio_epanw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\freatio_epanw1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_1προς1_Μηχανικός" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\1προς1_Μηχανικός.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="freatio_katw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\freatio_katw1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_2προς1_Μηχανικός2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\2προς1_Μηχανικός2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="blank_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\blank_image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1προς1_Μηχανικός" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\1προς1_Μηχανικός.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Εξώφυλλο" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Εξώφυλλο.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="65-651790_user-icon-login-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\65-651790_user-icon-login-logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon-register" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\icon-register1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

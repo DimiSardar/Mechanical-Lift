@@ -87,6 +87,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend Shared ReadOnly Property _65_651790_user_icon_login_logo() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("65-651790_user-icon-login-logo", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend Shared ReadOnly Property blank_image() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("blank_image", resourceCulture)
@@ -110,6 +120,16 @@ Namespace My.Resources
         Friend Shared ReadOnly Property freatio_katw() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("freatio_katw", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property icon_register() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon-register", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

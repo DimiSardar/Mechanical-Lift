@@ -87,6 +87,18 @@
     <Compile Include="AnalytikoBarosThalamou.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Egrafh.Designer.vb">
+      <DependentUpon>Egrafh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Egrafh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eisodos.Designer.vb">
+      <DependentUpon>Eisodos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eisodos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Meleth_Anelkysthra.Designer.vb">
       <DependentUpon>Meleth_Anelkysthra.vb</DependentUpon>
     </Compile>
@@ -141,6 +153,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AnalytikoBarosThalamou.resx">
       <DependentUpon>AnalytikoBarosThalamou.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Egrafh.resx">
+      <DependentUpon>Egrafh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eisodos.resx">
+      <DependentUpon>Eisodos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Meleth_Anelkysthra.resx">
       <DependentUpon>Meleth_Anelkysthra.vb</DependentUpon>
@@ -214,14 +232,31 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icon-register1.png" />
+    <None Include="Resources\65-651790_user-icon-login-logo1.png" />
+    <None Include="Resources\1pros1anarthsh.png" />
+    <None Include="Resources\2pros1anarthsh.png" />
+    <None Include="Resources\65-651790_user-icon-login-logo.png" />
+    <None Include="Resources\367-3670351_access-login-icon.png" />
+    <None Include="Resources\4051919-middle.png" />
     <None Include="Resources\blank_image.png" />
-    <Content Include="Resources\freatio_epanw.png" />
+    <None Include="Resources\depositphotos_62589313-stock-illustration-login-icon-glossy-button.jpg" />
+    <None Include="Resources\e3wfyllo.jpg" />
     <None Include="Resources\freatio_katw1.png" />
     <None Include="Resources\freatio_epanw1.png" />
-    <Content Include="Resources\freatio_katw.png" />
+    <None Include="Resources\freatio_epanw.png" />
     <None Include="Resources\Εξώφυλλο.jpg" />
     <None Include="Resources\2προς1_Μηχανικός2.png" />
     <None Include="Resources\1προς1_Μηχανικός.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freatio_katw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\αρχείο λήψης.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
