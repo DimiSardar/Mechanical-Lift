@@ -75,6 +75,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Beginning Page.Designer.vb">
+      <DependentUpon>Beginning Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Beginning Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="bibliothhkes.Designer.vb">
       <DependentUpon>bibliothhkes.vb</DependentUpon>
     </Compile>
@@ -154,6 +160,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Beginning Page.resx">
+      <DependentUpon>Beginning Page.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="bibliothhkes.resx">
       <DependentUpon>bibliothhkes.vb</DependentUpon>
     </EmbeddedResource>

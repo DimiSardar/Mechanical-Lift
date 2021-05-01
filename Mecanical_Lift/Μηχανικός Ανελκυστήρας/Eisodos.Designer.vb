@@ -38,7 +38,7 @@ Partial Class Eisodos
         Me.EjodosBtn.BackColor = System.Drawing.SystemColors.HotTrack
         Me.EjodosBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EjodosBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.EjodosBtn.Location = New System.Drawing.Point(565, 214)
+        Me.EjodosBtn.Location = New System.Drawing.Point(550, 225)
         Me.EjodosBtn.Name = "EjodosBtn"
         Me.EjodosBtn.Size = New System.Drawing.Size(100, 40)
         Me.EjodosBtn.TabIndex = 12
@@ -51,7 +51,7 @@ Partial Class Eisodos
         Me.EisodosBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EisodosBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.EisodosBtn.ForeColor = System.Drawing.Color.Black
-        Me.EisodosBtn.Location = New System.Drawing.Point(418, 214)
+        Me.EisodosBtn.Location = New System.Drawing.Point(403, 225)
         Me.EisodosBtn.Name = "EisodosBtn"
         Me.EisodosBtn.Size = New System.Drawing.Size(100, 40)
         Me.EisodosBtn.TabIndex = 13
@@ -60,7 +60,7 @@ Partial Class Eisodos
         '
         'KwdikosXrhsthBox
         '
-        Me.KwdikosXrhsthBox.Location = New System.Drawing.Point(593, 132)
+        Me.KwdikosXrhsthBox.Location = New System.Drawing.Point(578, 143)
         Me.KwdikosXrhsthBox.Name = "KwdikosXrhsthBox"
         Me.KwdikosXrhsthBox.Size = New System.Drawing.Size(100, 20)
         Me.KwdikosXrhsthBox.TabIndex = 9
@@ -68,7 +68,7 @@ Partial Class Eisodos
         '
         'OnomaXrhsthBox
         '
-        Me.OnomaXrhsthBox.Location = New System.Drawing.Point(593, 77)
+        Me.OnomaXrhsthBox.Location = New System.Drawing.Point(578, 88)
         Me.OnomaXrhsthBox.Name = "OnomaXrhsthBox"
         Me.OnomaXrhsthBox.Size = New System.Drawing.Size(100, 20)
         Me.OnomaXrhsthBox.TabIndex = 11
@@ -79,7 +79,7 @@ Partial Class Eisodos
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.Location = New System.Drawing.Point(393, 133)
+        Me.Label3.Location = New System.Drawing.Point(378, 144)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(67, 16)
         Me.Label3.TabIndex = 5
@@ -90,7 +90,7 @@ Partial Class Eisodos
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.Location = New System.Drawing.Point(393, 78)
+        Me.Label1.Location = New System.Drawing.Point(378, 89)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(112, 16)
         Me.Label1.TabIndex = 7
@@ -103,7 +103,7 @@ Partial Class Eisodos
         Me.EgrafhBtn.FlatAppearance.BorderSize = 0
         Me.EgrafhBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EgrafhBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.EgrafhBtn.Location = New System.Drawing.Point(657, 273)
+        Me.EgrafhBtn.Location = New System.Drawing.Point(648, 319)
         Me.EgrafhBtn.Name = "EgrafhBtn"
         Me.EgrafhBtn.Size = New System.Drawing.Size(75, 23)
         Me.EgrafhBtn.TabIndex = 15
@@ -112,12 +112,12 @@ Partial Class Eisodos
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.PictureBox1.BackColor = System.Drawing.Color.White
         Me.PictureBox1.Image = Global.Μηχανικός_Ανελκυστήρας.My.Resources.Resources._65_651790_user_icon_login_logo
-        Me.PictureBox1.Location = New System.Drawing.Point(41, 31)
+        Me.PictureBox1.Location = New System.Drawing.Point(33, 32)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(291, 246)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.Size = New System.Drawing.Size(291, 291)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 14
         Me.PictureBox1.TabStop = False
         '
@@ -126,7 +126,7 @@ Partial Class Eisodos
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DodgerBlue
-        Me.ClientSize = New System.Drawing.Size(735, 308)
+        Me.ClientSize = New System.Drawing.Size(735, 354)
         Me.Controls.Add(Me.EgrafhBtn)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.EjodosBtn)
