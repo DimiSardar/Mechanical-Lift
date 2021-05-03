@@ -46,7 +46,7 @@ Partial Class RegisterForm
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.Location = New System.Drawing.Point(384, 71)
+        Me.Label1.Location = New System.Drawing.Point(372, 69)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(112, 16)
         Me.Label1.TabIndex = 0
@@ -54,9 +54,9 @@ Partial Class RegisterForm
         '
         'OnomaXrhsthBox
         '
-        Me.OnomaXrhsthBox.Location = New System.Drawing.Point(584, 70)
+        Me.OnomaXrhsthBox.Location = New System.Drawing.Point(572, 68)
         Me.OnomaXrhsthBox.Name = "OnomaXrhsthBox"
-        Me.OnomaXrhsthBox.Size = New System.Drawing.Size(100, 20)
+        Me.OnomaXrhsthBox.Size = New System.Drawing.Size(125, 20)
         Me.OnomaXrhsthBox.TabIndex = 1
         Me.OnomaXrhsthBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -66,7 +66,7 @@ Partial Class RegisterForm
         Me.BtnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnRegister.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.BtnRegister.ForeColor = System.Drawing.Color.Black
-        Me.BtnRegister.Location = New System.Drawing.Point(426, 283)
+        Me.BtnRegister.Location = New System.Drawing.Point(411, 283)
         Me.BtnRegister.Name = "BtnRegister"
         Me.BtnRegister.Size = New System.Drawing.Size(100, 40)
         Me.BtnRegister.TabIndex = 2
@@ -78,7 +78,7 @@ Partial Class RegisterForm
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.Location = New System.Drawing.Point(384, 122)
+        Me.Label2.Location = New System.Drawing.Point(372, 120)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(177, 16)
         Me.Label2.TabIndex = 0
@@ -89,7 +89,7 @@ Partial Class RegisterForm
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.Location = New System.Drawing.Point(384, 173)
+        Me.Label3.Location = New System.Drawing.Point(372, 171)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(67, 16)
         Me.Label3.TabIndex = 0
@@ -100,7 +100,7 @@ Partial Class RegisterForm
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label4.Location = New System.Drawing.Point(384, 224)
+        Me.Label4.Location = New System.Drawing.Point(372, 222)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(156, 16)
         Me.Label4.TabIndex = 0
@@ -120,25 +120,25 @@ Partial Class RegisterForm
         '
         'EmailBox
         '
-        Me.EmailBox.Location = New System.Drawing.Point(584, 121)
+        Me.EmailBox.Location = New System.Drawing.Point(572, 119)
         Me.EmailBox.Name = "EmailBox"
-        Me.EmailBox.Size = New System.Drawing.Size(100, 20)
+        Me.EmailBox.Size = New System.Drawing.Size(125, 20)
         Me.EmailBox.TabIndex = 1
         Me.EmailBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'KwdikosBox
         '
-        Me.KwdikosBox.Location = New System.Drawing.Point(584, 172)
+        Me.KwdikosBox.Location = New System.Drawing.Point(572, 170)
         Me.KwdikosBox.Name = "KwdikosBox"
-        Me.KwdikosBox.Size = New System.Drawing.Size(100, 20)
+        Me.KwdikosBox.Size = New System.Drawing.Size(125, 20)
         Me.KwdikosBox.TabIndex = 1
         Me.KwdikosBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'EpalhtheushKwdikou
         '
-        Me.EpalhtheushKwdikou.Location = New System.Drawing.Point(584, 223)
+        Me.EpalhtheushKwdikou.Location = New System.Drawing.Point(572, 221)
         Me.EpalhtheushKwdikou.Name = "EpalhtheushKwdikou"
-        Me.EpalhtheushKwdikou.Size = New System.Drawing.Size(100, 20)
+        Me.EpalhtheushKwdikou.Size = New System.Drawing.Size(125, 20)
         Me.EpalhtheushKwdikou.TabIndex = 1
         Me.EpalhtheushKwdikou.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '

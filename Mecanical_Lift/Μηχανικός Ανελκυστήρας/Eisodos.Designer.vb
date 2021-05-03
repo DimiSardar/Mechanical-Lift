@@ -23,13 +23,15 @@ Partial Class Eisodos
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.EjodosBtn = New System.Windows.Forms.Button()
-        Me.EisodosBtn = New System.Windows.Forms.Button()
         Me.KwdikosXrhsthBox = New System.Windows.Forms.TextBox()
         Me.OnomaXrhsthBox = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.EgrafhBtn = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.KwdikosHost = New System.Windows.Forms.TextBox()
+        Me.EisodosBtn = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -45,32 +47,19 @@ Partial Class Eisodos
         Me.EjodosBtn.Text = "Έξοδος"
         Me.EjodosBtn.UseVisualStyleBackColor = False
         '
-        'EisodosBtn
-        '
-        Me.EisodosBtn.BackColor = System.Drawing.SystemColors.HotTrack
-        Me.EisodosBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.EisodosBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
-        Me.EisodosBtn.ForeColor = System.Drawing.Color.Black
-        Me.EisodosBtn.Location = New System.Drawing.Point(403, 225)
-        Me.EisodosBtn.Name = "EisodosBtn"
-        Me.EisodosBtn.Size = New System.Drawing.Size(100, 40)
-        Me.EisodosBtn.TabIndex = 13
-        Me.EisodosBtn.Text = "Είσοδος"
-        Me.EisodosBtn.UseVisualStyleBackColor = False
-        '
         'KwdikosXrhsthBox
         '
-        Me.KwdikosXrhsthBox.Location = New System.Drawing.Point(578, 143)
+        Me.KwdikosXrhsthBox.Location = New System.Drawing.Point(540, 124)
         Me.KwdikosXrhsthBox.Name = "KwdikosXrhsthBox"
-        Me.KwdikosXrhsthBox.Size = New System.Drawing.Size(100, 20)
+        Me.KwdikosXrhsthBox.Size = New System.Drawing.Size(138, 20)
         Me.KwdikosXrhsthBox.TabIndex = 9
         Me.KwdikosXrhsthBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'OnomaXrhsthBox
         '
-        Me.OnomaXrhsthBox.Location = New System.Drawing.Point(578, 88)
+        Me.OnomaXrhsthBox.Location = New System.Drawing.Point(540, 88)
         Me.OnomaXrhsthBox.Name = "OnomaXrhsthBox"
-        Me.OnomaXrhsthBox.Size = New System.Drawing.Size(100, 20)
+        Me.OnomaXrhsthBox.Size = New System.Drawing.Size(138, 20)
         Me.OnomaXrhsthBox.TabIndex = 11
         Me.OnomaXrhsthBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -79,7 +68,7 @@ Partial Class Eisodos
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.Location = New System.Drawing.Point(378, 144)
+        Me.Label3.Location = New System.Drawing.Point(378, 125)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(67, 16)
         Me.Label3.TabIndex = 5
@@ -121,17 +110,50 @@ Partial Class Eisodos
         Me.PictureBox1.TabIndex = 14
         Me.PictureBox1.TabStop = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label2.Location = New System.Drawing.Point(378, 161)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(112, 16)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Κωδικός - Host:"
+        '
+        'KwdikosHost
+        '
+        Me.KwdikosHost.Location = New System.Drawing.Point(540, 160)
+        Me.KwdikosHost.Name = "KwdikosHost"
+        Me.KwdikosHost.Size = New System.Drawing.Size(138, 20)
+        Me.KwdikosHost.TabIndex = 9
+        Me.KwdikosHost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'EisodosBtn
+        '
+        Me.EisodosBtn.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.EisodosBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.EisodosBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(161, Byte))
+        Me.EisodosBtn.Location = New System.Drawing.Point(402, 225)
+        Me.EisodosBtn.Name = "EisodosBtn"
+        Me.EisodosBtn.Size = New System.Drawing.Size(100, 40)
+        Me.EisodosBtn.TabIndex = 16
+        Me.EisodosBtn.Text = "Είσοδος"
+        Me.EisodosBtn.UseVisualStyleBackColor = False
+        '
         'Eisodos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DodgerBlue
         Me.ClientSize = New System.Drawing.Size(735, 354)
+        Me.Controls.Add(Me.EisodosBtn)
         Me.Controls.Add(Me.EgrafhBtn)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.EjodosBtn)
-        Me.Controls.Add(Me.EisodosBtn)
+        Me.Controls.Add(Me.KwdikosHost)
         Me.Controls.Add(Me.KwdikosXrhsthBox)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.OnomaXrhsthBox)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
@@ -146,10 +168,12 @@ Partial Class Eisodos
 
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents EjodosBtn As Button
-    Friend WithEvents EisodosBtn As Button
     Friend WithEvents KwdikosXrhsthBox As TextBox
     Friend WithEvents OnomaXrhsthBox As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents EgrafhBtn As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents KwdikosHost As TextBox
+    Friend WithEvents EisodosBtn As Button
 End Class
