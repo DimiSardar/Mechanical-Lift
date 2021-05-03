@@ -3,8 +3,10 @@
 Public Class Eisodos
 
     Dim MysqlConn As MySqlConnection
+    Dim MysqlCom As MySqlCommand
 
     Private Sub Eisodos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         MysqlConn = New MySqlConnection
 
         MysqlConn.ConnectionString =
